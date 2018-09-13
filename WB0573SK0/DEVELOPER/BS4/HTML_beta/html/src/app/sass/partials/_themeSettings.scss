@@ -1,0 +1,39 @@
+.sa-theme-settings {
+	position: absolute;
+	right: -$sa-theme-settings-width;
+	top: 5px;
+	width: $sa-theme-settings-width;
+	padding: 10px;
+	padding-top: 5px;
+	&.active {
+		right: 0;
+		z-index: 999;
+	}
+	h4 {
+		display: block;
+		border-bottom: 1px dashed;
+		font-size: 16px;
+		line-height: 1.4;
+		margin: 0 0 10px;
+
+	}
+
+	.sa-theme-settings-toggle {
+		width: 30px;
+		height: 30px;
+		right: 100%;
+		font-size: 17px;
+		line-height: 30px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		text-align: center;
+		top: 0;
+		position: absolute;
+	}
+
+	&.active .sa-theme-settings-toggle {
+		.fa:before {
+			content: "\f00d";
+		}			
+	}
+}

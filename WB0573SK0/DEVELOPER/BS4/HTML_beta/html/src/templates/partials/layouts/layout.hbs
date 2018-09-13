@@ -1,0 +1,141 @@
+{{!-- layouts/base.hbs --}}
+<!DOCTYPE html>
+
+<html lang="en" class="smart-style-0">
+<head>
+  <title>{{#if title}}{{title}}{{else}}Base Page Title{{/if}} | {{ThemeName}}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,500,700">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" media="screen, print" href="{{vendorCssPath}}">
+  <link rel="stylesheet" media="screen, print" href="{{appCssPath}}">
+{{#> head-block}}{{!-- Custom <head> content per page could be added. --}}{{/head-block}}
+</head>
+<body class="{{#iff hasHeader '==' false }}no-header{{/iff}} {{#iff publicHeader '==' true }}publicHeader-active{{/iff}} {{bodyClass}} smart-style-0">
+  
+  <!-- BEGIN .{{prefix}}wrapper -->
+  <div class="{{prefix}}wrapper">
+    {{#iff hasHeader '==' false }}
+    {{else}}
+      {{#iff publicHeader '==' true }}
+        {{> navigationpublic }}
+      {{else}}
+        {{> navigation}}
+      {{/iff}}
+    {{/iff}}
+
+    <div class="{{prefix}}page-body">
+    
+    {{#iff hasSidebar '==' false }}
+    {{else}}
+      {{> sidebar parentPage=parentPage firstLevelChild=firstLevelChild secondLevelChild=secondLevelChild}}
+    {{/iff}}
+
+      
+
+      <!-- BEGIN .{{prefix}}content-wrapper -->
+      <div class="{{prefix}}content-wrapper">
+        
+        {{#iff hasBreadcrumb '==' false }}
+        {{else}}
+          {{> breadcrumb parentPage=parentPage firstLevelChild=firstLevelChild secondLevelChild=secondLevelChild }}   
+        {{/iff}}
+
+        
+        <div class="{{prefix}}content">
+          {{#> sa-page-content }}
+            <!-- Page content goes here. -->
+          {{/sa-page-content }}
+        </div>
+
+
+        {{#iff hasFooter '==' false }}
+
+        {{else}}
+          <!-- BEGIN .{{prefix}}page-footer -->
+          <footer class="{{prefix}}page-footer">
+            {{#> sa-page-footer }}
+              <div class="d-flex align-items-center w-100 h-100">
+                <div class="footer-left">
+                  SmartAdmin 1.9.0 - <span class="footer-txt">Web Application Framework</span> &copy; 2017-2019            
+                </div>
+                <div class="ml-auto footer-right">
+                  <i class="hidden-xs text-blue-light">Last account activity <i class="fa fa-clock-o"></i> <strong>52 mins ago &nbsp;</strong> </i>
+                  <div class="btn-group dropup">
+                    <button class="btn btn-xs dropdown-toggle {{prefix}}btn-blue" data-toggle="dropdown">
+                      <i class="fa fa-link"></i> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <div class="padding-5">
+                          <p class="text-darken font-sm m-0">Download Progress</p>
+                          <div class="progress progress-micro m-0">
+                            <div class="progress-bar bg-success" style="width: 50%;"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li>
+                        <div class="padding-5">
+                          <p class="text-darken font-sm m-0">Server Load</p>
+                          <div class="progress progress-micro m-0">
+                            <div class="progress-bar bg-success" style="width: 20%;"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li>
+                        <div class="padding-5">
+                          <p class="text-darken font-sm m-0">Memory Load <span class="text-danger">*critical*</span></p>
+                          <div class="progress progress-micro m-0">
+                            <div class="progress-bar bg-danger" style="width: 70%;"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li>
+                        <div class="padding-5">
+                          <button class="btn btn-block btn-default">refresh</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {{!-- footer goes here. --}}
+            {{/sa-page-footer}}
+          </footer>
+          <!-- END .{{prefix}}page-footer -->
+        {{/iff}}
+
+      
+      </div>
+      <!-- END .{{prefix}}content-wrapper -->
+
+
+    </div>
+
+   
+
+  </div>
+  <!-- END .{{prefix}}wrapper -->
+
+  <script src="{{vendorJsPath}}"></script>
+  <script src="{{appJsPath}}"></script>
+  
+<script>
+  $(function () {
+      $('#menu1').metisMenu();
+  });
+</script>
+
+{{#> script-block}}
+  {{!-- Custom script or page related script. --}}
+{{/script-block}}
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+.vcheck {
+	input {
+		display: none;
+
+		& + span {
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 19px;
+				height: 19px;
+				font-size: 12px;
+				line-height: 17px;
+				text-align: center;
+				margin-right: 5px;
+				border: 1px solid;
+				vertical-align: middle;
+				font-family: $familyFontAwesome;
+			}
+
+		}
+
+		&:checked + span {
+			font-weight: bold;
+			&:before {
+				content: "\f00c";
+			}
+		}
+		&[disabled] + span {
+			opacity: 0.5;
+		}
+	}
+
+}
+
+.vcheck-20 {
+	input  + span:before {
+		width: 20px;
+		height: 20px;
+		line-height: 18px;
+	}
+}
+
+
+.vradio {
+	input {
+		display: none;
+
+		& + span {
+			width: 19px;
+			height: 19px;
+			margin-right: 5px;
+			vertical-align: text-bottom;
+			display: inline-block;
+			border: 1px solid;
+			border-radius: 50%;
+			position: relative;
+			&:before {
+				content: '';
+				width: 9px;
+				height: 9px;
+				left: 50%;
+				top: 50%;
+				border-radius: 50%;
+				margin-left:  -(9px / 2);
+				margin-top:  -(9px / 2);
+				display: block;
+				position: absolute;
+			}
+		}
+
+		&[disabled] + span {
+			opacity: 0.5;
+		}
+	}
+
+}

@@ -1,0 +1,262 @@
+@import "../variables";
+
+
+
+.show-stats .progress {
+    margin-top: rem(3px);
+    margin-bottom: rem(15px);
+}
+.show-stat-buttons {
+	.col-12:first-child {
+		padding-right: rem(5px);
+	}
+	.col-12:last-child {
+		padding-left: rem(5px);
+	}
+}
+
+.show-stat-microcharts {
+	> div {
+		padding: rem(7px) rem(9px);
+		border-right: rem(1px) solid #dadada;
+		border-top: rem(1px) solid #dadada;
+		&:last-child {
+			border-right-width: 0;
+		}
+	}
+	.label {
+		opacity: .5;
+		min-width: rem(42px);
+		&:hover {
+			opacity: 1;
+		}
+	}
+	li {
+		margin-top: 3px;
+	}
+	.sparkline {
+	    margin-top: rem(10px);
+	    margin-right: rem(8px);
+	    opacity: .7;
+	}
+	.easy-pie-chart {
+		margin-bottom: -4px;
+	}
+
+}
+.home-first-tab {
+	padding-left: rem(10px);
+	padding-right: rem(10px);
+	padding-top: rem(15px);
+}
+
+.smaller-stat {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	list-style: none;
+}
+
+.easy-pie-title .icon-color-bad, .easy-pie-title .icon-color-good {
+	font-size: rem($baseFontSize + 5px);
+}
+
+
+.sa-status {
+	.who {
+	    border-bottom: 1px solid rgba($black,.07);
+	    padding: 20px;
+	    font-weight: normal;
+	    font-size: inherit;
+
+		img {
+		    float: left;
+		    height: 40px;
+		    margin-right: 10px;
+		    width: 40px
+		}
+
+		.name {
+		    display: block;
+		    font-size: 13px;
+		    font-weight: 400;
+		    line-height: normal
+		}
+
+		.name b {
+		    color: #57889c
+		}
+
+		.from {
+		    font-size: 12px;
+		    opacity: .7
+		}
+	}
+
+
+	.text {
+	    font-size: 13px;
+	    line-height: 1.82em;
+	    padding: 20px
+	}
+
+	.image {
+	    padding: 20px;
+
+		img {
+		    width: 100%
+		}
+	}
+
+
+	.links {
+	    border-top: 1px solid rgba($black,.07);
+	    margin: 0;
+	    padding: 15px 20px;
+	    background: #fafafa;
+		.fa {
+		    color: inherit;
+		    font-size: 14px;
+		    margin-right: 2px
+		}
+		li {
+		    display: inline;
+		    padding-right: 20px
+		}
+	}
+
+
+
+	.comments {
+	    border-top: 1px solid rgba($black,.07);
+	    font-size: 13px;
+	    padding: 0 20px;
+
+		li {
+		    border-bottom: 1px solid rgba($black,.07);
+		    display: block;
+		    padding: 15px 0 15px 40px;
+		    position: relative;
+
+			&:last-child {
+			    border-bottom: none;
+			    padding-bottom: 5px
+			}
+		}
+		img {
+		    height: 30px;
+		    left: 0;
+		    position: absolute;
+		    width: 30px
+		}
+
+		.name {
+		    display: block;
+		    font-weight: 600;
+		    opacity: .8
+		}
+	}
+
+
+
+	&.card-body {
+	    padding: 0
+	}
+	.vote {
+		.comments {
+
+	    	padding: 0!important;
+
+			li {
+
+			    padding: 10px 0 10px 20px!important;
+
+				&:last-child {
+
+				    padding-right: 20px!important
+				}
+			}
+	    }
+	}
+
+
+}
+.card {
+	margin-bottom: rem(18px);
+	box-shadow: 0 1px 1px rgba($black,.05);
+}
+.card-header {
+  border-color: $card-border-color-homepage;
+  background: none;	
+}
+.card-body {
+  border-left: 1px solid $card-border-color-homepage;
+  border-right: 1px solid $card-border-color-homepage;
+}
+.card:last-child .card-body,
+.card .card-body {
+	border-bottom: 1px solid $card-border-color-homepage;
+}
+.well.connect {
+	padding: rem(14px);
+	img {
+		border-radius: 50% 50% 0;
+	}
+}
+
+blockquote.twitter-tweet {
+    border-color: $gray-lighter $dullWhite $twitter-tweet-bottom-border;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba($black,.15);
+    display: inline-block;
+    font-size: rem($baseFontSize - 1px);
+    font-family: "Helvetica Neue",Roboto,"Segoe UI",Calibri,sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 10px 5px;
+    width: calc(100% - 10px);
+    padding: 0 16px 16px;
+
+	p {
+	    font-size: rem($baseFontSize + 3px);
+	    font-weight: 400;
+	    line-height: 20px
+	}
+
+	a {
+	    color: inherit;
+	    font-weight: 400;
+	    outline: 0 none;
+	    text-decoration: none
+	}
+
+	a:focus,blockquote.twitter-tweet a:hover {
+	    text-decoration: underline
+	}
+}
+
+@media (min-width: 1200px){
+	.show-stat-microcharts > div {
+		height: 68px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 979px){
+	header .nav-tabs{
+		.d-none.d-md-inline-block{
+			display: none !important;
+		}
+	}
+	.show-stat-microcharts > div {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 767px){
+	.show-stat-microcharts > div {
+		border-right: 0;
+	}
+}
+
+

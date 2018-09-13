@@ -1,0 +1,106 @@
+{{> shortcuts }}
+
+{{!-- includes/navigation --}}
+
+{{!-- BEGIN .{{prefix}}page-header --}}
+<header class="{{prefix}}page-header">
+  <div class="{{prefix}}header-container h-100">
+    <div class="d-table d-table-fixed h-100 w-100">
+      <div class="{{prefix}}logo-space d-table-cell h-100">
+        <div class="flex-row d-flex align-items-center h-100">
+          <a class="{{prefix}}logo-link" href="{{navigation.homepage.url}}" title="{{ThemeName}}"><img alt="{{ThemeName}}" src="assets/img/common/{{prefix}}logo.png" class="{{prefix}}logo"></a>
+          <div class="dropdown ml-auto">
+            <button class="btn btn-default {{prefix}}btn-icon {{prefix}}activity-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span><span class="badge bg-red">21</span></button>
+            <div class="dropdown-menu ml-auto ajax-dropdown" aria-labelledby="dropdownMenuButton">
+              <form class="btn-group btn-group-justified" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/mail.html">Msgs (21)</button>
+                <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/notifications.html">Notify (3)</button>
+                <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/tasks.html">Tasks (4)</button>
+              </form>
+              <div class="{{prefix}}ajax-notification-container">
+                <div class="alert {{prefix}}ajax-notification-alert">
+                  <h4>Click a button to show messages here</h4>
+                  This blank page message helps protect your privacy, or you can show the first message here automatically.
+                </div>
+                <span class="fa fa-lock fa-4x fa-border"></span>
+              </div>
+
+              <form role="group" class="flex-row d-flex align-items-center {{prefix}}ajax-notification-footer">
+                <span>Last updated on: 12/12/2013 9:43AM</span>
+                <button class="btn btn-xs btn-default ml-auto" type="button" onclick="toggleReloadButton(this, event)"><span class="fa fa-refresh"></span></button>
+              </form>
+
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="d-table-cell h-100 w-100 align-middle">
+        <div class="{{prefix}}header-menu">
+          <div class="d-flex align-items-center w-100">
+            <div class="{{prefix}}header-left-area">
+              <span class="{{prefix}}project-label">Projects:</span>
+              <div class="dropdown {{prefix}}project-dropdown">
+                <a href=":;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recent projects <span class="fa fa-angle-down"></span></a>
+                <div class="dropdown-menu ml-auto" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Online e-merchant management system - attaching integration with the iOS</a>
+                  <a class="dropdown-item" href="#">Notes on pipeline upgradee</a>
+                  <a class="dropdown-item" href="#">Assesment Report for merchant account</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><span class="fa fa-power-off"></span> Clear</a>
+                </div>
+              </div>
+            </div>
+            <div class="ml-auto {{prefix}}header-right-area">
+              <div class="form-inline">
+                <span class="dropdown {{prefix}}country-dropdown">
+                  <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="flag flag-us"></em> <span>English (US) <span class="fa fa-angle-down"></span></span></a>
+                  <span class="dropdown-menu dropdown-menu-right ml-auto" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item active" href="javascript:void(0);"><span class="flag flag-us"></span> English (US)</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-fr"></span> Français</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-es"></span> Español</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-de"></span> Deutsch</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-jp"></span> 日本語</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-cn"></span> 中文</a> 
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-it"></span> Italiano</a> 
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-pt"></span> Portugal</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-ru"></span> Русский язык</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><span class="flag flag-kr"></span> 한국어</a>
+                  </span>
+                </span>
+                <button class="btn btn-light {{prefix}}btn-icon {{prefix}}btn-micro d-none d-lg-block" type="button"><span class="fa fa-microphone"></span></button>
+                <button class="btn btn-light {{prefix}}btn-icon {{prefix}}toggle-full-screen d-none d-lg-block" type="button" onclick="toggleFullScreen()"><span class="fa fa-arrows-alt"></span></button>
+                <form class="{{prefix}}header-search-form">
+                  <input type="text" class="form-control" placeholder="Find reports and more">
+                  <button type="submit" class="{{prefix}}form-btn"><span class="fa fa-search"></span></button>
+                </form>
+                <button class="btn btn-default {{prefix}}logout-header-toggle {{prefix}}btn-icon" type="button"><span class="fa fa-sign-out"></span></button>
+                <span class="dropdown {{prefix}}user-dropdown">
+                  <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="{{prefix}}user-dropdown-toggle">
+                    <img src="assets/img/avatars/sunny.png" alt="John Doe">
+                  </a>
+                  <span class="dropdown-menu dropdown-menu-right ml-auto" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-cog"></i> Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0);"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item padding-10 padding-top-5 padding-bottom-5" href="javascript:void(0);" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+                  </span>
+                </span>
+                
+                <button class="btn btn-default {{prefix}}btn-icon {{prefix}}sidebar-hidden-toggle" onclick="SAtoggleClass(this, 'body', '{{prefix}}hidden-menu')" type="button"><span class="fa fa-reorder"></span></button>
+
+                
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</header>
+<!-- END .{{prefix}}page-header -->

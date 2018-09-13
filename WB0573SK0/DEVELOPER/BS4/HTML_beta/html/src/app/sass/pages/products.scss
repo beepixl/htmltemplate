@@ -1,0 +1,294 @@
+@import "../variables";
+
+.product-content {
+    border: 1px solid $dullerWhite;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    background: $white;
+    .carousel-control.left {
+      margin-left: 0
+  }
+  .product-image {
+      background-color: $white;
+      display: block;
+      min-height: 238px;
+      overflow: hidden;
+      position: relative
+  }
+  .product-deatil {
+      border-bottom: 1px solid $dullerWhite;
+      padding: 16px;
+      position: relative;
+      background: $white;
+       h5 a {
+        color: $blackish;
+        font-size: rem($baseFontSize + 2px);
+        line-height: 19px;
+        text-decoration: none;
+        padding-left: 0;
+        margin-left: 0
+    }
+     h5 a span {
+        color: $mixmuted;
+        display: block;
+        font-size: rem($baseFontSize);
+    }
+     span.tag1 {
+        @include css3(border-radius,50%);
+        color: $white;
+        font-size: rem($baseFontSize + 2px);
+        height: 50px;
+        padding: 13px 0;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 10px;
+        width: 50px
+    }
+     span.sale {
+        background-color: $lightBlue;
+    }
+     span.discount {
+        background-color: #71e134;
+    }
+     span.hot {
+        background-color: #fa9442;
+    }
+  }
+  .description {
+      font-size: rem($baseFontSize - 0.5px);
+      line-height: rem(20px);
+      padding: rem(10px) rem(16px);
+      background: $white
+  }
+  .product-info {
+      padding: rem(10px) rem(16px);
+  }
+  .product-info a.add-to-cart {
+      color: $blackish;
+      font-size: rem($baseFontSize);
+      padding-left: 16px
+  }
+  name.a {
+      padding: 5px 10px;
+      margin-left: 16px
+  }
+
+  .carousel-indicators li {
+    background: rgba($primary, 0.5);
+    &.active {
+      background: $primary;
+    }
+  }
+}
+.product-entry{
+   .product-deatil {
+      border-bottom: 1px solid $dullerWhite;
+      padding-bottom: 17px;
+      padding-left: 16px;
+      padding-top: 16px;
+      position: relative;
+   }
+   h5 a {
+        color: $blackish;
+        font-size: rem($baseFontSize + 2px);
+        line-height: 19px;
+        text-decoration: none
+    }
+    h5 a span {
+        color: $mixmuted;
+        display: block;
+        font-size: rem($baseFontSize);
+    }
+}
+.load-more-btn {
+    background-color: $lightBlue;
+    border-bottom: 2px solid #037ca5;
+    @include css3(border-radius,2px);
+    border-top: 2px solid #0cf;
+    margin-top: 20px;
+    padding: 9px 0;
+    width: 100%
+}
+.product-block .product-deatil p.price-container span,
+.product-content .product-deatil p.price-container span,
+.product-entry .product-deatil p.price-container span,
+.shipping table tbody tr td p.price-container span,
+.shopping-items table tbody tr td p.price-container span {
+    color: $lightBlue;
+    font-family: Lato, sans-serif;
+    font-size: rem($baseFontSize + 11px);
+    line-height: 20px
+}
+.product-wrap .product-image span.tag2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    @include css3(border-radius,50%);
+    padding: 10px 0;
+    color: $white;
+    font-size: rem($baseFontSize - 2px);
+    text-align: center
+}
+.product-wrap .product-image span.sale {
+    background-color: $bg-blue;
+}
+.product-wrap .product-image span.hot {
+    background-color: $red;
+}
+.shop-btn {
+    position: relative
+}
+.shop-btn>span {
+    background: $red;
+    display: inline-block;
+    font-size: rem($baseFontSize - 3px);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    font-weight: 700;
+    @include css3(border-radius,50%);
+    padding: 2px 4px 3px!important;
+    text-align: center;
+    line-height: normal;
+    width: 19px;
+    top: -7px;
+    left: -7px
+}
+
+@media only screen and (min-width:1024px) {
+    .product-content .product-image {
+        border-right: 1px solid $dullerWhite;
+        margin-right: rem(-13px)
+    }
+    .product-content .product-info {
+        position: relative
+    }
+    .product-content .description, .product-content .product-deatil, .product-content .product-info {
+        margin-left: rem(-13px)
+    }
+    .product-deatil.product-content .description, .product-deatil.product-content .product-info {
+        margin-left: 0
+    }
+}
+
+
+.product-deatil {
+    padding: 30px 30px 50px;
+}
+.description-tabs {
+    padding: 30px 0 5px!important
+}
+.description-tabs .tab-content {
+    padding: 10px 0
+}
+.product-deatil {
+    padding: 30px 30px 50px;
+    hr+.description-tabs {
+      padding: 0 0 5px!important
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+      background: none!important
+  }
+  .glyphicon {
+      color: $blue;
+  }
+  .product-image {
+      border-right: none!important
+  }
+  .name {
+    //font-size: rem($baseFontSize + 9px);
+    margin-top: 0;
+    margin-bottom: 0
+  }
+  .name small {
+      display: block
+  }
+  .name a {
+      margin-left: 0
+  }
+  .price-container {
+      font-size: rem($baseFontSize + 11px);
+      margin: 0;
+      font-weight: 300
+  }
+  .price-container small {
+      font-size: rem($baseFontSize - 1px);
+  }
+  .fa-2x {
+      font-size: rem($baseFontSize + 3px) !important;
+  }
+  .fa-2x>h5 {
+      font-size: rem($baseFontSize - 1px);
+      margin: 0
+  }
+  .fa-2x+a, .fa-2x+a+a {
+      font-size: rem($baseFontSize);
+  }
+  .certified {
+      margin-top: 10px
+  }
+  .certified ul {
+      padding-left: 0
+  }
+  .certified ul li:not(first-child) {
+      margin-left: -3px
+  }
+  .certified ul li {
+      display: inline-block;
+      background-color: #f9f9f9;
+      border: 1px solid $rating-default;
+      padding: 13px 19px;
+  }
+  .certified ul li:first-child {
+      border-right: none
+  }
+  .certified ul li a {
+      text-align: left;
+      font-size: rem($baseFontSize - 1px);
+      color: #6d7a83;
+      line-height: 16px;
+      text-decoration: none
+  }
+  .certified ul li a span {
+      display: block;
+      color: $lightBlue;
+      font-size: rem($baseFontSize);
+      font-weight: 700;
+      text-align: center
+  }
+  .message-text {
+      width: calc(100% - 70px)
+  }
+  .name small{
+    font-size: 65%;
+  }
+}
+.nav-pills{
+  .nav-link.active,
+  .show > .nav-link,
+  .nav-link.active:hover{
+    background: $blue;
+    color: $white !important;
+    font-weight: normal !important;
+  }
+  .nav-link:hover{
+    background: #eee;
+  }
+}
+
+
+
+
+
+@media (max-width: 479px) {
+  .product-deatil {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .product-deatil .certified ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,322 @@
+{{!-- blank.hbs --}}
+{{#> layout title=pageTitle parentPage='app-views' firstLevelChild='forum-layout' secondLevelChild='forum'}}
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa-fw fa fa-home"></i> App Views <span>> Forum Layout > General View</span></h1>				
+			</div>
+			<div class="ml-auto">
+				<ul class="sa-sparks">
+					<li class="sparks-info">
+						<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+						<div class="sparkline text-blue d-none d-xl-block">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline text-purple d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline text-green-dark d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div class="d-flex w-100">
+
+			<div class="well w-100">
+				<table class="table table-striped table-forum" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<th colspan="2">Introduction</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Topics</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Posts</th>
+							<th class="hidden-xs-down hidden-sm-down" style="width: 200px;">Last Post</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-globe fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Hello, welcome to SmartAdmin Forum!
+								</a>
+									<small>You can introduce yourself here</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-microphone fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									News & Announcements
+								</a>
+									<small>Latest news and reports</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-pencil fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Forum Rules
+								</a>
+									<small>Please read carefully our forum rules before you post</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+					</tbody>
+				</table>
+
+				<table class="table table-striped table-forum">
+					<thead>
+						<tr>
+							<th colspan="2">Projects</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Topics</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Posts</th>
+							<th class="hidden-xs-down hidden-sm-down" style="width: 200px;">Last Post</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-table fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Business Requirement Docs
+								</a>
+									<small>Latest BRD docs</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-bar-chart-o fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Project Discussions
+								</a>
+									<small>Post all project related topics here</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-user fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Clients
+								</a>
+									<small>Client forum posts</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-dollar fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									Budget Meetings
+								</a>
+									<small>Project budget discussions</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+					</tbody>
+				</table>
+
+
+				<table class="table table-striped table-forum">
+					<thead>
+						<tr>
+							<th colspan="2">Support</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Topics</th>
+							<th class="text-center hidden-xs-down hidden-sm-down" style="width: 100px;">Posts</th>
+							<th class="hidden-xs-down hidden-sm-down" style="width: 200px;">Last Post</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-book fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+										How to...
+									</a>
+									<small>Maecenas nec odio et</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-question-circle fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+										Questions and FAQs
+									</a>
+									<small>Luctus pulvinar hendrerit id lorem</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+						<!-- TR -->
+						<tr>
+							<td class="icon-cell"><i class="fa fa-user-md fa-2x text-muted"></i></td>
+							<td>
+								<h4><a href="forum-topic.html">
+									User Guideline
+								</a>
+									<small>Cras dapibus vivamus elementum semper nisi</small>
+								</h4>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">431</a>
+							</td>
+							<td class="text-center hidden-xs-down hidden-sm-down">
+								<a href="javascript:void(0);">1342</a>
+							</td>
+							<td class="hidden-xs-down hidden-sm-down">by 
+								<a href="javascript:void(0);">John Doe</a>
+								<br>
+								<small><i>January 1, 2014</i></small>
+							</td>
+						</tr>
+						<!-- end TR -->
+						
+					</tbody>
+				</table>
+
+
+			</div>
+		
+		</div>
+	{{/inline}}
+{{/layout}}

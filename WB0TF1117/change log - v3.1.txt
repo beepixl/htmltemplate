@@ -1,0 +1,5 @@
+# Bug fixes [Fixed - RTL Mobile Sidebar Filter, Fixed - Signup page broken  ]
+# Edited script.js and signup.html
+
+# Please email me if you find out some new bugs or issues :)
+# gtanim@gmail.com

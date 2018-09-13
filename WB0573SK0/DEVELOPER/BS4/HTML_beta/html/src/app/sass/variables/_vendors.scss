@@ -1,0 +1,194 @@
+// bootstrap 
+
+	// -> headings
+	$headerSmallSize : 0.65em;
+	$headerSmallAltSize : 0.75em;
+	$headerSmallColor: #999;
+
+
+	// $form-group-margin-bottom
+	$form-group-margin-bottom: 1rem;
+
+	// h3
+	$h3-small-font-size: 0.65em;
+
+	// h4
+	$h4-font-size: rem($baseFontSize + 5px);
+
+	// h5
+	$h5-margin: rem(10px) 0;
+	$h5-font-size: rem($baseFontSize + 4px);
+
+
+	// hr
+
+	$hr-margin: rem(18px);
+
+
+	// form-control
+
+	$form-control-md-font-size: rem(12px);
+	$form-control-disabled-background: #eee;
+
+	//-> buttons
+	$btn-radius: rem(2px);
+	$btn-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+	$btn-padding: rem(6px) rem(12px);
+	$btn-lg-padding: rem(10px) rem(16px);
+	$btn-font-size: rem($baseFontSize + 4px);
+
+	// blockquote
+	$blockquote-border: rgba(0,0,0,.15);
+	$blockquote-footer-color: $gray-light;
+
+	//-> card 
+
+	$card-border-color: #c3c3c3;
+	$card-bg: #fcfcfc;
+	$card-header-padding: rem(8px) rem(15px) rem(9px);
+	$card-header-text-color: inherit;
+	$card-header-font-weight: 300;
+	$card-header-font-size: rem($baseFontSize + 2px);
+
+
+
+	// -> alerts
+	$alert-info-border: #9cb4c5;
+	$alert-info-color: #305d8c;
+	$alert-info-bg: #d6dde7;
+
+	$alert-warning-border: #dfb56c;
+	$alert-warning-color: #826430;
+	$alert-warning-bg: #efe1b3;
+
+	$alert-success-border: #8ac38b;
+	$alert-success-color: #356635;
+	$alert-success-bg: #cde0c4;
+
+	$alert-danger-border: #953b39;
+	$alert-danger-color: #fff;
+	$alert-danger-bg: #c26565;
+
+
+	// -> well 
+
+	$well-lg-padding: rem(24px);
+	$well-lg-radius: rem(3px);
+
+	$well-sm-padding: rem(9px);
+	$well-sm-radius: rem(2px);
+
+	$well-light-bg: $white;
+	$well-light-border: #e2e2e2;
+
+
+
+	// -> nav-tabs
+	$navbarActiveLinkBorderColor: #C2C2C2;
+	$tab-active-link-color: #555;
+
+
+	// -> badge
+	$badge-inverse: #999;
+	$badge-padding: rem(3px) rem(7px);
+	$badge-radius: rem(10px);
+	$badge-font-size: rem($baseFontSize - 1px);
+
+
+	// -> modal
+	$modal-width: rem(600px);
+	$modal-shadow: 0 rem(5px) rem(15px) rgba(0,0,0,.5);
+	$modal-border: #e5e5e5;
+	$close-opacity: 0.2;
+	$modal-header-padding: rem(15px);
+	$modal-radius: rem(3px);
+	$modal-body-padding: rem(20px);
+	$modal-footer-padding: rem(20px);
+
+	$table-th-border-width: rem(1px);
+
+	// -> label
+	$label-font-size: 75%;
+
+	// -> popover
+	$popover-font-size: $baseFontSize;
+
+	// table condition rows
+	$table-success:               #dff0d8;
+	$table-info:                  #d6dde7;
+	$table-warning:               #fcf8e3;
+	$table-danger:                #f2dede;
+
+	// -> pre
+	$pre-border: #ccc;
+	$pre-bg: #f5f5f5;
+	$pre-color: #333;
+	$code-color: #c7254e;
+	$code-background: #f9f2f4;
+
+// ui chat manager
+
+	// -> status colors
+	$away : $orange-bright;
+	$online : $green-bright;
+	$incognito : #a19e9d;
+	$busy : #f14b52;
+	$offline : #ddd;
+	$onlineColor: #40ac2b;
+
+	$chat-body-background: #fafafa;
+	$chat-time: #afafaf;
+	$chat-border: #cdcecf;
+
+
+
+
+// bootstrap-slider
+
+	$slider-handle-background: #858585;
+	$slider-handle-color: #BDBDBD;
+	$slider-track-background: #E5E5E5;
+
+
+// jquery-ui
+	$ui-datepicker-direction-arrow-color: #222;
+	$ui-datepicker-header: #f5f5f5;
+	$ui-datepicker-today: #BFBFBF;
+	$ui-state-highlight: #A90329;
+	$ui-state-active: #ebebeb;
+	$ui-state-hover: #428bca;
+	$ui-default-state-border: #adadad;
+	$ui-default-state-background: #ebebeb;
+	$ui-state-hover-border: #357ebd;
+	$ui-tabs-nav-border: #ddd;
+	$ui-tabs-tab: $darkerWhite;
+	$ui-tabs-active: $gray;
+	$ui-spinner-input-border: #aaa;
+	$ui-accordion-header-background: #fbfbfb;
+
+
+
+// smart-forms
+	$action-form-background: #f9f9f9;
+
+// dropzone
+	$dropzone-background: #FAFCFD;
+// summernote
+	$summernote-background: #307ecc;
+
+// fuelux
+	$fuelux-wizard-active: #f1f6fc;
+
+
+
+// ui-grid
+$ui-jqgrid-hover: #ecf3f8;
+$ui-jqgrid-border-hover: #dee2e6;
+
+
+// nouislider
+$nouislider-background: #bfbfbf;
+
+
+// datatable
+$datatable-shown-background: #cdd162;

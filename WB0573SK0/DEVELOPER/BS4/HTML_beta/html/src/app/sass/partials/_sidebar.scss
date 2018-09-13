@@ -1,0 +1,841 @@
+.sa-left-menu:not(.metismenu) {
+  .sa-sub-nav {
+    display: none;
+  }
+}
+.sa-aside-left {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: $leftColumnWidth;
+  font-size:rem($baseFontSize + 1px);
+  body:not(.sa-menu-on-top) & .sa-left-menu {
+    li.active > a{
+      &:before{
+        content: "\f0d9";
+        font-family: FontAwesome;
+        display: block;
+        height: 27px;
+        line-height: normal;
+        width: 27px;
+        position: absolute;
+        right: -21px;
+        font-size:rem($baseFontSize + 7px)
+      }
+    }
+  }
+  .badge {
+    font-weight: 700;
+    padding: 3px 7px;
+    min-width: 10px;
+    font-size:rem($baseFontSize - 1px);
+    border-radius: 10px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .sa-left-menu {
+    display: flex;
+    flex-direction: column;
+    li > a {
+      padding: 10px 10px 10px 11px;
+      > .fa-fw {
+        margin-right: 5px;
+        position: relative;
+        .round-top{
+          font-size:rem($baseFontSize - 4px);
+          display: block;
+          padding: 2px;
+          position: absolute;
+          top: -8px;
+          right: -6px;
+          text-decoration: none;
+          font-style: normal;
+          min-width: 13px;
+          @include css3(border-radius,50%);
+          font-style: normal;
+          max-height: 13px;
+          line-height: 8px;
+          font-weight: 700;
+          vertical-align: baseline;
+          white-space: nowrap;
+          text-align: center;
+          border: 1px solid;
+        }
+      }
+      .collapse-sign{
+        //position: absolute;
+        //right: rem(10px);
+        //top: rem(9px);
+        font-size:rem($baseFontSize - 2px);
+        float: right;
+        margin-top: 2px;
+        .fa-minus-square-o{
+          display: none;
+        }
+      }
+    }
+    li.active > a{
+      position: relative;
+      .collapse-sign{
+        .fa{
+          display: none;
+        }
+        .fa-minus-square-o{
+          display: inline-block;
+        }
+      }
+    }  
+    li > .has-arrow:after{
+      content: " ";
+      display: none;
+    }
+    
+    .sa-sub-nav {
+      position: relative;
+      //padding: 7px 0;
+      .sa-sub-nav-second-level{
+        > li > a{
+          padding-left: 60px;
+        }
+      }
+
+      
+      > li{
+        position: relative;
+        body:not(.sa-menu-on-top) 
+        &:first-child {
+          margin-top: 7px;
+        }
+        body:not(.sa-menu-on-top) 
+        &:last-child {
+          margin-bottom: 7px;
+        }
+        a{
+          padding: 7px 10px 7px 42px;
+          .fa-fw{
+              font-size:rem($baseFontSize + 1px);
+              width: 18px;
+              text-align: center;
+              vertical-align: 0;
+              line-height: 1;
+          }
+        }
+      }
+      > li.active > a:before {
+          content: "\f0d9";
+          font-family: FontAwesome;
+          display: block;
+          height: 27px;
+          line-height: normal;
+          width: 27px;
+          position: absolute;
+          right: -21px;
+          font-size:rem($baseFontSize + 7px);
+      }
+      
+      > li.active > a.has-arrow{
+        &:before{
+          display: none;
+        }
+      }
+      li.active li.active{
+        > a{
+          position: relative;
+          &:before{
+            content: "\f0d9";
+            font-family: FontAwesome;
+            display: block;
+            height: 27px;
+            line-height: normal;
+            width: 27px;
+            position: absolute;
+            right: -21px;
+            font-size:rem($baseFontSize + 7px);
+          }
+        }
+      }
+    }
+    .sa-nav-third-level:before,
+    .sa-nav-forth-level:before,
+    .sa-nav-fifth-level:before,
+    .sa-nav-sixth-level:before{
+      display: none;
+    }
+    .sa-nav-third-level{
+      > li a{
+        padding-left: 60px;
+      }
+    }
+    .sa-nav-forth-level{
+      > li a{
+        padding-left: 80px;
+      }
+    }
+    .sa-nav-fifth-level{
+      > li a{
+        padding-left: 100px;
+      }
+    }
+    .sa-nav-sixth-level{
+      > li a{
+        padding-left: 120px;
+      }
+    }
+
+
+    a {
+      display: block;
+      position: relative;
+      padding: 10px;
+    }
+    
+    > li {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    > li.chat-users{
+      overflow: visible;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.popover {
+  min-width: 250px;
+  @include css3(border-radius,0);
+  font-weight: 400!important
+}
+.bs-popover-right {
+  margin-left: 14px;  
+}
+.popover .popover-content {
+  padding: 8px
+}
+.usr-card {
+  position: relative;
+  .card-small-text {
+    font-size: 0.92em;
+    display: block;
+  }
+  p{
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+    font-size:rem($baseFontSize + 1px);
+    font-weight: 700    
+  }
+  > img {
+    display: inline-block;
+    border-left: 3px solid;
+  }
+}
+.usr-card-content {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -3px;
+  padding-left: 5px;
+  max-width: 174px
+}
+
+
+.minifyme{
+  border-bottom: 1px solid;
+  text-align: center;
+  padding: 0;
+  width: 36px;
+  height: 28px;
+  display: block;
+  float: right;
+  @include css3(border-radius,5px 0 0 5px);
+  cursor: pointer;
+  margin-top: 7px;
+  font-size:rem($baseFontSize + 6px);
+  transition: all .1s linear 0s;
+  &:hover{
+    right: 0;
+    width: 40px;
+    padding-right: 5px;
+  }
+}
+.minified {
+  .sa-aside-left {
+    z-index: 999;
+  }
+}
+
+
+// Minified and menu on top not working on mobile, so added into media query.
+@media (min-width:979px){
+
+  //  minified nav start
+  .minified{
+    .sa-aside-left{
+      width: $minifiedSidebar;
+      .sa-left-menu{
+        .menu-item-parent{
+          display: none;
+          position: absolute;
+          left: 40px;
+          top: -3px;
+          width: 186px;
+          height: 38px;
+          line-height: 38px;
+          z-index: 3;
+          border-left: 1px solid;
+          border-top: 1px solid;
+          border-bottom: 1px solid;
+          padding-left: 12px;
+          box-sizing: content-box;
+        }
+        // first main dropdown active
+        > li.active{
+          > a{
+            &:before{
+              content: "\f0d9";
+              font-family: FontAwesome;
+              display: block;
+              height: 27px;
+              line-height: normal;
+              width: 27px;
+              position: absolute;
+              right: -21px;
+              font-size:rem($baseFontSize + 7px);
+            }
+          }
+        }
+        // first main dropdown 
+        > li{
+            overflow: visible;
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            position: relative;
+
+            &:hover .sa-sub-nav,
+            &:hover .menu-item-parent,
+            &:hover .chat-users-dropdown{
+              display: block;
+            }
+
+            > a{
+              padding: 10px 11px;
+              .collapse-sign{
+                display: none;    
+              }
+              .fa-fw{
+                display: block;
+                width: auto;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+              }
+            }
+          > .sa-sub-nav,
+          .chat-users-dropdown {
+            display: none;
+            position: absolute;
+            left: 40px;
+            width: 201px;
+            top: 100%;
+            z-index: 5;
+            border: 1px solid;
+            min-height: 180px;
+            margin-top: -3px;
+            overflow: hidden;
+            &:before{
+              display: none;
+            }
+          }
+          .chat-users-dropdown{
+            padding: 7px 0;
+          }
+        }
+        li > a{
+          position: relative;
+          display: block;
+        }
+        .sa-sub-nav{
+          > li{
+            &:before{
+              display: none;
+            }
+            > a{
+              padding: 7px 11px 7px 14px;
+            }
+          }
+        }
+      }
+      .sa-sub-nav-second-level{
+        > li a{
+          padding-left: 20px !important;
+        }
+      }
+      .sa-nav-third-level{
+        > li a{
+          padding-left: 25px;
+        }
+      }
+      .sa-nav-forth-level{
+        > li a{
+          padding-left: 45px;
+        }
+      }
+      .sa-nav-fifth-level{
+        > li a{
+          padding-left: 62px;
+        }
+      }
+      .sa-nav-sixth-level{
+        > li a{
+          padding-left: 82px;
+        }
+      }
+    }
+
+    .inbox-badge{
+      font-size:rem($baseFontSize - 4px);
+      padding: 2px;
+      position: absolute;
+      top: 6px;
+      min-width: 13px;
+    }
+    .sa-sidebar-shortcut-toggle {
+      padding: rem(5px) rem(6px) rem(3px);
+      @include css3(box-shadow,none);
+      img {
+        width: rem(33px);
+        height: rem(30px);
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+    .minifyme {
+      float: none;
+      position: relative;
+      margin: 0;
+      width: auto;
+      display: block;
+      height: rem(34px);
+      font-size:rem($baseFontSize + 10px);
+      @include css3(border-radius,0);
+      .fa:before {
+        content: "\f0a9";
+      }
+    }
+    .chat-users{
+      > a{
+        max-height: 40px;
+      }
+    }
+  }
+  // minified nav end
+
+
+  //  menu-on-top start
+  .sa-menu-on-top{
+    .sa-content-wrapper{
+      margin-left: 0 !important;
+    }
+    .sa-page-body{
+      display: block;
+    }
+    .minifyme {
+      display: none;
+    }
+    .sa-aside-left{
+      //position: static !important;
+      width: 100%;
+      height: rem(70px);
+      height: inherit !important;
+      overflow: visible !important;
+      border-bottom: 1px solid;
+      position: relative;
+      z-index: 1;
+    }
+    .sa-left-menu{
+      position: static !important;
+      width: auto !important;
+      display: flex !important;
+      flex-direction: row;
+      overflow: inherit !important;
+      // first main li in top
+      > li{
+        display: list-item;
+        overflow: visible;
+        z-index: 1;
+        > a{
+          font-size:rem($baseFontSize);
+          padding: 5px 9px 13px;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent;
+          > .fa-fw{
+            display: block;
+            margin: 1px 0 0;
+            line-height: inherit;
+            text-align: center;
+            font-size:rem($baseFontSize + 11px);
+            width: 100%;
+          }
+          &:before{
+            font-family: FontAwesome;
+            content: "\f0dd";
+            position: absolute;
+            top: 73%;
+            left: 46%;
+          }
+          // only those not have dropdown
+          &:only-child:before,
+          &:only-child:before {
+              content: ""!important;
+          }
+          .menu-item-parent{
+            display: block;
+            max-width: 72px;
+            min-width: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+          }
+          .round-top{
+            top: -2px !important;
+          }
+        }
+        // &.active > a,
+        &:hover > a,
+        &:hover > a:hover{
+          border-left: 1px solid;
+          border-right: 1px solid;
+          z-index: 1;
+          position: relative;
+        }
+      }
+      > li.active{
+        > a{
+          font-weight: bold;
+        }
+      }
+      .menu-item-parent + span{
+        float: none!important;
+        top: 5px;
+        right: 5px;
+        position: absolute;
+      }
+      li{
+        .collapse-sign{
+          display: none;
+        }
+        &:hover{
+          .sa-sub-nav{
+            display: block;
+          }
+        }
+      }
+      .top-menu-invisible{
+        display: none;
+      }
+      .active > .sa-sub-nav {
+        padding: 3px;        
+      }
+      .sa-sub-nav {
+        display: none;
+        position: absolute;
+        border: 1px solid;
+        border-top: none;
+        width: 200px;
+        &.collapse {
+          display: none;
+          overflow: hidden;
+        }
+        @include css3(border-radius,0);
+        &:before{
+          display: none;
+        }
+        li{
+          position: relative;
+          &:before{
+            display: none;
+          }
+          a{
+            padding: 7px 10px !important;
+            font-size:rem($baseFontSize);
+            &:after{
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1;
+              content: "\f0da";
+              display: block!important;
+              position: absolute;
+              top: 9px;
+              right: 4px;
+              transform: none;
+              border: none;
+            }
+          }
+          > a:only-child:after{
+            display: none;
+            content: " ";
+          }
+          ul{
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 100%;
+            top: -8px;
+            border: 1px solid;
+            width: 200px;
+            padding: 3px;
+            @include css3(border-radius,0);
+          }
+          &:hover{
+            > ul{
+              display: block;
+            }
+          }
+          &.active{
+            > a{
+              font-weight: bold;
+              background: none;
+              &:before{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //  menu-on-top end
+}  
+
+
+
+// hidden menu 
+.sa-hidden-menu{
+  .sa-aside-left{
+    top: 0 !important;
+    .sa-left-menu{
+      position: static !important;
+    }
+  }
+  .sa-content-wrapper{
+    //margin-left: 0 !important;
+  }
+}
+.sa-shortcuts-section{
+  z-index: 999;
+}
+
+
+
+.inactive,
+.inactive:hover{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.sa-sidebar-shortcut-toggle {
+  display: block;
+  margin-bottom: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: rem(8px) rem(10px) rem(6px);
+  img {
+    width: 28px;
+    height: 25px;
+    margin-right: 5px;
+  }
+}
+
+
+
+
+.sa-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-page-body {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  background: url(../img/common/sa-bg.png);
+}
+
+
+
+.sa-menu-on-top {
+  .sa-logout-header-toggle {
+    display: none;
+  }
+}
+
+@media (min-width:979px){
+  .minified, .sa-menu-on-top {
+    .sa-sidebar-hidden-toggle {
+      display: none;
+    }
+  }
+  .sa-menu-on-top {
+    .sa-sidebar-shortcut-toggle {
+      display: none;
+    }
+  }
+}
+
+@media (max-width:979px){
+  .minifyme{
+    display: none;
+  }
+}
+
+
+// Minified and menu on top not working on mobile, so added into media query.
+@media (min-width:979px){
+  .sa-fixed-navigation:not(.minified) {
+    .sa-aside-left {
+      position: fixed;
+      z-index: 9;
+      top: $headerHeight;
+      bottom: 0;
+      overflow: hidden;
+    }
+    .sa-left-menu {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      bottom: -17px;
+      //padding-right: 17px;
+      overflow: scroll;
+      display: block;
+      width: calc(#{$leftColumnWidth} + 17px);
+    }
+
+    .sa-content-wrapper {
+      margin-left: $leftColumnWidth
+    }
+    &.minified {
+      .sa-content-wrapper {
+        margin-left: $minifiedSidebar;
+      }
+    }
+    .minifyme {
+      display: none;
+    }
+  }
+}
+
+.sa-hidden-menu {
+  .minifyme {
+    display: none;
+  }
+  .sa-page-header {
+    z-index: 9;
+  }
+  .sa-aside-left {
+    transition: left 0.2s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    padding-top: 49px;
+    left: rem(-$leftColumnWidth + 10px);
+    &:hover {
+      left: 0;
+    }
+  }
+  .sa-content-wrapper {
+    margin-left: rem(10px);
+  }
+}
+
+
+.sa-fixed-header{
+  padding-top: rem($headerHeight);
+  .sa-page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    border-bottom: 1px solid;
+  }
+}
+@media (min-width:979px){
+  .sa-fixed-navigation.sa-menu-on-top{
+    padding-top: rem($headerHeight + $headerMenuTopHeight);
+    .sa-aside-left{
+      position: fixed !important;
+      height: $headerMenuTopHeight !important;
+    }
+    .sa-page-footer{
+      padding-left: 20px;
+    }
+  }
+  // default fixed ribbon style is in bottom
+  .sa-fixed-ribbon.sa-menu-on-top{
+    padding-top: rem($headerHeight + $headerMenuTopHeight + $ribbonHeight); 
+    .sa-page-ribbon{
+      top: rem($headerHeight + $headerMenuTopHeight);
+    }
+  }
+
+}
+.sa-fixed-ribbon{
+  padding-top: rem($headerHeight + $ribbonHeight);
+  .sa-page-ribbon{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: rem($headerHeight);
+  }
+}
+
+
+
+@media (max-width:979px){
+  // this style is only for tablet and mobile version, nav remain in one style.
+  .sa-aside-left {
+    transition: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    padding-top: 49px;
+    left: rem(-$leftColumnWidth);
+  }
+  .sa-hidden-menu{
+    .sa-aside-left{
+      transition: none;
+      position: relative;
+      left: 0;
+      padding-top: 0;
+      left: 0 !important;
+    }
+  }
+  .sa-fixed-ribbon{
+    padding-top: rem($headerHeight);
+    .sa-content{
+      margin-top: $ribbonHeight;
+    }
+  }
+}

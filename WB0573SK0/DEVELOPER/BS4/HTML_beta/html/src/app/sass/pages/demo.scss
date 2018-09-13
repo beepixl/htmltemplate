@@ -1,0 +1,30 @@
+@import "../variables";
+
+.demo-icon-font {
+    font-size: rem($baseFontSize + 1px);
+    margin-bottom: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
+.demo-icon-font:hover {
+    background-color: rgba(86,61,124,.1);
+    text-decoration: none
+}
+
+.show-grid {
+	margin-bottom: $form-group-margin-bottom;
+	[class*="col"] {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    background-color: rgba(61, 106, 124, 0.15);
+	    border: 1px solid rgba(61, 106, 124, 0.2);
+	}
+}
+
+.knobs-demo > div {
+	display: inline-block;
+	+ div {
+		margin-left: 30px;
+	}
+}

@@ -1,0 +1,237 @@
+/* jquery.Jcrop.css v0.9.12 - MIT License */
+/*
+  The outer-most container in a typical Jcrop instance
+  If you are having difficulty with formatting related to styles
+  on a parent element, place any fixes here or in a like selector
+
+  You can also style this element if you want to add a border, etc
+  A better method for styling can be seen below with .jcrop-light
+  (Add a class to the holder and style elements for that extended class)
+*/
+
+.jcrop-active{
+  position:relative;
+  float:left
+}
+.jcrop-selection{
+  position:absolute
+}
+.jcrop-border.ord-n,
+.jcrop-dragbar.ord-n{
+  top:0;
+  margin:0;
+  cursor:n-resize;
+  left:0;
+  right:0
+}
+.jcrop-border.ord-s,
+.jcrop-dragbar.ord-s{
+  bottom:0;
+  margin:0;
+  cursor:s-resize;
+  left:0;
+  right:0
+}
+.jcrop-border.ord-e,
+.jcrop-border.ord-w,
+.jcrop-dragbar.ord-e,
+.jcrop-dragbar.ord-w{
+  margin:0;
+  top:0;
+  cursor:e-resize;
+  bottom:0
+}
+
+.jcrop-border.ord-e,.jcrop-dragbar.ord-e{right:0}
+.jcrop-border.ord-w,.jcrop-dragbar.ord-w{left:0}
+.jcrop-box{position:absolute;width:100%;height:100%;left:0;top:0;cursor:move;background:0 0;border:0}
+.jcrop-holder {
+  direction: ltr;
+  text-align: left;
+}
+/* Selection Border */
+.jcrop-border, .jcrop-dragbar {
+  background: #ffffff url("#{$base-url}/jcrop/Jcrop.gif");
+  font-size: 0;
+  position: absolute;
+}
+.jcrop-border {
+  height: 100%;
+  width: 1px !important;
+  &.right { right: 0; }
+}
+.jcrop-dragbar {
+  height: 1px !important;
+  width: 100%;
+  &.bottom { bottom: 0; }
+}
+.jcrop-tracker {
+  height: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.jcrop-handle {
+  position:absolute;
+  background-color: #333333;
+  border: 1px #eeeeee solid;
+  width: 7px;
+  height: 7px;
+  font-size: 1px;
+  &.ord-n {
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 0;
+  }
+  &.ord-s {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -4px;
+    margin-left: -4px;
+  }
+  &.ord-e {
+    margin-right: -4px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+  }
+  &.ord-w {
+    left: 0;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 50%;
+  }
+  &.ord-nw {
+    left: 0;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 0;
+  }
+  &.ord-ne {
+    margin-right: -4px;
+    margin-top: -4px;
+    right: 0;
+    top: 0;
+  }
+  &.ord-se {
+    bottom: 0;
+    margin-bottom: -4px;
+    margin-right: -4px;
+    right: 0;
+  }
+  &.ord-sw {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -4px;
+    margin-left: -4px;
+  }
+}
+/* Dragbars */
+.jcrop-dragbar {
+  &.ord-n, &.ord-s {
+    height: 7px;
+    width: 100%;
+  }
+  &.ord-e, &.ord-w {
+    height: 100%;
+    width: 7px;
+  }
+  &.ord-n {
+    //margin-top: -4px;
+  }
+  &.ord-s {
+    bottom: 0;
+    //margin-bottom: -4px;
+  }
+  &.ord-e {
+    margin-right: -4px;
+    right: 0;
+  }
+  &.ord-w {
+    margin-left: -4px;
+  }
+}
+
+/* The "jcrop-light" class/extension */
+.jcrop-light {
+  .jcrop-border, .jcrop-dragbar {
+    background: #ffffff;
+    filter: alpha(opacity=70) !important;
+    opacity: .70!important;
+  }
+  .jcrop-handle {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #000000;
+    border-color: #ffffff;
+    border-radius: 3px;
+  }
+}
+
+/* The "jcrop-dark" class/extension */
+.jcrop-dark {
+  .jcrop-border, .jcrop-dragbar {
+    background: #000000;
+    filter: alpha(opacity=70) !important;
+    opacity: 0.7 !important;
+  }
+  .jcrop-handle {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-radius: 3px;
+  }
+}
+
+/* Simple macro to turn off the antlines */
+.solid-line {
+  .jcrop-border, .jcrop-dragbar { background: #ffffff; }
+}
+/* Fix for twitter bootstrap et al. */
+.jcrop-holder {
+  display:inline-block;
+  float:left;
+  margin-bottom:20px;
+  .modal & {
+    display:block;
+    float:none !important;
+    margin:0px !important;
+  }
+}
+
+.jcrop-holder img, img.jcrop-preview {
+  max-width: none;
+}
+
+
+.inline-labels label {
+  margin-left: 10px;
+}
+
+
+
+.jcrop-thumb {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.4);
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.1);
+    display: block;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 20px;
+    z-index: 200
+}
+
+.jcrop-active img,
+.jcrop-thumb canvas,
+.jcrop-thumb img {
+    min-width: none;
+    min-height: none;
+    max-width: none;
+    max-height: none
+}

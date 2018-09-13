@@ -1,0 +1,424 @@
+//
+// Imports
+//
+
+//
+// Core
+//
+@import "../../../../assets/include/scss/unify-core";
+
+
+
+/*------------------------------------
+  Components
+------------------------------------*/
+
+//
+// Bases
+//
+
+// @import "../../../../assets/include/scss/base/alerts";
+// @import "../../../../assets/include/scss/base/arrows";
+
+//
+// Badges
+// @import "../../../../assets/include/scss/base/badges/badges";
+// @import "../../../../assets/include/scss/base/badges/badges-v1";
+// @import "../../../../assets/include/scss/base/badges/badges-v2";
+// @import "../../../../assets/include/scss/base/badges/badges-v3";
+
+//
+// Dividers
+@import "../../../../assets/include/scss/base/dividers/dividers";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-solid";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-dotted";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-dashed";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-db-solid";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-db-dashed";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-db-dotted";
+// @import "../../../../assets/include/scss/base/dividers/divider-style-linear-gradient";
+// @import "../../../../assets/include/scss/base/dividers/divider-type-icon";
+
+//
+// Go To
+@import "../../../../assets/include/scss/base/go-to/go-to-v1";
+// @import "../../../../assets/include/scss/base/go-to/go-to-v2";
+// @import "../../../../assets/include/scss/base/go-to/go-to-v3";
+
+//
+// Headers
+@import "../../../../assets/include/scss/base/headers/headers";
+// @import "../../../../assets/include/scss/base/headers/header-togglers";
+// @import "../../../../assets/include/scss/base/headers/header-fullscreen";
+// @import "../../../../assets/include/scss/base/headers/header-side";
+
+// Buttons
+@import "buttons";
+
+// Icons
+@import "../../../../assets/include/scss/base/icons/icons";
+// @import "../../../../assets/include/scss/base/icons/icon-v1";
+@import "../../../../assets/include/scss/base/icons/icon-v2";
+// @import "../../../../assets/include/scss/base/icons/icon-v3";
+// @import "../../../../assets/include/scss/base/icons/icon-v4";
+// @import "../../../../assets/include/scss/base/icons/icon-v5";
+// @import "../../../../assets/include/scss/base/icons/icons-image";
+// @import "../../../../assets/include/scss/base/icons/icons-block-hover";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-scale";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-shadow";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-slide-v1";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-slide-v2";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-zoom";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-shape";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-effect-1";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-effect-2";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-effect-3";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-effect-4";
+// @import "../../../../assets/include/scss/base/icons/icon-hover-effect-5";
+
+//
+// Box shadows
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v1";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v2";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v3-v4-v5";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v6";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v7";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v8";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v9";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v10";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v11";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v12";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v13";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v14";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v15";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v16";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v17";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v18";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v19";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v20";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v21";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v22";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v23";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v24";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v25";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v26";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v27";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v28";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v29";
+// @import "../../../../assets/include/scss/base/box-shadows/box-shadows-v30";
+
+//
+// Forms
+// @import "../../../../assets/include/scss/base/form-controls/style";
+// @import "../../../../assets/include/scss/base/form-controls/states/states";
+// @import "../../../../assets/include/scss/base/form-controls/fields/fields";
+// @import "../../../../assets/include/scss/base/form-controls/checkboxes/checkboxes";
+// @import "../../../../assets/include/scss/base/form-controls/file-attachments/file-attachments";
+// @import "../../../../assets/include/scss/base/form-controls/selects/selects";
+// @import "../../../../assets/include/scss/base/form-controls/sliders/sliders";
+// @import "../../../../assets/include/scss/base/form-controls/datepickers/datepickers";
+// @import "../../../../assets/include/scss/base/form-controls/quantity";
+
+//
+// Carousel indicators
+@import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators";
+@import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v1";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v2";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v3";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v4";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v5";
+@import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v6";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v7";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v8";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v9";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v10";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v11";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v12";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v13";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v14";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v15";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v16";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v17";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v18";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v19";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v20";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v21";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v22";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v23";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v24";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v25";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v26";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v27";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v28";
+@import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v29";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v30";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v31";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v32";
+// @import "../../../../assets/include/scss/base/carousel-indicators/carousel-indicators-v33";
+
+//
+// Breadcrumbs
+// @import "../../../../assets/include/scss/base/breadcrumbs/breadcrumbs-v1";
+// @import "../../../../assets/include/scss/base/breadcrumbs/breadcrumbs-v2";
+
+//
+// Dot line
+// @import "../../../../assets/include/scss/base/dot-line/dot-line-v1";
+// @import "../../../../assets/include/scss/base/dot-line/dot-line-v2";
+
+//
+// Headings
+// @import "../../../../assets/include/scss/base/headings/heading-v1";
+// @import "../../../../assets/include/scss/base/headings/heading-v2";
+// @import "../../../../assets/include/scss/base/headings/heading-v3";
+// @import "../../../../assets/include/scss/base/headings/heading-v4";
+// @import "../../../../assets/include/scss/base/headings/heading-v5";
+// @import "../../../../assets/include/scss/base/headings/heading-v6";
+// @import "../../../../assets/include/scss/base/headings/heading-v7";
+@import "../../../../assets/include/scss/base/headings/heading-v8";
+// @import "../../../../assets/include/scss/base/headings/heading-v9";
+// @import "../../../../assets/include/scss/base/headings/headings";
+
+//
+// Bg-nonstandarts
+// @import "../../../../assets/include/scss/base/bg-nonstandarts";
+
+//
+// Nonstandard-bg
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v1";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v2";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v3";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v4";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v5";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v6";
+// @import "../../../../assets/include/scss/base/nonstandard-bg/nonstandard-bg-v7";
+
+//
+// Progress bars
+// @import "../../../../assets/include/scss/base/progress-bars/progress-bars";
+// @import "../../../../assets/include/scss/base/progress-bars/tag-progress-bars";
+// @import "../../../../assets/include/scss/base/progress-bars/progress-bars-sizes";
+
+//
+// Ratings
+// @import "../../../../assets/include/scss/base/rating/rating-v1";
+
+//
+// Searchforms
+// @import "../../../../assets/include/scss/base/searchforms/searchform-v1";
+// @import "../../../../assets/include/scss/base/searchforms/searchform-v2";
+// @import "../../../../assets/include/scss/base/searchforms/searchform-v3";
+// @import "../../../../assets/include/scss/base/searchforms/searchform-v4";
+// @import "../../../../assets/include/scss/base/searchforms/searchform-v5";
+
+//
+// Steps
+// @import "../../../../assets/include/scss/base/steps/steps-v1";
+// @import "../../../../assets/include/scss/base/steps/steps-v2";
+// @import "../../../../assets/include/scss/base/steps/steps-v3";
+
+//
+// Time Lines
+// @import "../../../../assets/include/scss/base/timelines/timelines";
+// @import "../../../../assets/include/scss/base/timelines/timelines-v1";
+// @import "../../../../assets/include/scss/base/timelines/timelines-v2";
+// @import "../../../../assets/include/scss/base/timelines/timelines-v3";
+
+
+// @import "../../../../assets/include/scss/base/labels";
+// @import "../../../../assets/include/scss/base/links";
+// @import "../../../../assets/include/scss/base/lists";
+// @import "../../../../assets/include/scss/base/media";
+// @import "../../../../assets/include/scss/base/orders";
+// @import "../../../../assets/include/scss/base/paginations";
+// @import "../../../../assets/include/scss/base/ribbons";
+@import "../../../../assets/include/scss/base/scroll-animations";
+// @import "../../../../assets/include/scss/base/stickers";
+// @import "../../../../assets/include/scss/base/sticky-blocks";
+// @import "../../../../assets/include/scss/base/tables";
+// @import "../../../../assets/include/scss/base/tabs/tabs";
+// @import "../../../../assets/include/scss/base/tags";
+// @import "../../../../assets/include/scss/base/text-animations";
+// @import "../../../../assets/include/scss/base/text-shadows";
+// @import "../../../../assets/include/scss/base/bg-markers";
+// @import "../../../../assets/include/scss/base/tooltips";
+// @import "../../../../assets/include/scss/base/typography";
+// @import "../../../../assets/include/scss/base/video-audio";
+@import "../../../../assets/include/scss/base/navigation/navigation";
+// @import "../../../../assets/include/scss/base/basket";
+// @import "../../../../assets/include/scss/base/dropdown";
+// @import "../../../../assets/include/scss/base/compressed-form";
+// @import "../../../../assets/include/scss/base/dropcaps";
+// @import "../../../../assets/include/scss/base/bg-angles";
+@import "../../../../assets/include/scss/base/block-hovers";
+@import "../../../../assets/include/scss/base/blockquotes";
+// @import "../../../../assets/include/scss/base/accordions/accordions";
+// @import "../../../../assets/include/scss/base/carousels";
+@import "../../../../assets/include/scss/base/carousels/effects";
+// @import "../../../../assets/include/scss/base/chart-pies";
+// @import "../../../../assets/include/scss/base/charts";
+// @import "../../../../assets/include/scss/base/counters";
+// @import "../../../../assets/include/scss/base/credit-cards";
+
+//
+// Dropdowns
+// @import "../../../../assets/include/scss/base/dropdowns/dropdowns-v1";
+@import "../../../../assets/include/scss/base/bg-overlays";
+
+//
+// Material
+// @import "../../../../assets/include/scss/base/waves";
+// @import "../../../../assets/include/scss/base/fab/fab";
+// @import "../../../../assets/include/scss/base/chips";
+
+
+
+//
+// Helpers
+//
+
+// @import "../../../../assets/include/scss/base/outer-spaces-helper";
+
+
+
+//
+// Blocks
+//
+
+@import "../../../../assets/include/scss/blocks/info";
+
+
+
+//
+// Vendors
+//
+
+@import "../../../../assets/include/scss/vendors/vendor";
+
+
+
+//
+// JS
+//
+
+@import "../../../../assets/include/scss/js/js";
+
+
+
+//
+// IE
+//
+
+@import "../../../../assets/include/scss/ie/ie";
+
+
+
+//
+// Demo
+//
+
+@import "../../../../assets/include/scss/demo/demo.icons";
+
+
+
+//
+// Custom Styles
+//
+
+@import "../../../../assets/include/scss/custom/custom";
+
+
+
+/*------------------------------------
+  Globals
+------------------------------------*/
+
+//
+// Globals
+//
+
+@import "../../../../assets/include/scss/globals/globals";
+
+// Background Styles
+@import "../../../../assets/include/scss/globals/bg-attachments";
+@import "../../../../assets/include/scss/globals/bg-color-gradients";
+@import "../../../../assets/include/scss/globals/bg-colors";
+@import "../../../../assets/include/scss/globals/bg-colors-extended";
+@import "../../../../assets/include/scss/globals/bg-color-socials";
+@import "../../../../assets/include/scss/globals/bg-grids";
+@import "../../../../assets/include/scss/globals/bg-covers";
+@import "../../../../assets/include/scss/globals/bg-image-hero";
+@import "../../../../assets/include/scss/globals/bg-patterns";
+@import "../../../../assets/include/scss/globals/bg-positions";
+@import "../../../../assets/include/scss/globals/bg-repeat";
+@import "../../../../assets/include/scss/globals/bg-sizes";
+
+// Fill
+@import "../../../../assets/include/scss/globals/fill-colors";
+
+// Border styles
+@import "../../../../assets/include/scss/globals/borders";
+@import "../../../../assets/include/scss/globals/border-none";
+@import "../../../../assets/include/scss/globals/border-styles";
+@import "../../../../assets/include/scss/globals/border-radiuses";
+@import "../../../../assets/include/scss/globals/border-dashed";
+@import "../../../../assets/include/scss/globals/border-dotted";
+@import "../../../../assets/include/scss/globals/border-widths";
+@import "../../../../assets/include/scss/globals/border-colors";
+@import "../../../../assets/include/scss/globals/border-color-socials";
+@import "../../../../assets/include/scss/globals/border-color-gradients";
+
+// Typography
+@import "../../../../assets/include/scss/globals/typo-font-families";
+@import "../../../../assets/include/scss/globals/typo-font-sizes";
+@import "../../../../assets/include/scss/globals/typo-font-weights";
+@import "../../../../assets/include/scss/globals/typo-text-transforms";
+@import "../../../../assets/include/scss/globals/typo-text-decorations";
+@import "../../../../assets/include/scss/globals/typo-letter-spacings";
+@import "../../../../assets/include/scss/globals/typo-line-heights";
+@import "../../../../assets/include/scss/globals/typo-font-styles";
+@import "../../../../assets/include/scss/globals/typo-list-styles";
+@import "../../../../assets/include/scss/globals/typo-text-styles";
+@import "../../../../assets/include/scss/globals/quotes";
+
+// Positions
+@import "../../../../assets/include/scss/globals/positions";
+@import "../../../../assets/include/scss/globals/position-spaces";
+
+// Alignments
+@import "../../../../assets/include/scss/globals/block-alignments";
+@import "../../../../assets/include/scss/globals/verical-alignments";
+
+// Others
+@import "../../../../assets/include/scss/globals/blur";
+@import "../../../../assets/include/scss/globals/box-shadow";
+@import "../../../../assets/include/scss/globals/clears";
+@import "../../../../assets/include/scss/globals/cursors";
+@import "../../../../assets/include/scss/globals/overflows";
+@import "../../../../assets/include/scss/globals/transitions";
+@import "../../../../assets/include/scss/globals/transforms";
+@import "../../../../assets/include/scss/globals/opacities";
+@import "../../../../assets/include/scss/globals/z-index";
+// @import "../../../../assets/include/scss/globals/absolute-reset"; /* O */
+@import "../../../../assets/include/scss/globals/resize";
+@import "../../../../assets/include/scss/globals/placeholder";
+@import "../../../../assets/include/scss/globals/offset";
+
+// Colors
+@import "../../../../assets/include/scss/globals/colors";
+@import "../../../../assets/include/scss/globals/color-socials";
+@import "../../../../assets/include/scss/globals/color-gradients"; // Z
+
+// Widths & Heighs
+@import "../../../../assets/include/scss/globals/widths";
+@import "../../../../assets/include/scss/globals/heights";
+
+// Spaces (Margins & Paddings)
+@import "../../../../assets/include/scss/globals/margins";
+@import "../../../../assets/include/scss/globals/margins-extended";
+@import "../../../../assets/include/scss/globals/paddings";
+
+// Block Hidden
+@import "../../../../assets/include/scss/globals/block-hidden";

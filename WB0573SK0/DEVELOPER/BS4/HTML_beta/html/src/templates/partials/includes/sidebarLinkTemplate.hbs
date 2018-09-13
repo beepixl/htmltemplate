@@ -1,0 +1,7 @@
+<a {{#iff data.hasSubMenu '||' data.inactive }}class="{{#if data.hasSubMenu}}has-arrow{{/if}}{{#if data.inactive}}inactive{{/if}}" {{/iff}} {{#if data.targetBlank}}target="_blank"{{/if}} href="{{data.url}}" title="{{data.title}}">{{#if data.hasIcon}}<span class="{{data.iconClass}}">{{#if data.roundTop}}<em class="{{data.roundClass}}">{{data.roundContent}}</em>{{/if}}</span>{{/if}} {{#if data.parentLevel}}<span class="menu-item-parent">{{data.title}}{{#if data.beta}} <sup>{{data.betaText}}</sup>{{/if}}</span>{{else}}{{data.title}}{{/if}} {{#if this.inlineIcon}}<span class="{{this.inlineIconClass}}"></span>{{/if}}{{#if data.hasBadge}}<span class="{{data.badgeClass}}">{{data.badgeValue}}</span>{{/if}}{{#iff data.hasSubMenu '||' data.chatboxSubMenu }}
+	<b class="collapse-sign">
+		<em class="fa fa-plus-square-o"></em>
+		<em class="fa fa-minus-square-o"></em>
+	</b>
+{{/iff}}
+</a>

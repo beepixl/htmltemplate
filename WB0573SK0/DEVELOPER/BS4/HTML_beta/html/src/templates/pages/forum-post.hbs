@@ -1,0 +1,158 @@
+f{{!-- blank.hbs --}}
+{{#> layout title=pageTitle parentPage='app-views' firstLevelChild='forum-layout' secondLevelChild='forum-post'}}
+	
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="assets/pages/forum-post.css">
+	{{/inline}}
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa-fw fa fa-puzzle-piece"></i> App Views <span>> Forum Layout > Post View</span></h1>				
+			</div>
+			<div class="ml-auto">
+				<ul class="sa-sparks">
+					<li class="sparks-info">
+						<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+						<div class="sparkline text-blue d-none d-xl-block">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline text-purple d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline text-green-dark d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div class="d-flex w-100">
+
+			<div class="well w-100">
+				<table class="table table-striped table-forum">
+					<thead>
+						<tr>
+							<th colspan="2"><a href="forum.html"> Projects </a> > <a href="forum-topic.html">Business Requirement Docs </a> > Nam quam nunc blandit vel </th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Post -->
+						<tr>
+							<td class="text-center"><a href="profile.html"><img alt="" src="assets/img/flags/us.png"> &nbsp; <strong>John Doe</strong></a></td>
+							<td>on <em>Jan 1, 2014 - 12:00am</em></td>
+						</tr>
+						<tr>
+							<td class="text-center" style="width: 12%;">
+							<div class="push-bit">
+								<a href="profile.html"> <img src="assets/img/avatars/sunny.png" width="50" alt="avatar" class="online"> </a>
+							</div><small>473 Posts</small></td>
+							<td>
+							<p>
+
+								Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+							</p><h5>Forecast Pie</h5><span class="sparkline display-inline margin-bottom-10" data-sparkline-type="pie" data-sparkline-offset="90" data-sparkline-piesize="150px"> 33,20,10 </span>
+							<p>
+								Fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viv.
+							</p><em>- John Doe
+							<br>
+							CEO, SmartAdmin</em></td>
+						</tr>
+						<!-- end Post -->
+
+						<!-- Post -->
+						<tr>
+							<td class="text-center"><a href="profile.html"><img alt="" src="assets/img/flags/es.png"> &nbsp; <strong>Sadi Orlaf</strong></a></td>
+							<td>on <em>Jan 1, 2014 - 12:00am</em></td>
+						</tr>
+						<tr>
+							<td class="text-center" style="width: 12%;">
+							<div class="push-bit">
+								<a href="profile.html"> <img src="assets/img/avatars/5.png" width="50" alt="avatar" class="offline"> </a>
+							</div><small>473 Posts</small></td>
+							<td>
+							<p>
+
+								Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+							</p><em>- Sadi Orlaf
+							<br>
+							Executive, SmartAdmin</em>
+							<div class="forum-attachment">
+								2 attachment(s) — <a href="javascript:void(0);"> Download all attachments</a>
+								<ul class="list-inline margin-top-10">
+									<li class="well well-sm padding-5">
+										<strong>rocketlaunch.jpg</strong>
+										<br>
+										400 kb
+										<br>
+										<a href="javascript:void(0);"> Download</a> | <a href="javascript:void(0);"> View</a>
+									</li>
+									<li class="well well-sm padding-5">
+										<strong>budget.xsl</strong>
+										<br>
+										400 kb
+										<br>
+										<a href="javascript:void(0);"> Download</a> | <a href="javascript:void(0);"> Share</a>
+									</li>
+								</ul>
+							</div></td>
+						</tr>
+						<!-- end Post -->
+
+						<!-- Post -->
+						<tr>
+							<td class="text-center"><a href="profile.html"><img alt="" src="assets/img/flags/us.png"> &nbsp; <strong>Me</strong></a></td>
+							<td><em>Today</em></td>
+						</tr>
+						<tr>
+							<td class="text-center" style="width: 12%;">
+							<div class="push-bit">
+								<a href="profile.html"> <img src="assets/img/avatars/sunny.png" width="50" alt="avatar" class="online"> </a>
+							</div><small>473 Posts</small></td>
+							<td><div id="forumPost"></div>
+								
+							<button class="btn btn-primary margin-top-10">
+								Post
+							</button>
+							<button class="btn btn-success margin-top-10">
+								Save for later
+							</button></td>
+						</tr>
+						<!-- end Post -->
+
+					</tbody>
+				</table>
+
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination pagination-sm justify-content-center">
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">Prev</a></li>
+				    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">....</a></li>
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">99</a></li>
+				    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+				  </ul>
+				</nav>
+
+				
+
+			</div>
+		
+		</div>
+	{{/inline}}
+	{{#*inline "script-block"}}
+	<script type="text/javascript">
+		$('#forumPost').summernote({
+			height : 180,
+			focus : false,
+			tabsize : 2
+		});
+	</script>
+	{{/inline}}
+{{/layout}}

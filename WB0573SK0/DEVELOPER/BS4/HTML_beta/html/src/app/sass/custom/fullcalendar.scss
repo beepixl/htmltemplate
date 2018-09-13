@@ -1,0 +1,76 @@
+.fc {
+    direction: ltr;
+    text-align: left;
+}
+.fc-toolbar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	h2 {
+	    text-shadow: 0 1px 0 #fff;
+	    padding: 12px 10px;
+	    font-size: 14px;
+	    font-weight: 700;
+	}
+}
+
+.fc-head-container th {
+    padding: 4px;
+    line-height: 1.428571429;
+    background: #f3f3f3;
+}
+
+
+.fc-event-container {
+	color: #fff;	
+}
+.fc-event {
+	border: 0;
+	border-left: rem(6px) solid rgba(0,0,0, 0.15);
+	border-radius: 0;
+
+	.fa {
+	    font-size: rem(14px);
+	    margin-top: rem(4px);
+	    margin-right: rem(3px);
+	    margin-left: rem(3px);
+	}
+}
+
+.fc-day-grid-event .fc-content {
+	white-space: normal;
+	padding: rem(3px) rem(2px) rem(2px) rem(4px);
+}
+
+.fc-time,
+.fc-title {
+    line-height: rem(16px);
+    font-weight: 700;
+    font-size: rem(11px);
+}
+.fc-time {
+    display: block;
+    padding-bottom: rem(5px)
+}
+
+.air {
+  position: absolute;
+  z-index: 5;
+}
+
+.air-top-left {
+  top: 0;
+  left: 0;
+}
+
+.air-top-right {
+    top: 0;
+    right: 0;
+}
+.fc-other-month {
+	background-image: -webkit-linear-gradient(top left, rgba(0,0,0,.03) 25%, transparent 25%, transparent 50%, rgba(0,0,0,.03) 50%, rgba(0,0,0,.03) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(top left, rgba(0,0,0,.03) 25%, transparent 25%, transparent 50%, rgba(0,0,0,.03) 50%, rgba(0,0,0,.03) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(to bottom right, rgba(0,0,0,.03) 25%, transparent 25%, transparent 50%, rgba(0,0,0,.03) 50%, rgba(0,0,0,.03) 75%, transparent 75%, transparent);	
+	background-color: #FAFCFD;
+    background-size: 16px 16px;
+}

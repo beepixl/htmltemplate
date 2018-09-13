@@ -1,0 +1,152 @@
+* {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+[dir="rtl"] main {
+  text-align: right;
+}
+
+[dir="rtl"] pre {
+  direction: ltr;
+}
+
+/*[dir="rtl"] .list-unstyled,*/
+/*[dir="rtl"] .list-inline,*/
+/*[dir="rtl"] .u-carousel-indicators-v1,*/
+/*[dir="rtl"] .u-carousel-indicators-v1--white,*/
+/*[dir="rtl"] .nav,*/
+/*[dir="rtl"] .navbar-nav:not([class*="g-mr-"]) {*/
+  /*padding-right: 0;*/
+/*}*/
+
+[dir="rtl"] main [class*="u-heading-v4-"] {
+  border-left-style: none;
+  border-right-style: solid;
+}
+
+[dir="rtl"] .list-inline-item:not(:last-child) {
+  margin-left: .5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .input-group > .input-group-append > .btn,
+[dir="rtl"] .input-group > .input-group-append > .input-group-text,
+[dir="rtl"] .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+[dir="rtl"] .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+[dir="rtl"] .input-group > .input-group-prepend:not(:first-child) > .btn,
+[dir="rtl"] .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+[dir="rtl"] .input-group > .custom-select:not(:last-child),
+[dir="rtl"] .input-group > .form-control:not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+/*[dir="rtl"] .navbar-brand {*/
+  /*margin-left: 1rem;*/
+  /*margin-right: 0;*/
+/*}*/
+
+[dir="rtl"] .hs-has-sub-menu > a::after,
+[dir="rtl"] .hs-has-sub-menu .hs-has-sub-menu > a::after {
+  display: none;
+}
+
+[dir="rtl"] .hs-has-sub-menu > a::before {
+  content: "\e900";
+  font-family: "hs-icons", sans-serif;
+  font-size: 10px;
+  display: inline;
+  margin-right: 7px;
+}
+
+[dir="rtl"] .hs-has-sub-menu .hs-has-sub-menu > a::before {
+  content: "\e901";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-family: "hs-icons", sans-serif;
+  transform: translateY(-50%);
+  color: inherit;
+  background: transparent !important;
+}
+
+/* Chosen */
+[dir="rtl"] .chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  display: none;
+}
+
+[dir="rtl"] .chosen-container-single .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+}
+
+[dir="rtl"] .chosen-container-single .chosen-single div {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .chosen-container-single .chosen-single span,
+[dir="rtl"] .chosen-container .chosen-results li {
+  text-align: right;
+}
+
+[dir="rtl"] .alert-dismissible {
+  padding-right: 1.25rem;
+  padding-left: 4rem;
+}
+
+/* Dropdowns */
+[dir="rtl"] .dropdown-item {
+  text-align: right;
+}
+
+/* Cubeportfolio */
+@media only screen and (max-width: 360px), (max-height: 600px) {
+  [dir="rtl"] .cbp-popup-lightbox .cbp-popup-close {
+    left: 10px;
+    right: auto;
+  }
+}
+
+/* Master Slider */
+[dir="rtl"] main .ms-thumb-frame::after {
+  right: auto;
+  left: 0;
+}
+
+/* Datepicker */
+[dir="rtl"] .ui-datepicker .ui-datepicker-prev {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .ui-datepicker .ui-datepicker-next {
+  right: 0;
+}
+
+/* Fancybox */
+[dir="rtl"] .u-fancybox-theme .fancybox-arrow--left {
+  left: 1.42857rem;
+  right: auto;
+}
+
+[dir="rtl"] .u-fancybox-theme .fancybox-arrow--right {
+  left: auto;
+  right: 1.42857rem;
+}
+
+@media (min-width: 800px) {
+  [dir="rtl"] .fancybox-thumbs {
+    left: 0;
+    right: auto;
+  }
+}

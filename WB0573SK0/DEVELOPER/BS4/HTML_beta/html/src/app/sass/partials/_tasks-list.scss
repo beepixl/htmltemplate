@@ -1,0 +1,65 @@
+.sa-tasks-list {
+	margin: 0;
+	margin-left: 3px;
+
+	li ~ li {
+
+		border-top: 1px solid;
+	}
+	li {
+		&:after,&:before {
+			display: block;
+			content: '';
+			clear: both;
+		}
+
+		padding: rem(10px);
+
+		&.unread {
+			.from {
+				font-weight: bold;
+			}
+		}
+		
+	}
+	em {
+
+		font-size: rem(11px);
+		line-height: rem(15px);
+	}
+	.avatar-section {
+		padding: rem(5px) rem(5px);
+		margin-right: rem(5px);
+		float: left;
+
+	}
+	.from, .subject, .msg-body {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		display: block;		
+	}
+	.from {
+		font-size: rem(14px);
+		line-height: normal;
+		margin-bottom: rem(6px);
+	}
+	time {
+		position: absolute;
+		top: rem(3px);
+		right: 0;
+		font-size: rem(11px);
+		font-weight: 400;
+	}
+	.subject {
+		max-height: rem(22px);
+	}
+	.msg-body {
+		max-height: rem(35px);
+	}
+	.msg {
+		position: relative;
+		display: block;
+		padding-left: rem(50px);
+	}
+}

@@ -1,0 +1,17 @@
+.br-theme-fontawesome-stars .br-widget {
+	height: auto;
+}
+
+.br-theme-fontawesome-stars .br-widget a {
+	font-size: rem($baseFontSize + 4px);
+}
+
+.br-theme-fontawesome-stars .br-widget a.br-active:after,
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+	color: $primary;
+}
+
+.br-theme-fontawesome-stars .br-widget a:after {
+	padding-left: 2px;
+	color: $rating-default;
+}

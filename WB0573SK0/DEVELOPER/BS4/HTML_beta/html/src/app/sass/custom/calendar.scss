@@ -1,0 +1,59 @@
+.btn-select-tick {
+	i {
+	    display: none
+	}
+	.btn:hover i {
+	    opacity: .3;
+	    display: block
+	}
+	.active i {
+	    display: block;
+	    opacity: 1!important
+	}
+}
+
+
+#external-events {
+	> li {
+		margin: 6px 4px 6px 0;
+		display: inline-block;
+		> :first-child {
+			padding: 5px 10px 10px;
+		    cursor: move;
+		    display: block;
+		    &:after {
+		        color: $white;
+			    color: rgba($white,.7);
+			    content: attr(data-description);
+			    font-size: rem($baseFontSize - 2);
+			    font-weight: normal;
+			    display: block;
+			    line-height: 0;
+			    margin: 7px 0;
+			    text-transform: lowercase;
+			}
+
+		}
+	}
+}
+
+.jarviswidget {
+
+	td:first-child,
+	th:first-child {
+		border-left: 0;
+	}
+	td:last-child,
+	th:last-child {
+		border-right: 0;
+	}
+	.fc-head-container {
+		border-top: 0;
+	}
+	
+}
+
+.fc-scroller {
+	overflow: hidden !important;
+	height: auto !important;
+}

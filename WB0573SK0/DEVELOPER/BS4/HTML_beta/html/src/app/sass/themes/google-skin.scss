@@ -1,0 +1,265 @@
+.smart-style-3 {
+	background: $white;
+	font-family: Arial, sans-serif;
+	.sa-logo {
+		width: 125px;
+		height: 26px;
+		margin-top: -3px;
+	}
+	.sa-page-body {
+		background: $white;
+	}
+	.sa-sidebar-shortcut-toggle {
+		background: $white;
+		border-bottom: 1px solid $gs-sidebar-shortcut-toggle-border;
+		color: $gs-sidebar-shortcut-toggle-color;
+		box-shadow: none;
+		.fa {
+			color: $gs-sidebar-shortcut-toggle-arrow;			
+		}
+	}
+	.sa-page-header {
+		background-color: $gs-header-bg1;
+	    background-image: -moz-linear-gradient(top,$gs-header-bg1,$gs-header-bg2);
+	    background-image: -webkit-gradient(linear,0 0,0 100%,from($gs-header-bg1),to($gs-header-bg2));
+	    background-image: -webkit-linear-gradient(top,$gs-header-bg1,$gs-header-bg2);
+	    background-image: -o-linear-gradient(top,$gs-header-bg1,$gs-header-bg2);
+	    background-image: linear-gradient(to bottom,$gs-header-bg1,$gs-header-bg2);		
+	}
+	.sa-page-ribbon {
+		background: $white;
+		.breadcrumb-item {
+			color: $gs-ribbon-link;
+			&:last-child a {
+				color: $gs-ribbon-link-active;
+			}
+		}
+	}
+	.sa-project-label {
+		color: $white;
+		text-shadow: $gs-shadow 0 -1px;
+	}
+	.sa-project-dropdown > a {
+		color: $white;
+		text-shadow: $gs-shadow 0 -1px;
+	}
+	.sa-header-right-area .form-inline > .btn,
+	.sa-activity-dropdown-toggle {
+		background-color: $gs-activity-dropdown-toggle-bg1;
+	    background-image: -moz-linear-gradient(top,$gs-activity-dropdown-toggle-bg1,$gs-activity-dropdown-toggle-bg2);
+	    background-image: -webkit-gradient(linear,0 0,0 100%,from($gs-activity-dropdown-toggle-bg2),to($gs-activity-dropdown-toggle-bg2));
+	    background-image: -webkit-linear-gradient(top,$gs-activity-dropdown-toggle-bg1,$gs-activity-dropdown-toggle-bg2);
+	    background-image: -o-linear-gradient(top,$gs-activity-dropdown-toggle-bg1,$gs-activity-dropdown-toggle-bg2);
+	    background-image: linear-gradient(to bottom,$gs-activity-dropdown-toggle-bg1,$gs-activity-dropdown-toggle-bg2);
+	    color: $white;
+	    border: 1px solid $gs-activity-dropdown-toggle-border;
+	    text-shadow: $gs-shadow 0 -1px;
+	    &:hover {
+			box-shadow: inset 1px 1px 0px $gs-shadow,inset -1px -1px 0px $gs-shadow;
+			background-color: $gs-activity-dropdown-toggle-hover-bg1;
+			background-image: -moz-linear-gradient(top, $gs-activity-dropdown-toggle-hover-bg1, $gs-activity-dropdown-toggle-hover-bg2);
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gs-activity-dropdown-toggle-hover-bg1), to($gs-activity-dropdown-toggle-hover-bg2));
+			background-image: -webkit-linear-gradient(top, $gs-activity-dropdown-toggle-hover-bg1, $gs-activity-dropdown-toggle-hover-bg2);
+			background-image: -o-linear-gradient(top, $gs-activity-dropdown-toggle-hover-bg1, $gs-activity-dropdown-toggle-hover-bg2);
+			background-image: linear-gradient(to bottom, $gs-activity-dropdown-toggle-hover-bg1, $gs-activity-dropdown-toggle-hover-bg2);
+	    }		
+	}
+	.sa-aside-left {
+		background: $gs-nav-bg-1;
+
+		ul ul {
+			background-color: transparent;
+		}
+		.sa-left-menu  {
+			font-size: rem($baseFontSize);
+			.sa-sub-nav li.active li.active > a {
+				color: inherit;
+			}
+			li {
+				> a {
+				
+					color: $gs-sidebar-shortcut-toggle-color;
+					line-height: normal;
+				}
+
+				a:hover {
+					background: rgba($black,.05);
+					color: inherit;
+				}
+
+			}
+			> li {
+				background-color: $gs-nav-bg-1;
+			    background-image: -moz-linear-gradient(top,$gs-nav-bg-2, $gs-nav-bg-1);
+			    background-image: -webkit-gradient(linear,0 0,0 100%,from($gs-nav-bg-2),to($gs-nav-bg-1));
+			    background-image: -webkit-linear-gradient(top,$gs-nav-bg-2,$gs-nav-bg-1);
+			    background-image: -o-linear-gradient(top,$gs-nav-bg-2,$gs-nav-bg-1);
+			    background-image: linear-gradient(to bottom,$gs-nav-bg-2,$gs-nav-bg-1);
+			    border-bottom: 1px solid $gs-nav-border;		
+			    > a {
+			    	padding: 12px 10px 12px 11px;
+					> .fa-fw {
+						color: $gs-nav-active-border;
+						font-size: rem($baseFontSize + 7px);
+					}
+			    }
+			    ul li > a {
+					padding-left: 38px;
+				}
+			}
+			.sa-sub-nav > li.active > a {
+				background: none;
+				color: inherit;
+			}
+			li.active > a {
+				font-weight: bold;
+				background: none;
+				color: inherit;
+				
+			}
+			> li.active {
+				border-left: 4px solid $gs-nav-active-border;
+				> a {
+					padding-left: 7px;
+				}
+			}
+
+		}
+	}
+
+
+	.minified .sa-aside-left .sa-left-menu {
+		.sa-sub-nav > li {
+			color: $white;
+			a {
+				color: inherit;
+				padding-left: 14px;
+			}
+		}
+	}
+
+	.sa-shortcuts-expanded .sa-shortcuts-section {
+		background: $gs-shortcut-bg;
+	}
+
+	
+	.sa-fixed-ribbon .sa-page-ribbon{
+		box-shadow: 0 .0625em .3125em rgba($black, .35);
+	}
+
+
+
+	
+	.sa-header-search-form .form-control {
+		border-color: $gs-search-form-control-border;
+	}
+	.sa-header-search-form .sa-form-btn {
+		color: $gs-search-form-btn;
+	}
+	.sa-country-dropdown > a {
+		color: $white;
+		text-shadow: $gs-shadow 0 -1px;
+	}
+	.ajax-dropdown {
+		box-shadow: 1px 14px 16px $gs-dropdown-shadow;
+	}
+	.dropdown-menu:not(.ajax-dropdown) {
+	    border-radius: 0;
+	    border-bottom: 2px solid $gs-dropdown-border;
+	    background: $gs-dropdown-bg;
+	    a:hover,
+	    .active {
+	    	color: $white;
+	    	background: $gs-dropdown-active;
+	    }
+		.dropdown-divider {
+			 border-top-color: $gs-dropdown-divider;
+		}
+	}
+	.dropdown-item {
+	    color: $gs-dropdown-color;		
+	}
+
+
+
+
+
+	.form-control:not(:focus) {
+		border-color: $form-control-border $gray-mid-light $gray-mid-light $form-control-border;
+	}
+	
+
+
+	
+
+	.superbox-list.active:before,
+	.page-footer,
+	.superbox-show {
+	  background: $gs-page-footer;
+	}
+	
+
+	@media (min-width: 979px) {
+		.sa-menu-on-top .sa-aside-left { 
+			border-bottom-color: $white;
+			background: $white;
+			box-shadow: 0 2px 4px 0 rgba($black,.25);
+			.sa-left-menu {
+				> li.active {
+					border-left: 0;
+				}
+				> li {
+					border-right: 1px solid $gs-sidebar-shortcut-toggle-border;
+					border-left: 1px solid $white;
+					&:hover > a {
+						background: $white;
+					}
+
+					> a {
+						padding: 10px 9px;
+						border-width: 0;
+						line-height: 22px;
+						height: 69px;
+						> .fa-fw {
+							font-size: rem($baseFontSize + 11px);
+							margin-bottom: 3px;
+							.round-top{
+								top: -7px !important;
+							}
+						}
+						&:before {
+							top: auto;
+							color: $gs-nav-icon-color;
+							bottom: -2px;
+						}
+					}
+					ul {
+						border-color: $gs-sidebar-shortcut-toggle-border;
+					}
+				}
+				.sa-sub-nav li {
+					a:hover, &:hover > a {
+						background: rgba($black, 0.05) !important;
+						color: $baseBodyTextColor !important;
+					}
+				}
+			}
+		}
+		.minified .sa-aside-left .sa-left-menu > li {
+			border-top: 1px solid $white;
+			border-bottom: 1px solid $gs-minified-border;
+			> a {
+				padding-bottom: 13px;
+			}
+		}
+	}
+
+}
+body.smart-style-3:not(.sa-menu-on-top) .sa-aside-left {
+	@media (min-width: 979px) {
+		border-right: 2px solid $gray-mid-light;
+	}
+	.sa-left-menu li.active > a:before {
+		color: $gray-light-soft-2;
+	}
+}

@@ -1,0 +1,24 @@
+.sa-page-ribbon {
+  height: $ribbon-height;
+  padding: 0 1rem;
+  border-radius: 0;
+  margin-bottom: 0;
+  a {
+  	color: inherit;
+  }
+  @media (max-width: 767px)  {
+    padding-left: $sm-gap;
+    padding-right: $sm-gap;
+  }
+}
+
+.sa-ribbon-btn {
+  padding: 0 5px;
+  height: 20px;
+  border: 0;
+  font-size: rem(14.43px);
+  display: block;
+  cursor: pointer;
+  line-height: rem(20px);
+  margin-right: 11px;
+}

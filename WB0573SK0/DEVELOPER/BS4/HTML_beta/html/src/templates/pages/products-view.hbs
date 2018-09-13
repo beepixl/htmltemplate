@@ -1,0 +1,339 @@
+{{!-- blank.hbs --}}
+{{#> layout title=pageTitle parentPage='e-commerce' firstLevelChild='products-view'}}
+	
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="assets/pages/products.css">
+	{{/inline}}
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa-fw fa fa-home"></i> E-commerce <span>> Products View</span></h1>				
+			</div>
+			<div class="ml-auto text-right">
+				<a href="javascript:void(0);" class="btn btn-default shop-btn">
+					<i class="fa fa-3x fa-shopping-cart"></i>
+					<span class="air air-top-right label-danger text-white padding-5">10</span>
+				</a>
+				<a href="javascript:void(0);" class="btn btn-default">
+					<i class="fa fa-3x fa-print"></i>
+				</a>			
+			</div>
+		</div>
+		<div class="d-flex w-100">
+			<!-- widget grid -->
+			<section id="widget-grid" class="">
+
+				<!-- row -->
+
+				<div class="row">
+
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/1.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 hot">
+												HOT
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$99</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+										<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+									<div class="product-info">
+										<div class="row align-items-center">
+											<div class="col"> 
+												<a href="javascript:void(0);" class="btn {{prefix}}btn-success">Add to cart</a>
+											</div>
+											<div class="col text-right">
+												<select class="barrating">
+												  <option value=""></option>
+												  <option value="1">1</option>
+												  <option value="2">2</option>
+												  <option value="3">3</option>
+												  <option value="4">4</option>
+												  <option value="5">5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/2.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$109</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+											<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+									<div class="product-info">
+										<div class="row align-items-center">
+											<div class="col"> <a href="javascript:void(0);" class="btn {{prefix}}btn-success">Add to cart</a> </div>
+											<div class="col text-right">
+												<select class="barrating">
+												  <option value=""></option>
+												  <option value="1">1</option>
+												  <option value="2">2</option>
+												  <option value="3">3</option>
+												  <option value="4">4</option>
+												  <option value="5">5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/3.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 hot">
+												HOT
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$399</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+											<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>			
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/4.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$19</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+										<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/5.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$195</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+											<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/7.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$99</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+										<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/8.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$109</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+											<p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>	
+
+					<div class="col-sm-6 col-md-6 col-xl-4">
+						<!-- product -->
+						<div class="product-content product-wrap clearfix">
+							<div class="row">
+									<div class="col-lg-5 col-sm-12">
+										<div class="product-image"> 
+											<img src="assets/img/demo/e-comm/9.png" alt="194x228" class="img-responsive"> 
+											<span class="tag2 sale">
+												Sale
+											</span> 
+										</div>
+									</div>
+									<div class="col-lg-7 col-sm-12">
+									<div class="product-deatil">
+											<h5 class="name">
+												<a href="#">
+													Product Name Title Here <span>Category</span>
+												</a>
+											</h5>
+											<p class="price-container">
+												<span>$399</span>
+											</p>
+											<span class="tag1"></span> 
+									</div>
+									<div class="description">
+											<p>Proin in ullamcorper lorem. Maecenas eu ipsum</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end product -->
+					</div>
+
+				</div>
+				<!-- end row -->
+
+				<div class="text-center">
+					<p>
+						<a href="javascript:void(0);" class="btn {{prefix}}btn-primary btn-lg">Load more <i class="fa fa-arrow-down"></i></a>
+					</p>
+				</div>
+
+			</section>
+			<!-- end widget grid -->
+		</div>
+	{{/inline}}
+{{/layout}}

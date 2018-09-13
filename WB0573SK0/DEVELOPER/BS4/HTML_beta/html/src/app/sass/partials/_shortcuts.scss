@@ -1,0 +1,91 @@
+.sa-shortcuts-section {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 99;
+	transition: height 0.3s ease;
+	height: 0;
+	.sa-shortcuts-expanded &{
+		height: rem(151px);
+		border-bottom: 1px solid;
+	}
+	ul {
+		margin: 0;
+		list-style: none;
+		padding: rem(15px) rem(23px);
+
+	}
+	&.expand {
+		height: rem(151px);		
+	}
+
+	&:after, &:before {
+		clear: both;
+		display: block;
+		content: '';
+	}
+
+	li {
+		float: left;
+		vertical-align: top;
+		margin: 0 rem(9px) 0 0;
+	}
+	a {
+		color: inherit;
+		display: block;
+		width: rem(120px);
+		height: rem(120px);
+		padding: rem(19px) rem(15px);
+		position: relative;
+		text-align: center;
+		&:hover {
+			z-index: 10;
+			-webkit-transform: scale(1.07);
+			transform: scale(1.07);
+		}
+	}
+	.box-caption {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: rem(7px) rem(5px);
+		font-weight: 300;
+	}
+	.selected {
+		border: 1px solid;
+		&:before {
+			content: '';
+			border-top: rem(35px) solid;
+    		border-left: rem(35px) solid transparent;
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+		}
+		&:after {
+		    position: absolute;
+		    content: "\f00c";
+		    right: 4px;
+		    top: 3px;
+		    font-family: FontAwesome;
+		}
+	}
+	.counter {
+		border: rem(1px) solid;
+		width: rem(23px);
+		height: rem(23px);
+		display: block;
+		border-radius: 50%;
+		line-height: rem(23px);
+		font-size: rem(9.75px);
+		font-style: normal;
+		position: absolute;
+		right: rem(-3px);
+		bottom: rem(-3px);
+		&:empty {
+			display: none;
+		}
+	}
+
+}

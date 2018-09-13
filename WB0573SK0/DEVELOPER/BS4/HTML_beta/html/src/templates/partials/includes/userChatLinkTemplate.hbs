@@ -1,0 +1,22 @@
+<a href="javascript:void(0)" class="usr {{#if data.offline}}offline{{/if}}" 
+	data-chat-id="{{data.id}}" 
+	data-chat-fname="{{data.fname}}" 
+	data-chat-lname="{{data.lname}}" 
+	data-chat-status="{{data.status}}" 
+	data-chat-alertmsg="{{data.alertmsg}}" 
+	data-chat-alertshow="{{data.alershow}}" 
+	data-rel="{{data.rel}}" 
+	data-placement="{{data.placement}}" 
+	data-html="true" 
+	data-trigger="hover"
+	data-content="
+		<div class='usr-card {{data.status}}'>
+			<img src='{{data.contentImg}}' alt='{{data.fname}} {{data.lname}}'>
+			<div class='usr-card-content'>
+				<h3>{{data.fname}} {{data.lname}}</h3>
+				<p>{{data.title}} {{#if this.contentIcon}}<span class='card-small-text'><i class='{{this.contentIconClass}}'></i> {{#if this.contentSubCat}}Playing Beethoven Classics{{/if}}</span>{{/if}}</p>
+			</div>
+		</div>
+	"> 
+	<i></i>{{data.fname}} {{data.lname}} {{#if data.offline}}(offline){{/if}}
+</a>

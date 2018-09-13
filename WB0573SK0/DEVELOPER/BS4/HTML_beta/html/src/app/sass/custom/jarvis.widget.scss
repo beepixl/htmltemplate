@@ -1,0 +1,776 @@
+/*
+  Copyright 2013 - SmartAdmin : WebApp (Sunny)
+
+  * This is part of an item on wrapbootstrap.com
+  * https://wrapbootstrap.com/user/myorange
+  * ==================================
+
+  Table of Contents
+  ---------------------------------------------------------------
+
+    - Main
+    - Header
+    - Content
+    - Edit box
+    - Timestamp
+    - Helpers
+    - Fullscreen
+    - Styling
+    - Custom styles
+    - Icons - A few used examples
+    - RTL support
+    - Clearfix
+    - Examples (minimalistic in grid)
+    - Examples (lists)
+
+*/
+
+/*
+ * MAIN
+ */
+article.sortable-grid { min-height:30px; }
+
+.jarviswidget {
+  margin: 0 0 30px 0;
+  position: relative;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0;
+}
+.widget-body {
+  .well { margin-bottom: 0px; }
+  
+}
+
+.widget-content-padding {
+  padding: 20px;
+  .well { margin-bottom: 0px; }
+}
+
+/*
+ * HEADER
+ */
+
+.jarviswidget {
+  > header {
+    align-items:center;
+    height: 34px; /* make sure ".jarviswidget-loader" is also the same height or it will flicker during collapse */
+    padding: 0;
+    //line-height: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    align-items: flex-start;
+    .jarviswidget-icon {
+      width: 16px;
+      height: 16px;
+      float: left;
+      margin: 12px 10px 0 0;
+      display: block;
+      zoom: 1;
+      z-index: 4000
+    }
+    .widget-icon {
+      display:block;
+      width: 32px;
+      height: 34px;
+      position: absolute;
+      left: 0;
+      top: 0; 
+      font-size: 111%;
+      line-height:34px;
+      text-align:center;
+      margin-right:-10px;
+      + h2 {
+        padding-left: 20px;
+      }
+    }
+    .widget-header {
+      max-width: 50%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    h2 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      margin: 0;
+      line-height: 34px;
+      font-weight:normal;
+      margin-left:10px;
+      letter-spacing: 0;
+    }
+    .nav-tabs .nav-item {
+      position: relative;
+    }
+  }
+  &.jarviswidget-style-2 {
+    > header {
+       align-items: baseline;
+    }
+  }
+  .ml-auto, .mx-auto {
+    float: right;
+  }
+
+}
+.ui-sortable .jarviswidget-sortable {
+  > header {
+    cursor: move;
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    line-height: normal;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  }
+  &.jarviswidget-collapsed > header {
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+  }
+}
+
+.jarviswidget-ctrls {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  .button-icon {
+    min-width: 30px;
+    height: 32px;
+    float: left;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left:1px solid rgba(0,0,0,0.09);
+    &:hover {
+      background-color:rgba(0,0,0,0.05);
+    }
+  }
+}
+
+.jarviswidget-loader {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+  text-align: center;
+  line-height: 32px;
+  font-size: 111%;
+}
+
+/*
+ * CONTENT
+ */
+.jarviswidget {
+  > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    -moz-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    margin: 0;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-top: none;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+    padding: 13px 13px 0px;
+    /* as per version 1.3 */
+    overflow: $widgetContentOverflow;
+  }
+  &.no-padding {
+    > div {
+      padding: 0;
+    }
+    .alert {
+      border-width: 0 0 1px;
+    }
+  }
+  .widget-body {
+    min-height:100px;
+    position:relative;
+    padding-bottom:13px;
+    &.widget-hide-overflow { overflow:hidden; }
+  }
+}
+
+.widget-toolbar.no-border { border-left:none; }
+.widget-body > table { margin-bottom:0; }
+
+.widget-toolbar > .smart-form {
+  font-size: rem($baseFontSize - 1px);
+}
+.widget-toolbar > .smart-form .radio input + i,
+.widget-toolbar > .smart-form .checkbox input + i,
+.widget-toolbar > .smart-form .toggle input + i {
+  border-width:1px;
+  border-color: #C7C7C7;
+  margin-top:1px;
+
+  box-shadow: 0 1px 1px #FFF,0 1px 1px #858585 inset;
+  -webkit-box-shadow: 0 1px 1px #FFF,0 1px 1px #858585 inset;
+  -moz-box-shadow: 0 1px 1px #FFF,0 1px 1px #858585 inset;
+}
+
+/*
+ * WELL WIDGET
+ */
+.jarviswidget.well {
+  margin: 0 0 30px 0;
+  > div{
+    border:none;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  header { display:none; }
+}
+.jarviswidget.transparent {
+  padding: 0;
+  border: none;
+  background:none;
+  > div {
+    padding: 0;
+    background: none;
+  }
+}
+
+/*
+ * WIDGET FOOTER
+ */
+
+.widget-footer {
+  display: block;
+  min-height: 32px;
+  vertical-align:middle;
+  position: relative;
+  background-color: #F8F7F7;
+  padding: 5px;
+  border-top: 1px solid #E4E4E4;
+  text-align:right;
+  margin: 0px -13px -13px;
+  &.smart-form > label {
+  margin-top:4px;
+  display:block;
+  }
+}
+.widget-body.no-padding .alert {
+  margin-bottom: 10px;
+}
+.jarviswidget.no-padding .widget-footer {
+  margin: 0 0 -13px;
+}
+
+/*
+ * EDIT BOX
+ */
+.jarviswidget-editbox {
+  display: none;
+  padding: 10px;
+}
+/*.jarviswidget-editbox div {
+width: 100%;
+float: left;
+margin-bottom: 0;
+}
+.jarviswidget-editbox label {
+width: 80px;
+height: 26px;
+float: left;
+line-height: 26px;
+font-weight: bold;
+margin-bottom:0;
+}
+.jarviswidget-editbox input {
+width: 200px;
+height: 24px;
+padding: 0 5px;
+border: 1px solid #666;
+}
+.jarviswidget-editbox span {
+height: 26px;
+width: 26px;
+float: left;
+margin: 0 5px 0 0;
+cursor: pointer;
+}*/
+
+/*
+ * TIMESTAMP
+ */
+.jarviswidget-timestamp {
+  font-size: 12px;
+  color: #868686;
+  font-style:italic;
+  margin: 10px 0 0;
+}
+
+/*
+ * HELPERS
+ */
+.jarviswidget-placeholder {
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin-bottom: 28px; /* adjusted from 28px */
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * FULL SCREEN
+ */
+body.nooverflow {
+  overflow: hidden;
+  position: fixed;
+  width:100%;
+}
+#jarviswidget-fullscreen-mode {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $widget-fullscreen-zindex;
+  .jarviswidget {
+    margin: 0;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    > div {
+      overflow-y: scroll;
+      -moz-border-radius: 0;
+      -khtml-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      > header { cursor: default; }
+    }
+  }
+}
+
+/*
+ * WIDGET BODY TOOLBAR
+ */
+.widget-body-toolbar {
+  display:block;
+  padding:8px 10px;
+  min-height:42px;
+  border-bottom:1px solid #ccc;
+  background: #fafafa;
+  .onoffswitch-container {
+    margin-top: 7px;
+  }
+}
+
+
+.widget-body-toolbar.smart-form .inline-group, .smart-form .widget-body-toolbar .inline-group {
+  float: left;
+  margin-top: 4px;
+}
+
+.widget-body-toolbar .btn { vertical-align: middle; }
+
+/*
+ * WIDGET BODY AJAX LOAD
+ */
+.widget-body-ajax-loading::before {
+  content: url("#{$base-url}/ajax-loader.gif");
+  padding-top:18%;
+  text-align:center;
+  font-weight:bold;
+  font-size:16px;
+  color:#fff;
+  display: block;
+  background: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+}
+.widget-body-ajax-loading:hover { cursor: wait; }
+
+/*
+ * STYLING
+ */
+.jarviswidget {
+  > header {
+    color: #333;
+
+    border: 1px solid #C2C2C2;
+    background: #fafafa;
+  }
+  > div { background-color: #fff; }
+}
+
+.jarviswidget-editbox {
+  border-bottom: 1px solid #B1B1B1;
+  background-color: #fff;
+  margin: -13px -13px 13px;
+  .no-padding & { margin: 0 0 10px; }
+}
+.jarviswidget-placeholder {
+  background-color: #FFC;
+  border: 1px dashed #A7A7A7;
+}
+
+/*
+ * CUSTOM STYLES
+ */
+
+/* remove colors */
+.jarviswidget-remove-colors:hover,
+.jarviswidget-remove-colors {
+  color:#333;
+  padding:0;
+  background:none;
+}
+
+@each $color, $value in $theme-colors-text-bg {
+  /* #{$color} theme */
+  @if $color != 'white' {
+    .jarviswidget-color-#{$color} {
+      > header {
+        background: $value;
+        border-color: $value;
+        color: #FFF;
+        > .jarviswidget-ctrls a {
+          color: #fff;
+        }
+        .nav-tabs li {
+          a:not(.active) {
+            color: #fff;
+          }
+        }
+      }    
+    }    
+  }
+}
+
+/* blue-light theme */
+
+.jarviswidget-color-blue-light {
+  > header {
+    background: #cbd2d5;
+    color: #2b363c;
+    > .jarviswidget-ctrls a {
+      color: #2b363c;
+    }
+  }
+  > header {
+    border-color: #a0aeb3;
+  }
+}
+
+/* white theme */
+
+.jarviswidget-color-white  > header {
+  color: #838383;
+}
+
+
+/*
+ * WIDGET COLOR DROPDOWN
+ */
+
+.color-select {
+  list-style:none;
+  margin:0;
+  padding:4px;
+  min-width: 166px;
+  max-width: 156px;
+  right: -3px;
+  li {
+    display:block;
+    margin:2px;
+    float:left;
+    line-height: $baseLineHeight;
+    span:hover { border:3px solid rgba(0,0,0,.2); }
+  }
+}
+
+.color-select li span, .color-box {
+  display:block;
+  width:22px;
+  height:22px;
+  padding:0;
+  background:#333;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border:1px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.color-box {
+  position:relative;
+  vertical-align:middle;
+  border:1px solid rgba(255,255,255,.3);
+  outline:1px solid rgba(0,0,0,.1);
+  background: rgba(255,255,255,.3);
+  &:hover, .open & { outline: 1px solid rgba(0,0,0,.1); }
+  &:hover {
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+  }
+  &:active {
+    top:1px;
+    left:1px;
+  }
+
+  .widget-toolbar > & {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+    &:hover, &:active, &:focus { outline: 1px solid rgba(0, 0, 0, 0.25); }
+  }
+  &.selector {
+    &:after {
+      opacity: 0
+    }
+  }
+}
+
+.widget-toolbar .dropdown-menu.color-select { right:-1px; }
+
+/*
+ * ICONS
+ */
+.jarviswidget-ctrls a {
+  text-decoration:none;
+  font-size:14px;
+  text-align:center;
+  display:inline-block;
+  line-height:32px;
+  padding:0;
+  margin:0;
+  color:#333;
+}
+
+/*
+ * RTL - SUPPORT
+ 
+.rtl {
+  .jarviswidget > header {
+    padding: 0 7px 0 0;
+    h2 {
+      float: right;
+      text-align: right
+    }
+    .jarviswidget-icon {
+      float: right;
+      margin: 12px 0 0 7px;
+    }
+  }
+  .jarviswidget-ctrls {
+    float: left;
+    padding: 10px 0 0 3px;
+    margin: 0;
+    .button-icon { margin: 0 0 5px 5px; }
+  }
+  .jarviswidget-loader { float: left; }
+}*/
+
+/*
+ * CLEARFIX
+ */
+.jarviswidget:before, .jarviswidget:after, .jarviswidget > div:before, .jarviswidget > div:after, .inner-spacer:before, .inner-spacer:after, .jarviswidget-editbox:before, .jarviswidget-editbox:after, .clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.jarviswidget:after, .jarviswidget > div:after, .inner-spacer:after, .jarviswidget-editbox:after, .clearfix:after { clear: both; }
+.jarviswidget, .jarviswidget > div, .inner-spacer:after, .jarviswidget-editbox, .clearfix { zoom: 1;/*IE*/ }
+
+/*
+ * WIDGET TOOLBARS
+ */
+.widget-toolbar {
+  width: auto;
+  height: 32px;
+  line-height:32px;
+  position: relative;
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  padding: 0 8px;
+  text-align:center;
+}
+
+/*
+ * WIDGET TOOLBAR COMPONENTS
+ */
+
+/*
+ * TABS
+ */
+.jarviswidget header .nav-tabs {
+  border-bottom-color:transparent;
+
+  > li {
+    padding-left:0;
+    > a {
+      border-radius: 0px;
+      padding: 7px 14px;
+      display: block;
+      margin-left: 2px;
+      color:#333;
+    }
+    .fa {
+      opacity: 0.5;
+    }
+    .active {
+      .fa {
+        opacity: 1;
+      }
+      > a, > a:hover, > a:focus {
+        color: #555;
+        background-color: #FFF ;
+        border: 1px solid #C2C2C2;
+        border-bottom-color: transparent;
+        border-top:none;
+        cursor: default;
+      }
+    }
+  }
+  &:first-child li:first-child a {
+    margin-left: -1px;
+  }
+
+  &:last-child li:last-child a {
+    margin-right: -1px;
+  }
+}
+
+
+/*
+ * PILLS
+ */
+.jarviswidget header .nav-pills {
+  margin:3px;
+  > li > a { padding: 3px 5px 4px; }
+}
+
+/*
+ * BTN GROUPS
+ */
+.widget-toolbar .btn-group { margin-top:-3px; }
+
+/*
+ * BTNs
+ */
+.widget-toolbar > .btn {
+  margin-top:-3px;
+  font-size:12px;
+  padding: 1px 8px;
+}
+
+/*
+ * INPUT
+ */
+.widget-toolbar .smart-form label.checkbox, .widget-toolbar .smart-form label.radio { line-height:29px; }
+
+/*
+ * LABELS
+ */
+.widget-toolbar > .label {
+  vertical-align: middle;
+  margin-top: -3px;
+  display: inline-block;
+  text-align:center;
+  font-size:12px;
+  padding: 4px 7px;
+}
+
+/*
+ * BADGE
+ */
+.widget-toolbar > .badge {
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 50%;
+  font-weight:normal;
+  min-width:24px;
+  text-align: center;
+}
+
+/*
+ * PROGRESS BARS
+ */
+.widget-toolbar .progress {
+  width:130px;
+  margin: 7px 0 0 0;
+  height: 18px;
+  font-size:12px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #D1D1D1 inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #D1D1D1 inset;
+  -moz-box-shadow: 0 1px 0 transparent, 0 0 0 1px #D1D1D1 inset
+}
+
+.widget-toolbar .progress-bar { font-size:12px; }
+
+/*
+ * PAGINATION
+ */
+.widget-toolbar .pagination {
+  margin:4px 0;
+  > li > a { padding: 2px 7px; }
+}
+
+/*
+ * TEXT INPUT
+ */
+.widget-toolbar .widget-text-input { max-width:220px; }
+.widget-toolbar input[type='text'] {
+  height:28px;
+  margin-top:2px;
+}
+.widget-toolbar.smart-form .icon-append, .widget-toolbar.smart-form .icon-prepend,
+.widget-toolbar .smart-form .icon-append, .widget-toolbar .smart-form .icon-prepend  {
+  top:3px;
+}
+
+/*
+ * Enhancements for other plugins 
+ */
+
+ // full calendar
+ #jarviswidget-fullscreen-mode .fc-grid .fc-day-number {
+  padding: 5px 12px;
+  font-size: 40px;
+ }
+
+
+ .widget-toolbar.smart-form .input input, .widget-toolbar.smart-form .select select, .widget-toolbar.smart-form .textarea textarea {
+  height: 28px;
+ }

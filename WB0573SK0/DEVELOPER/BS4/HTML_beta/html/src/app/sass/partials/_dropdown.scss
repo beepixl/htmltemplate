@@ -1,0 +1,129 @@
+
+.show > .ajax-dropdown {
+    animation: flipInY 0.7s both;
+}
+.dropdown > .ajax-dropdown {
+    padding: rem(10px);    
+}
+.ajax-dropdown {
+    padding: rem(10px);    
+    margin-top: 8px;
+    width: rem(366px);
+    height: rem(457px);
+    border-radius: 0;
+    margin-left: -(rem(336px / 2)) !important;
+    border: 1px solid;
+
+    &:after, &:before {
+        border: 7px solid transparent;
+        bottom: 100%;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        left: 50%;
+        margin-left: -7px;        
+    }
+    
+    &:before {
+        margin-left: -8px;        
+        border: 8px solid transparent;
+    }
+
+    .btn-group {
+        margin-bottom: 10px;
+
+        .btn {
+            font-weight: bold;
+        }
+        
+    }
+    .fa-4x.fa-border {
+        border-width: 3px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        width: rem(76px);
+        height: rem(76px);
+        text-align: center;
+    }
+    .sa-ajax-notification-container {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        height: rem(457px - 52px - 36px);
+        display: block;
+        overflow: auto;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+}
+
+
+
+.shortcut-on #response-btn {
+    display:none !important;
+    
+}
+
+.shortcut-on #main .navbar, .shortcut-on #left-bar .navbar {
+    border:none !important;
+}
+
+/*
+ * ARROW BOX
+ */ 
+ 
+
+.arrow-box-up:after, .arrow-box-up:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-box-up:after {
+    border-color: rgba(red($white), green($white), blue($white), 0);
+    border-bottom-color: $white;
+    border-width: 7px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.arrow-box-up:before {
+    border-color: transparent;
+    border-width: 8px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+/*
+ * right
+ */
+
+.arrow-box-up-right:after, .arrow-box-up-right:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-box-up-right:after {
+    border-color: transparent;
+    border-width: 7px;
+    right: 10px;
+    margin-left: -7px;
+}
+
+.arrow-box-up-right:before {
+    border-color: transparent;
+    border-width: 8px;
+    right: 9px;
+    margin-left: -8px;
+}

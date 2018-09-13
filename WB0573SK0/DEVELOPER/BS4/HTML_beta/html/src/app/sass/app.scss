@@ -1,0 +1,92 @@
+// variables
+@import "../../../../config/node_modules/bootstrap/scss/functions";
+@import "variables";
+@import "../../../../config/node_modules/bootstrap/scss/variables";
+@import "../../../../config/node_modules/bootstrap/scss/mixins";
+
+@import "partials/functions";
+
+// customize plugin styles
+@import "custom/bootstrap";
+@import "custom/bootstrap-slider";
+@import "custom/bootstrap-markdown";
+@import "custom/bootstrap-summernote";
+@import "custom/bootstrap-clockpicker";
+@import "custom/bootstrap-tagsinput";
+@import "custom/jquery-ui";
+@import "custom/pace";
+@import "custom/font-awesome";
+@import "custom/sparks";
+@import "custom/jarvis.widget";
+@import "custom/smart.chat.ui";
+@import "custom/smart-notifications";
+@import "custom/smart-forms";
+@import "custom/easy-pie-chart";
+@import "custom/flot";
+@import "custom/jvectormap";
+@import "custom/fullcalendar";
+@import "custom/datatables";
+@import "custom/rating";
+@import "custom/superbox";
+@import "custom/superbox-custom";
+@import "custom/todo";
+@import "custom/tree";
+@import "custom/nestable";
+@import "custom/chart";
+@import "custom/dygraphs";
+@import "custom/calendar";
+@import "custom/jcrop";
+@import "custom/dropzone";
+@import "custom/jqgrid";
+@import "custom/editable";
+@import "custom/ion.rangeSlider";
+@import "custom/nouislider";
+@import "custom/select2";
+@import "custom/ckeditor";
+
+
+// partials/elements
+
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/dropdown";
+@import "partials/checkboxes";
+@import "partials/chatbox";
+@import "partials/flags";
+@import "partials/switch";
+
+
+// related to layout
+
+@import "partials/shortcuts";
+@import "partials/header";
+@import "partials/sidebar";
+@import "partials/breadcrumb";
+@import "partials/themeSettings";
+@import "partials/tasks-list";
+@import "partials/layout";
+
+
+
+@import "themes/default";
+@import "themes/dark-elegance";
+@import "themes/ultra-light";
+@import "themes/google-skin";
+@import "themes/pixel-smash";
+@import "themes/glass";
+@import "themes/material-design";
+
+
+
+
+
+// only for demo
+#smart-styles {
+	.btn {
+		line-height: 1.5;
+		height: auto;
+		padding: 3px 5px;
+	}
+}
+
+/*# sourceMappingURL=app.bundle.css.map */

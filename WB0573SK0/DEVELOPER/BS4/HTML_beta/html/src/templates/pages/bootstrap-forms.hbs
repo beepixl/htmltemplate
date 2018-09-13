@@ -1,0 +1,2799 @@
+{{!-- blank.hbs --}}
+{{#> layout title=pageTitle parentPage='forms' firstLevelChild='bootstrap-forms'}}
+	
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="assets/pages/forms.css">
+	{{/inline}}
+
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa fa-pencil-square-o fa-fw "></i> Forms  <span>> Bootstrap Form Elements</span></h1>				
+			</div>
+			<div class="ml-auto">
+				<ul class="sa-sparks">
+					<li class="sparks-info">
+						<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+						<div class="sparkline text-blue d-none d-xl-block">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline text-purple d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline text-green-dark d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div class="w-100">
+			<!-- widget grid -->
+			<section id="widget-grid" class="">
+			
+				<div class="well">
+					<div class="input-group">
+						<input class="form-control" type="text" placeholder="Search...">
+						<div class="input-group-append">
+							<button class="btn {{prefix}}btn-primary" type="button">
+								<i class="fa fa-search"></i> Search
+							</button>
+						</div>
+					</div>
+				</div>
+			
+				<!-- row -->
+				<div class="row">
+			
+					<!-- NEW WIDGET START -->
+					<article class="col-xl-6">
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye"></i> </span>
+									<h2>Default Elements</h2>
+								</div>
+			
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<form class="form-horizontal">
+										
+										<fieldset>
+											<legend>Default Form Elements</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Text field</label>
+												<div class="col-md-10">
+													<input class="form-control" placeholder="Default Text Field" type="text">
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Auto Complete</label>
+												<div class="col-md-10">
+													<input class="form-control" placeholder="Type somethine..." type="text"  list="list">
+													<datalist id="list">
+														<option value="Alexandra">Alexandra</option>
+														<option value="Alice">Alice</option>
+														<option value="Anastasia">Anastasia</option>
+														<option value="Avelina">Avelina</option>
+														<option value="Basilia">Basilia</option>
+														<option value="Beatrice">Beatrice</option>
+														<option value="Cassandra">Cassandra</option>
+														<option value="Cecil">Cecil</option>
+														<option value="Clemencia">Clemencia</option>
+														<option value="Desiderata">Desiderata</option>
+														<option value="Dionisia">Dionisia</option>
+														<option value="Edith">Edith</option>
+														<option value="Eleanora">Eleanora</option>
+														<option value="Elizabeth">Elizabeth</option>
+														<option value="Emma">Emma</option>
+														<option value="Felicia">Felicia</option>
+														<option value="Florence">Florence</option>
+														<option value="Galiana">Galiana</option>
+														<option value="Grecia">Grecia</option>
+														<option value="Helen">Helen</option>
+														<option value="Helewisa">Helewisa</option>
+														<option value="Idonea">Idonea</option>
+														<option value="Isabel">Isabel</option>
+														<option value="Joan">Joan</option>
+														<option value="Juliana">Juliana</option>
+														<option value="Karla">Karla</option>
+														<option value="Karyn">Karyn</option>
+														<option value="Kate">Kate</option>
+														<option value="Lakisha">Lakisha</option>
+														<option value="Lana">Lana</option>
+														<option value="Laura">Laura</option>
+														<option value="Leona">Leona</option>
+														<option value="Mandy">Mandy</option>
+														<option value="Margaret">Margaret</option>
+														<option value="Maria">Maria</option>
+														<option value="Nanacy">Nanacy</option>
+														<option value="Nicole">Nicole</option>
+														<option value="Olga">Olga</option>
+														<option value="Pamela">Pamela</option>
+														<option value="Patricia">Patricia</option>
+														<option value="Qiana">Qiana</option>
+														<option value="Rachel">Rachel</option>
+														<option value="Ramona">Ramona</option>
+														<option value="Samantha">Samantha</option>
+														<option value="Sandra">Sandra</option>
+														<option value="Tanya">Tanya</option>
+														<option value="Teresa">Teresa</option>
+														<option value="Ursula">Ursula</option>
+														<option value="Valerie">Valerie</option>
+														<option value="Veronica">Veronica</option>
+														<option value="Wilma">Wilma</option>
+														<option value="Yasmin">Yasmin</option>
+														<option value="Zelma">Zelma</option>
+													</datalist>
+													<p class="note"><strong>Note:</strong> works in Chrome, Firefox, Opera and IE10.</p>
+												</div>
+												
+											</div>
+				
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Password field</label>
+												<div class="col-md-10">
+													<input class="form-control" placeholder="Password field" type="password" value="mypassword">
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Textarea</label>
+												<div class="col-md-10">
+													<textarea class="form-control" placeholder="Textarea" rows="4"></textarea>
+												</div>
+											</div>
+										
+										
+										</fieldset>
+										
+										<fieldset>
+											<legend>Unstyled Checkbox</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Checkbox default</label>
+												<div class="col-md-10">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Checkbox 1
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+													  <label class="form-check-label" for="defaultCheck2">
+													    Checkbox 2
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+													  <label class="form-check-label" for="defaultCheck3">
+													    Checkbox 3
+													  </label>
+													</div>
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+													  <label class="form-check-label" for="defaultCheck4">
+													    Checkbox 4
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+													  <label class="form-check-label" for="defaultCheck5">
+													    Checkbox 5
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+													  <label class="form-check-label" for="defaultCheck6">
+													    Checkbox 6
+													  </label>
+													</div>
+												</div>
+											</div>
+											
+										</fieldset>
+			
+										<fieldset>
+											<legend>Unstyled Radiobox</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Radios default</label>
+												<div class="col-md-10">
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio1">
+													  <label class="form-check-label" for="defaultRadio1">
+													    Radiobox 1
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio2">
+													  <label class="form-check-label" for="defaultRadio2">
+													    Radiobox 2
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio3">
+													  <label class="form-check-label" for="defaultRadio3">
+													    Radiobox 3
+													  </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio4">
+													  <label class="form-check-label" for="defaultRadio4">
+													    Radiobox 4
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio5">
+													  <label class="form-check-label" for="defaultRadio5">
+													    Radiobox 5
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" value="" id="defaultRadio6">
+													  <label class="form-check-label" for="defaultRadio6">
+													    Radiobox 6
+													  </label>
+													</div>
+												</div>
+											</div>
+			
+			
+										
+										</fieldset>
+			
+										<fieldset>
+											<legend>File inputs</legend>
+										
+											<div class="form-group row">
+												<label class="col-md-2 control-label">File input</label>
+												<div class="col-md-10">
+													<input type="file" class="btn btn-default" id="exampleInputFile1">
+													<p class="help-block">
+														some help text here.
+													</p>
+												</div>
+											</div>
+											
+										</fieldset>
+
+			
+										<fieldset class="demo-switcher-1">
+											<legend>Styled Checkbox and Radiobox</legend>
+
+											<!-- <span class="toggle-demo">
+													<span>Styles: </span>
+													<span class="btn-group justify-content-between1" role="group">
+													  <label class="btn btn-xs active">
+													      <input type="radio" name="demo-switcher-1" id="style-0"> 1
+													    </label>
+													    <label class="btn btn-xs">
+													      <input type="radio" name="demo-switcher-1" id="style-1"> 2
+													    </label>
+													    <label class="btn btn-xs">
+													      <input type="radio" name="demo-switcher-1" id="style-2"> 3
+													    </label>
+													    <label class="btn btn-xs">
+													      <input type="radio" name="demo-switcher-1" id="style-3"> 4
+													    </label>
+													</span>
+												</span> -->	
+
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Checkbox Styles</label>
+												<div class="col-md-10">
+													
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0" checked="checked">
+														  <span>Checkbox 1</span>
+														</label>
+													</div>
+			
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0">
+														  <span>Checkbox 2</span>
+														</label>
+													</div>
+			
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0">
+														  <span>Checkbox 3</span>
+														</label>
+													</div>
+			
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0">
+														  <span>Checkbox 1</span>
+													</label>
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0">
+														  <span>Checkbox 2</span>
+													</label>
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0">
+														  <span>Checkbox 3</span>
+													</label>
+												</div>
+											</div>
+											
+										</fieldset>
+			
+										<fieldset class="demo-switcher-1">
+											<legend></legend>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Radios Styles</label>
+												<div class="col-md-10">
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" checked="checked" name="style-0">
+															<span>Radiobox 1</span> 
+														</label>
+													</div>
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" name="style-0">
+															<span>Radiobox 2</span> 
+														</label>
+													</div>
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" name="style-0">
+															<span>Radiobox 3</span> 
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+													<label class="radio radio-inline">
+														
+														<input type="radio" class="radiobox" name="style-0a">
+														<span>Radiobox 1</span> 
+														
+													</label>
+													<label class="radio radio-inline">
+														<input type="radio" class="radiobox" name="style-0a">
+														<span>Radiobox 2</span>  
+													</label>
+													<label class="radio radio-inline">
+														<input type="radio" class="radiobox" name="style-0a">
+														<span>Radiobox 3</span> 
+													</label>
+												</div>
+											</div>
+										
+										</fieldset>
+										
+										<fieldset>
+											<legend>Unstyled Select</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label" for="select-1">Select</label>
+												<div class="col-md-10">
+				
+													<select class="form-control" id="select-1">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select> 
+				
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label" for="multiselect1">Multiple select</label>
+												<div class="col-md-10">
+													<select multiple="multiple" id="multiselect1" class="form-control custom-scroll" title="Click to Select a City">
+														<option>Amsterdam</option>
+														<option selected="selected">Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option selected="selected">Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+										</fieldset>
+										
+										<fieldset>
+											<legend>Input States</legend>
+											
+											<div class="form-group row has-warning">
+												<label class="col-md-2 control-label">Input warning</label>
+												<div class="col-md-10">
+
+													<div class="input-group">
+														<input type="text" class="form-control">
+														<div class="input-group-append">
+															<div class="input-group-text">
+																<i class="fa fa-warning"></i>
+															</div>
+														</div>
+													</div>
+													<span class="help-block">Something may have gone wrong</span>
+												</div>
+			
+											</div>
+											
+											<div class="form-group row has-error">
+												<label class="col-md-2 control-label">Input error</label>
+												<div class="col-md-10">
+
+													<div class="input-group">
+														<input type="text" class="form-control">
+														<div class="input-group-append">
+															<div class="input-group-text">
+																<i class="fa fa-close"></i>
+															</div>
+														</div>
+													</div>
+													<span class="help-block"><i class="fa fa-warning"></i> Please correct the error</span>
+												</div>
+											</div>
+											
+											<div class="form-group row has-success">
+												<label class="col-md-2 control-label">Input success</label>
+												<div class="col-md-10">
+													
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<div class="input-group-text">
+																<i class="fa fa-dollar"></i>
+															</div>
+														</div>
+														<input type="text" class="form-control">
+														<div class="input-group-append">
+															<div class="input-group-text">$</div>
+														</div>
+													</div>
+													<span class="help-block">Something may have gone wrong</span>
+												</div>
+											</div>
+											
+										</fieldset>	
+										
+										<fieldset>
+											<legend>Input sizes</legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2">Extra Small Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-xs" placeholder=".input-xs" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Small Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-sm" placeholder=".input-sm" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Default Input</label>
+												<div class="col-md-10">
+													<input class="form-control" placeholder="Default input" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Large Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-lg" placeholder=".input-lg" type="text">
+												</div>
+											</div>
+			
+										</fieldset>
+										
+										<fieldset>
+											<legend>Select Sizes</legend>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Small Select</label>
+												<div class="col-md-10">
+													<select class="form-control input-sm">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Default Select</label>
+												<div class="col-md-10">
+													<select class="form-control">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Large Select</label>
+												<div class="col-md-10">
+													<select class="form-control input-lg">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+			
+										</fieldset>
+										
+										<fieldset>
+											<legend>Prepend &amp; Append</legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="prepend">Prepended Input</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">@</div>
+																</div>
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="prepend">W/ input &amp; radios</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-addon">
+																		<span class="checkbox">
+																			<label>
+																			  <input type="checkbox" class="checkbox style-0" checked="checked">
+																			  <span></span>
+																			</label>
+																		</span>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="With switch">
+																<div class="input-group-append">
+																	<div class="input-group-text">
+																		<span class="onoffswitch">
+																			<input type="checkbox" name="start_interval" class="onoffswitch-checkbox" id="st3">
+																			<label class="onoffswitch-label" for="st3"> 
+																				<span class="onoffswitch-inner" data-swchon-text="YES" data-swchoff-text="NO"></span> 
+																				<span class="onoffswitch-switch"></span> 
+																			</label> 
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">
+																		<label class="vradio m-0">
+																			<input type="radio" class="radiobox style-0" name="style-0a2">
+																			<span></span>
+																			<span> Left</span> 
+																		</label>
+																	</div>
+																</div>
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">
+																		<label class="vradio m-0">
+																			<input type="radio" class="radiobox style-0" name="style-0a2">
+																			<span></span>
+																			<span> Right</span> 
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+												
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="append">Appended Input</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="input-group">
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">.00</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="appendprepend">Combined</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">$</div>
+																</div>
+																<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">.00</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="appendbutton">With buttons</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="input-group">
+																<input class="form-control" id="appendbutton" type="text">
+																<div class="input-group-append">
+																	<button class="btn btn-default" type="button">Search</button>
+																	<button class="btn btn-default" type="button">Options</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2">With dropdowns</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  <div class="input-group-append">
+    <button type="button" class="btn btn-default">Action</button>
+    <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-default">Action</button>
+    <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+										</fieldset>
+										
+										<fieldset>
+											<legend>Flexible Input fields with icons</legend>
+											
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Large</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-lg">
+									                    <input type="text" placeholder="Email" class="form-control">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+											
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Medium</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-md">
+									                    <input type="text" placeholder="Email" class="form-control">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Small</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-sm">
+									                    <input type="text" placeholder="Email" class="form-control">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Large</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-lg">
+									                    <select class="form-control">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Medium</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-md">
+									                    <select class="form-control">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Small</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-sm">
+									                    <select class="form-control">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Large</label>
+												<div class="col-md-10">
+
+													<div class="input-group input-group-lg">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Medium</label>
+												<div class="col-md-10">
+													<div class="input-group input-group-md">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Small</label>
+												<div class="col-md-10">
+													<div class="input-group input-group-sm">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+											
+										</fieldset>
+										
+										<fieldset>
+											<legend>Simple input with icons</legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2">Input with icon</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-icon-left">
+																<i class="fa fa-microphone"></i>
+																<input class="form-control" placeholder="Left Icon" type="text">
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2">With right icon</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-icon-right">
+																<i class="fa fa-microphone"></i>
+																<input class="form-control" placeholder="" type="text">
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2">Input with spinner</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<input class="form-control ui-autocomplete-loading" placeholder="" type="text">
+			
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											
+											
+										</fieldset>
+										
+										<div class="form-actions">
+											<div class="row">
+												<div class="col-md-12">
+													<button class="btn btn-default" type="submit">
+														Cancel
+													</button>
+													<button class="btn {{prefix}}btn-primary" type="submit">
+														<i class="fa fa-save"></i>
+														Submit
+													</button>
+												</div>
+											</div>
+										</div>
+			
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye"></i> </span>
+									<h2>Horizontal Form</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<form>
+										
+										<fieldset>
+											<input name="authenticity_token" type="hidden">
+											<div class="form-group">
+												<label>Text field</label>
+												<input class="form-control" placeholder="Text field" type="text">
+											</div>
+											<div class="form-group">
+												<label>Password field</label>
+												<input class="form-control" placeholder="Password" type="password" value="mypassword">
+											</div>
+											<div class="form-group">
+												<label>Textarea</label>
+												<textarea class="form-control" placeholder="Textarea" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+												<label>Readonly</label>
+												<span class="form-control">Read only text</span>
+											</div>
+										</fieldset>
+										<div class="form-actions">
+											<div class="btn {{prefix}}btn-primary btn-lg">
+												<i class="fa fa-save"></i>
+												Submit
+											</div>
+										</div>
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-4" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye"></i> </span>
+									<h2>Inline Form</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+
+									<div class="alert alert-info alert-dismissible fade show" role="alert">
+										<i class="fa-fw fa-lg fa fa-exclamation"></i>
+									  <strong>Hey hey!</strong> This is an inline form!
+									  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									    <span aria-hidden="true">&times;</span>
+									  </button>
+									</div>
+
+									<form class="form-inline">
+									  <label class="sr-only" for="inlineFormInputName2">Name</label>
+									  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter email">
+
+									  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+									  <div class="input-group mb-2 mr-sm-2">
+									    <input type="password" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Password">
+									  </div>
+
+									  <div class="form-check mb-2 mr-sm-2">
+									    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+									    <label class="form-check-label" for="inlineFormCheck">
+									      Remember me
+									    </label>
+									  </div>
+
+									  <button type="submit" class="btn {{prefix}}btn-primary mb-2">Sign in</button>
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+					</article>
+					<!-- WIDGET END -->
+			
+					<!-- NEW WIDGET START -->
+					<article class="col-xl-6">
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye-slash"></i> </span>
+									<h2>Disabled Elements</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<form class="form-horizontal">
+										
+										<fieldset>
+											<legend>Disabled Form Elements</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Text field</label>
+												<div class="col-md-10">
+													<input class="form-control" disabled="disabled" placeholder="Default Text Field" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Auto Complete</label>
+												<div class="col-md-10">
+													<input class="form-control" disabled="disabled" placeholder="Type somethine..." type="text" list="list">
+													<p class="note"><strong>Note:</strong> works in Chrome, Firefox, Opera and IE10.</p>
+												</div>
+												
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Password field</label>
+												<div class="col-md-10">
+													<input class="form-control" disabled="disabled" placeholder="Password field" type="password" value="mypassword">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Textarea</label>
+												<div class="col-md-10">
+													<textarea class="form-control" disabled="disabled" placeholder="Textarea" rows="4"></textarea>
+												</div>
+											</div>
+										</fieldset>
+										
+										<fieldset>
+											<legend>Unstyled Checkbox <small>(disabled)</small></legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Checkbox</label>
+												<div class="col-md-10">
+
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-1">
+													  <label class="form-check-label" for="default-check-1">
+													    Checkbox 1
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-2">
+													  <label class="form-check-label" for="default-check-2">
+													    Checkbox 2
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-3">
+													  <label class="form-check-label" for="default-check-3">
+													    Checkbox 3
+													  </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline Checkbox</label>
+												<div class="col-md-10">
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-4">
+													  <label class="form-check-label" for="default-check-4">
+													    Checkbox 4
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-5">
+													  <label class="form-check-label" for="default-check-5">
+													    Checkbox 5
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="checkbox" disabled="disabled" value="" id="default-check-6">
+													  <label class="form-check-label" for="default-check-6">
+													    Checkbox 6
+													  </label>
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										
+										<fieldset>
+											<legend>Unstyled Radiobox <small>(disabled)</small></legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Radios</label>
+												<div class="col-md-10">
+
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-1">
+													  <label class="form-check-label" for="radio-1">
+													    Radiobox 1
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-2">
+													  <label class="form-check-label" for="radio-2">
+													    Radiobox 2
+													  </label>
+													</div>
+													<div class="form-check">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-3">
+													  <label class="form-check-label" for="radio-3">
+													    Radiobox 3
+													  </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline Radiobox</label>
+												<div class="col-md-10">
+
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-4">
+													  <label class="form-check-label" for="radio-4">
+													    Radiobox 4
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-5">
+													  <label class="form-check-label" for="radio-5">
+													    Radiobox 5
+													  </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" disabled="disabled" value="" id="radio-6">
+													  <label class="form-check-label" for="radio-6">
+													    Radiobox 6
+													  </label>
+													</div>
+
+												</div>
+											</div>
+										</fieldset>
+			
+										<fieldset>
+											<legend>File inputs <small>(disabled)</small></legend>
+										
+											<div class="form-group row">
+												<label class="col-md-2 control-label">File input</label>
+												<div class="col-md-10">
+													<input type="file" class="btn btn-default" disabled="disabled" id="exampleInputFile2">
+													<p class="help-block">
+														some help text here.
+													</p>
+												</div>
+											</div>
+											
+										</fieldset>
+			
+										<fieldset class="demo-switcher-1">
+											<legend>Styled Checkbox and Radiobox <small>(disabled)</small></legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Checkbox Styles</label>
+												<div class="col-md-10">
+													
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0" checked="checked" disabled="disabled">
+														  <span>Checkbox 1</span>
+														</label>
+													</div>
+			
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0" disabled="disabled">
+														  <span>Checkbox 2</span>
+														</label>
+													</div>
+			
+													<div class="vcheck">
+														<label>
+														  <input type="checkbox" class="checkbox style-0" disabled="disabled">
+														  <span>Checkbox 3</span>
+														</label>
+													</div>
+			
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0" disabled="disabled">
+														  <span>Checkbox 1</span>
+													</label>
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0" disabled="disabled">
+														  <span>Checkbox 2</span>
+													</label>
+													<label class="checkbox-inline">
+														  <input type="checkbox" class="checkbox style-0" disabled="disabled">
+														  <span>Checkbox 3</span>
+													</label>
+												</div>
+											</div>
+											
+										</fieldset>
+										
+										<fieldset class="demo-switcher-1">
+											<legend></legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Radios Styles</label>
+												<div class="col-md-10">
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" checked="checked" disabled="disabled" name="style-0">
+															<span>Radiobox 1</span> 
+														</label>
+													</div>
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" disabled="disabled" name="style-0">
+															<span>Radiobox 2</span> 
+														</label>
+													</div>
+													<div class="radio">
+														<label>
+															<input type="radio" class="radiobox style-0" disabled="disabled" name="style-0">
+															<span>Radiobox 3</span> 
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Inline</label>
+												<div class="col-md-10">
+													<label class="radio radio-inline">
+														
+														<input type="radio" class="radiobox style-0" disabled="disabled" name="style-0a">
+														<span>Radiobox 1</span> 
+														
+													</label>
+													<label class="radio radio-inline">
+														<input type="radio" class="radiobox style-0" disabled="disabled" name="style-0a">
+														<span>Radiobox 2</span>  
+													</label>
+													<label class="radio radio-inline">
+														<input type="radio" class="radiobox style-0" disabled="disabled" name="style-0a">
+														<span>Radiobox 3</span> 
+													</label>
+												</div>
+											</div>
+										
+										</fieldset>
+										
+										<fieldset>
+											<legend>Unstyled Select</legend>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Select</label>
+												<div class="col-md-10">
+													<select class="form-control" disabled="disabled">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-2 control-label">Multiple select</label>
+												<div class="col-md-10">
+													<select multiple="multiple" disabled="disabled" class="form-control custom-scroll" title="Click to Select a City">
+														<option>Amsterdam</option>
+														<option selected="selected">Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option selected="selected">Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											
+										</fieldset>
+
+
+										<fieldset>
+											<legend>Input States <small>(disabled)</small></legend>
+											
+											<div class="form-group row has-warning">
+												<label class="col-md-2 control-label">Input warning</label>
+												<div class="col-md-10">
+
+													<div class="input-group">
+														<input type="text" class="form-control" disabled="disabled">
+														<div class="input-group-append">
+															<div class="input-group-text">
+																<i class="fa fa-warning"></i>
+															</div>
+														</div>
+													</div>
+													<span class="help-block">Something may have gone wrong</span>
+												</div>
+			
+											</div>
+											
+											<div class="form-group row has-error">
+												<label class="col-md-2 control-label">Input error</label>
+												<div class="col-md-10">
+
+													<div class="input-group">
+														<input type="text" class="form-control" disabled="disabled">
+														<div class="input-group-append">
+															<div class="input-group-text">
+																<i class="fa fa-close"></i>
+															</div>
+														</div>
+													</div>
+													<span class="help-block"><i class="fa fa-warning"></i> Please correct the error</span>
+												</div>
+											</div>
+											
+											<div class="form-group row has-success">
+												<label class="col-md-2 control-label">Input success</label>
+												<div class="col-md-10">
+													
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<div class="input-group-text">
+																<i class="fa fa-dollar"></i>
+															</div>
+														</div>
+														<input type="text" class="form-control" disabled="disabled">
+														<div class="input-group-append">
+															<div class="input-group-text">$</div>
+														</div>
+													</div>
+													<span class="help-block">Something may have gone wrong</span>
+												</div>
+											</div>
+											
+										</fieldset>	
+										
+										
+										
+										<fieldset>
+											<legend>Input sizes <small>(disabled)</small></legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2">Extra Small Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-xs" disabled="disabled" placeholder=".input-xs" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Small Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-sm" disabled="disabled" placeholder=".input-sm" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Default Input</label>
+												<div class="col-md-10">
+													<input class="form-control" disabled="disabled" placeholder="Default input" type="text">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Large Input</label>
+												<div class="col-md-10">
+													<input class="form-control input-lg" disabled="disabled" placeholder=".input-lg" type="text">
+												</div>
+											</div>
+			
+										</fieldset>
+										
+										<fieldset>
+											<legend>Select Sizes <small>(disabled)</small></legend>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Small Select</label>
+												<div class="col-md-10">
+													<select class="form-control input-sm" disabled="disabled">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Default Select</label>
+												<div class="col-md-10">
+													<select class="form-control" disabled="disabled">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-2">Large Select</label>
+												<div class="col-md-10">
+													<select class="form-control input-lg" disabled="disabled">
+														<option>Amsterdam</option>
+														<option>Atlanta</option>
+														<option>Baltimore</option>
+														<option>Boston</option>
+														<option>Buenos Aires</option>
+														<option>Calgary</option>
+														<option>Chicago</option>
+														<option>Denver</option>
+														<option>Dubai</option>
+														<option>Frankfurt</option>
+														<option>Hong Kong</option>
+														<option>Honolulu</option>
+														<option>Houston</option>
+														<option>Kuala Lumpur</option>
+														<option>London</option>
+														<option>Los Angeles</option>
+														<option>Melbourne</option>
+														<option>Mexico City</option>
+														<option>Miami</option>
+														<option>Minneapolis</option>
+													</select>
+												</div>
+											</div>
+			
+										</fieldset>
+
+										<fieldset>
+											<legend>Prepend &amp; Append <small>(disabled)</small></legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="prepend">Prepended Input</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">@</div>
+																</div>
+																<input type="text" class="form-control" disabled="disabled" id="inlineFormInputGroup" placeholder="Username">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="prepend">W/ input &amp; radios</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-addon">
+																		<span class="checkbox">
+																			<label>
+																			  <input type="checkbox" class="checkbox style-0" checked="checked">
+																			  <span></span>
+																			</label>
+																		</span>
+																	</span>
+																</div>
+																<input type="text" class="form-control" disabled="disabled" id="inlineFormInputGroup" placeholder="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<input type="text" disabled="disabled" class="form-control" id="inlineFormInputGroup" placeholder="With switch">
+																<div class="input-group-append">
+																	<div class="input-group-text">
+																		<span class="onoffswitch">
+																			<input type="checkbox" name="start_interval" class="onoffswitch-checkbox" id="st4">
+																			<label disabled="disabled" class="onoffswitch-label" for="st4"> 
+																				<span class="onoffswitch-inner" data-swchon-text="YES" data-swchoff-text="NO"></span> 
+																				<span class="onoffswitch-switch"></span> 
+																			</label> 
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">
+																		<span class="radio">
+																			<label>
+																				<input disabled="disabled" type="radio" class="radiobox style-0" name="style-0a2">
+																				<span> Left</span> 
+																			</label>
+																		</span>
+																	</div>
+																</div>
+																<input type="text" disabled="disabled" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">
+																		<span class="radio">
+																			<label>
+																				<input disabled="disabled" type="radio" class="radiobox style-0" name="style-0a2">
+																				<span> Right</span> 
+																			</label>
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+												
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="append">Appended Input</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="input-group">
+																<input type="text" disabled="disabled" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">.00</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="appendprepend">Combined</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<div class="input-group-text">$</div>
+																</div>
+																<input type="text" disabled="disabled" class="form-control" id="inlineFormInputGroup" placeholder="">
+																<div class="input-group-append">
+																	<div class="input-group-text">.00</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2" for="appendbutton">With buttons</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="input-group">
+																<input class="form-control" disabled="disabled" id="appendbutton" type="text">
+																<div class="input-group-append">
+																	<button disabled="disabled" class="btn btn-default" type="button">Search</button>
+																	<button disabled="disabled" class="btn btn-default" type="button">Options</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="form-group row">
+												<label class="control-label col-md-2">With dropdowns</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+
+															<div class="input-group">
+  <input type="text" disabled="disabled" class="form-control" aria-label="Text input with segmented dropdown button">
+  <div class="input-group-append">
+    <button disabled="disabled" type="button" class="btn btn-default">Action</button>
+    <button  disabled="disabled" type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2"></label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button type="button" disabled="disabled" class="btn btn-default">Action</button>
+    <button type="button" disabled="disabled" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" disabled="disabled" class="form-control" aria-label="Text input with segmented dropdown button">
+</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+										</fieldset>
+										
+										
+			
+										<fieldset>
+											<legend>Flexible Input fields with icons</legend>
+											
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Large</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-lg">
+									                    <input type="text" placeholder="Email" class="form-control" disabled="disabled">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+											
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Medium</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-md">
+									                    <input type="text" placeholder="Email" class="form-control" disabled="disabled">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Addon Small</label>
+												<div class="col-md-10">
+													<div class="icon-addon addon-sm">
+									                    <input type="text" placeholder="Email" class="form-control" disabled="disabled">
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Large</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-lg">
+									                    <select class="form-control" disabled="disabled">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Medium</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-md">
+									                    <select class="form-control" disabled="disabled">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Select Small</label>
+												<div class="col-md-10">
+									                <div class="icon-addon addon-sm">
+									                    <select class="form-control" disabled="disabled">
+									                        <option>Select Option</option>
+									                        <option>Sample</option>
+									                        <option>Sample</option>
+									                    </select>
+									                    <label for="email" class="fa fa-search" rel="tooltip" title="email"></label>
+									                </div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Large</label>
+												<div class="col-md-10">
+													<div class="input-group input-group-lg">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email" disabled="disabled">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Medium</label>
+												<div class="col-md-10">
+													<div class="input-group input-group-md">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email"  disabled="disabled">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+			
+											<div class="form-group row">
+												
+												<label class="control-label col-md-2" for="prepend">Prepended Small</label>
+												<div class="col-md-10">
+													<div class="input-group input-group-sm">
+													  <div class="input-group-prepend">
+													    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+													  </div>
+													  <input type="text" class="form-control" placeholder="Email"  disabled="disabled">
+													  <div class="input-group-append">
+													    <button class="btn btn-default" type="button">Go!</button>
+													  </div>
+													</div>
+												</div>
+												
+											</div>
+											
+										</fieldset>
+										
+										<fieldset>
+											<legend>Simple input with icons (disabled)</legend>
+											
+											<div class="form-group row">
+												<label class="control-label col-md-2">Input with icon</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-icon-left">
+																<i class="fa fa-microphone"></i>
+																<input class="form-control" disabled="disabled" placeholder="Left Icon" type="text">
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2">With right icon</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<div class="input-icon-right">
+																<i class="fa fa-microphone"></i>
+																<input class="form-control" disabled="disabled" placeholder="" type="text">
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+			
+											<div class="form-group row">
+												<label class="control-label col-md-2">Input with spinner</label>
+												<div class="col-md-10">
+													<div class="row">
+														<div class="col-sm-12">
+															
+															<input class="form-control ui-autocomplete-loading" disabled="disabled" placeholder="" type="text">
+															
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</fieldset>							
+			
+										<div class="form-actions">
+											<div class="row">
+												<div class="col-md-12">
+													<button class="btn {{prefix}}btn-primary" disabled="disabled" type="submit">
+														<i class="fa fa-save"></i>
+														Submit
+													</button>
+													<button class="btn btn-default" disabled="disabled" type="submit">
+														Cancel
+													</button>
+												</div>
+											</div>
+										</div>
+			
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-3" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye-slash"></i> </span>
+									<h2>Disabled Horizontal Form</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<form>
+										<fieldset>
+											<input name="authenticity_token" type="hidden">
+											<div class="form-group">
+												<label>Text field</label>
+												<input class="form-control" disabled="disabled" placeholder="Text field" type="text">
+											</div>
+											<div class="form-group">
+												<label>Password field</label>
+												<input class="form-control" disabled="disabled" placeholder="Password" type="password" value="mypassword">
+											</div>
+											<div class="form-group">
+												<label>Textarea</label>
+												<textarea class="form-control" disabled="disabled" placeholder="Textarea" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+												<label>Readonly</label>
+												<span class="form-control">Read only text</span>
+											</div>
+										</fieldset>
+										<div class="form-actions">
+											<button class="btn {{prefix}}btn-primary btn-lg" disabled="disabled">
+												<i class="fa fa-save"></i>
+												Submit
+											</button>
+										</div>
+										
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-5" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-eye-slash"></i> </span>
+									<h2>Inline Form Disabled</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+
+								<div class="widget-body">
+
+									<div class="alert alert-warning alert-dismissible fade show" role="alert">
+										<i class="fa-fw fa-lg fa fa-exclamation"></i>
+									  <strong>Hey hey!</strong> This is an inline form!
+									  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									    <span aria-hidden="true">&times;</span>
+									  </button>
+									</div>
+
+									<form class="form-inline">
+									  <label class="sr-only" for="inlineFormInputName2">Name</label>
+									  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter email" disabled="disabled">
+
+									  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+									  <div class="input-group mb-2 mr-sm-2">
+									    <input type="password" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Password" disabled="disabled">
+									  </div>
+
+									  <div class="form-check mb-2 mr-sm-2">
+									    <input class="form-check-input" type="checkbox" id="rem" disabled="disabled">
+									    <label class="form-check-label" for="rem">
+									      Remember me
+									    </label>
+									  </div>
+
+									  <button type="submit" disabled="disabled" class="btn {{prefix}}btn-primary">
+											Sign in
+										</button>
+									</form>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+					</article>
+					<!-- WIDGET END -->
+			
+				</div>
+			
+				<!-- end row -->
+			
+				<!-- row -->
+				<div class="row">
+			
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12">
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-8" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-columns"></i> </span>
+									<h2>Column sizing</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<div class="row">
+										<div class="col-sm-12">
+											<input type="text" class="form-control" placeholder=".col-sm-12">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-3">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+			
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-4">
+											<input type="text" class="form-control" placeholder=".col-sm-4">
+										</div>
+										<div class="col-sm-4">
+											<input type="text" class="form-control" placeholder=".col-sm-4">
+										</div>
+										<div class="col-sm-4">
+											<input type="text" class="form-control" placeholder=".col-sm-4">
+										</div>
+			
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+										<div class="col-sm-2">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+									</div>
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+					</article>
+					<!-- WIDGET END -->
+			
+				</div>
+				<!-- end row -->
+			
+				<!-- row -->
+				<div class="row">
+			
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12 col-md-12 col-lg-6">
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-9" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-columns"></i> </span>
+									<h2>Right Aligned</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-2 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-3 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-4 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-4">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-5 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-5">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-6 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-7 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-7">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-8 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-8">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-9 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-9">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-10 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-10">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-11 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-11">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row  row-reverse">
+										<div class="col-sm-12 pull-right">
+											<input type="text" class="form-control" placeholder=".col-sm-12">
+										</div>
+									</div>
+			
+							
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+					</article>
+					<!-- WIDGET END -->
+			
+					<!-- NEW WIDGET START -->
+					<article class="col-sm-12 col-md-12 col-lg-6">
+			
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false">
+							<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+			
+							data-widget-colorbutton="false"
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true"
+							data-widget-sortable="false"
+			
+							-->
+							<header>
+								<div class="widget-header">	
+									<span class="widget-icon"> <i class="fa fa-columns"></i> </span>
+									<h2>Left Align</h2>
+								</div>
+							</header>
+			
+							<!-- widget div-->
+							<div>
+			
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+			
+								</div>
+								<!-- end widget edit box -->
+			
+								<!-- widget content -->
+								<div class="widget-body">
+			
+									<div class="row">
+										<div class="col-sm-2 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-2">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-3 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-3">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-4 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-4">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-5 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-5">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-6 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-6">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-7 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-7">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-8 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-8">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-9 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-9">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-10 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-10">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-11 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-11">
+										</div>
+									</div>
+			
+									<hr>
+			
+									<div class="row">
+										<div class="col-sm-12 pull-left">
+											<input type="text" class="form-control" placeholder=".col-sm-12">
+										</div>
+									</div>
+			
+									
+			
+								</div>
+								<!-- end widget content -->
+			
+							</div>
+							<!-- end widget div -->
+			
+						</div>
+						<!-- end widget -->
+			
+					</article>
+					<!-- WIDGET END -->
+			
+				</div>
+				<!-- end row -->		
+			
+			
+			</section>
+			<!-- end widget grid -->
+		</div>
+	{{/inline}}
+
+	{{#*inline "script-block"}}
+	<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			// PAGE RELATED SCRIPTS
+		
+			// class switcher for radio and checkbox
+			$('input[name="demo-switcher-1"]').change( function() {
+				  //alert($(this).val())
+				  $this = $(this);
+				  
+				  myNewClass = $this.attr('id');
+				  
+				  $('.demo-switcher-1 input[type="checkbox"]').removeClass();
+				  $('.demo-switcher-1 input[type="checkbox"]').addClass("checkbox "+ myNewClass);
+				  
+				  $('.demo-switcher-1 input[type="radio"]').removeClass();
+				  $('.demo-switcher-1 input[type="radio"]').addClass("radiobox "+ myNewClass);
+			  
+			})
+		
+		})
+
+		</script>
+
+	{{/inline}}
+
+{{/layout}}
+

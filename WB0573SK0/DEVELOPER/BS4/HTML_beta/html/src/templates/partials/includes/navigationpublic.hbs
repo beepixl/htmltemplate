@@ -1,0 +1,18 @@
+<header id="header" class="publicheader">
+	<div class="logo-group">
+		<span class="{{prefix}}logo"> <img src="assets/img/common/logo.png" alt="SmartAdmin"> </span>
+	</div>
+	{{#if headerRegister}}
+		<span class="extr-page-header-space">
+			<span class="hidden-mobile hiddex-xs">Already registered?</span>
+			<a href="login.html" class="btn {{prefix}}btn-danger">Sign In</a>
+		</span>
+	{{/if}}
+
+	{{#if headerLogin}}
+		<span class="extr-page-header-space">
+			<span class="hidden-mobile hiddex-xs">Need an account?</span>
+			<a href="register.html" class="btn {{prefix}}btn-danger">Create account</a>
+		</span>
+	{{/if}}
+</header>

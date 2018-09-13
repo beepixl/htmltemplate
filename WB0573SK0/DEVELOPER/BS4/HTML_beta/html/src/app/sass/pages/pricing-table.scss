@@ -1,0 +1,212 @@
+@import "../variables";
+
+.the-price {
+    background-color: rgba(220, 220, 220, .17);
+    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 $white;
+    padding: 20px;
+    margin: 0;
+    h1 {
+      line-height: 1em;
+      padding: 0;
+      margin: 0;
+  }
+}
+.subscript {
+    font-size: rem($baseFontSize + 8px);
+    color: $muted;
+}
+.ribbon {
+    position: absolute;
+    right: 9px;
+    top: -4px;
+}
+.pricing-big {
+    border: none!important;
+    .panel-heading {
+        @include css3(border-radius,5px 5px 0 0);
+    }
+    .panel-title {
+        text-transform: capitalize;
+        font-size: rem($baseFontSize + 5px);
+        padding: 20px 0;
+        text-align: center;
+        @include css3(border-radius,5px 5px 0 0);
+        margin: 0;
+        font-weight: 700;
+    }
+    .the-price {
+        padding: 20px 0;
+        background: $darkMuted;
+        text-align: center;
+        font-size: rem($baseFontSize + 11px);
+        font-weight: 700;
+        color: $white;
+        @include css3(box-shadow,none !important);
+    }
+    .subscript {
+        font-size: rem($baseFontSize + 5px);
+        color: $muted;
+        margin-left: 5px;
+    }
+    .panel-footer {
+        @include css3(border-radius,0 0 5px 5px);
+        padding: 10px 15px;
+    }
+    .panel-footer .btn {
+        padding: 15px 0;
+        @include css3(border-radius,3px);
+        font-weight: 700;
+        font-size: rem($baseFontSize + 1px);
+    }
+    .panel-footer .btn span {
+        font-weight: 400;
+        font-style: italic;
+    }
+    .panel-footer {
+        background-color: $lightWhite !important;
+    }
+    .panel-footer>div {
+        padding: 15px 0 10px;
+        display: block;
+        font-size: rem($baseFontSize);
+    }
+    table {
+        background: $lighterWhite;
+        padding: 20px 15px;
+        height: 230px;
+        text-align: left;
+    }
+}
+.price-features {
+    background: $lighterWhite;
+    padding: 20px 15px;
+    min-height: 230px;
+    font-size: rem($baseFontSize + 0.5px);
+    li+li {
+        margin-top: 10px;
+    }
+}
+
+
+.panel {
+    margin-bottom: 18px;
+    background-color: $white;
+    border: 1px solid transparent;
+    @include css3(border-radius,2px);
+    @include css3(box-shadow,0 1px 1px rgba(0,0,0,.05));
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: rem($baseFontSize + 2px);
+    color: inherit;
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color: $darkerWhite;
+    border-top: 1px solid $dullWhite;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.table>tbody>tr.active>td,
+.table>tbody>tr.active>th,
+.table>tbody>tr>td.active,
+.table>tbody>tr>th.active,
+.table>tfoot>tr.active>td,
+.table>tfoot>tr.active>th,
+.table>tfoot>tr>td.active,
+.table>tfoot>tr>th.active,
+.table>thead>tr.active>td,
+.table>thead>tr.active>th,
+.table>thead>tr>td.active,
+.table>thead>tr>th.active {
+    background-color: #ecf3f8;
+}
+
+.panel-success>.panel-heading {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #468847;
+}
+.panel-teal>.panel-heading {
+    color: $white;
+    background-color: $teal;
+    border-color: $teal;
+}
+.panel-primary {
+    border-color: $blue;
+    .panel-heading {
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
+.panel-darken {
+    border-color: $darkMuted;
+    .panel-heading {
+        color: $white;
+        background-color: $darken;
+        border-color: $darken;
+    }
+}
+.panel-green-light {
+    border-color: $green-light;
+    .panel-heading {
+        color: $white;
+        background-color: $green-light;
+        border-color: $green-light;
+    }
+}
+.panel-orange {
+    border-color: $orange;
+    .panel-heading {
+        color: $white;
+        background-color: $orange;
+        border-color: $orange;
+    }
+}
+.panel-purple {
+    border-color: $purple;
+    .panel-heading {
+        color: $white;
+        background-color: $purple;
+        border-color: $purple;
+    }
+}
+.panel-blue {
+    border-color: $bg-blue;
+    .panel-heading {
+        color: $white;
+        background-color: $bg-blue;
+        border-color: $bg-blue;
+    }
+}
+.bg-color-blue {
+    background-color: $bg-blue!important;
+}
+.panel-red-light {
+    border-color: $red-light;
+    .panel-heading {
+        color: $white;
+        background-color: $red-light;
+        border-color: $red-light;
+    }
+}
+.panel-pink {
+    border-color: $pink;
+    >.panel-heading {
+        color: $white;
+        background-color: $pink;
+        border-color: $pink;
+    }
+}
+.text-align-center{
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.jarviswidget {
+	.note-editor {
+		&.note-frame {
+			.note-editing-area .note-editable {
+				background: rgba($summernote-background, 0.05);
+				&:focus {
+					background: $white;
+				}
+			}
+		}
+		.card-header {
+			background-color: $darkerWhite;
+			border-width: 0 0 1px;
+		}
+	}
+}
+.jarviswidget.no-padding {
+	.note-editor {
+		&.note-frame {
+			border: 0;
+		}
+	}
+}
+.note-btn-group {
+	.btn-light {
+		@extend .btn-default;
+	}
+}

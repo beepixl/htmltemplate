@@ -1,0 +1,41 @@
+.irs-from, .irs-to, .irs-single {
+	background: rgba($black, 0.4);
+	border-radius: 0;
+}
+
+.irs-from:after, .irs-to:after, .irs-single:after {
+	border-top-color: $gray-light;
+}
+.irs-max, .irs-min {
+	color: $gray-light;
+	border-radius: 0;
+	font-size: rem($baseFontSize - 1px) ;
+	background: rgba($black, 0.1);
+}
+
+.irs-slider {
+	width: 10px;
+	border: 1px solid $white;
+	background: $irs-slider-background;
+	top: 20px;
+}
+.irs-bar-edge,
+.irs-line,
+.irs-bar {
+	height: 8px;
+	border-radius: 0;
+}
+.irs-line-left,
+.irs-line-right,
+.irs-line-mid {
+	background: $gray-lighter;
+	border-radius: 0;
+}
+.irs-bar,
+.irs-bar-edge {
+	background: $primary;
+}
+.irs-grid-pol {
+	background: $irs-grid-pol-background;
+	
+}

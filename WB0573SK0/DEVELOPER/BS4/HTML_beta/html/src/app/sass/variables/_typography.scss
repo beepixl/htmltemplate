@@ -1,0 +1,22 @@
+$baseBodyBg: #f2f3f8;
+$baseBodyTextColor: #333;
+$basefontfamily: "Open Sans",Arial,Helvetica,Sans-Serif;
+$baseFontSize: 13px;
+$baseLineHeight: 1.42857143;
+$familyFontAwesome: "FontAwesome";
+$base-url: '../img';
+$progress-font: 11px;
+$progress-font-weight: 700;
+$note-font-size: rem($baseFontSize - 2px);
+$note-color: #999;
+$border-radius-base:        2px;
+$border-radius-large:       3px;
+$border-radius-small:       2px;
+
+@mixin css3($a,$b){
+	#{$a}: $b;
+}
+
+
+// screen base variables
+$sm-gap: 5px;

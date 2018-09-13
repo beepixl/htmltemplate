@@ -1,0 +1,169 @@
+.smart-style-4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	.sa-header-right-area .sa-user-dropdown {
+		display: block;
+	}
+	.sa-page-header {
+		background: $white;
+		box-shadow: 0 2px 2px rgba($black,.05), 0 1px 0 rgba($black,.05);
+		z-index: 99;
+		position: relative;
+	}
+	.sa-logo-space {
+		height: $headerHeight !important;
+		background: $ps-logo-space-bg;
+	}
+
+	.sa-activity-dropdown-toggle {
+		background: $ps-activity-dropdown-toggle-bg1;
+	    background: -webkit-gradient(linear,left bottom,left top,color-stop(0,$ps-activity-dropdown-toggle-bg1),color-stop(1,$ps-activity-dropdown-toggle-bg2));
+	    background: -ms-linear-gradient(bottom,$ps-activity-dropdown-toggle-bg1,$ps-activity-dropdown-toggle-bg2);
+	    background: -moz-linear-gradient(center bottom,$ps-activity-dropdown-toggle-bg1 0,$ps-activity-dropdown-toggle-bg2 100%);
+	    background: -o-linear-gradient($ps-activity-dropdown-toggle-bg2,$ps-activity-dropdown-toggle-bg1);
+	    border-color: $ps-activity-dropdown-toggle-bg1;
+	    color: $ps-activity-dropdown-toggle-color;
+	    &:hover {
+	    	border-color: $ps-activity-dropdown-toggle-bg1 !important;
+		    transition: all 0s;
+		    box-shadow: inset 0 0 4px 1px rgba($black,.08);
+	    }
+	}
+	.sa-sidebar-shortcut-toggle {
+		display: none;
+	}
+
+	.sa-aside-left {
+		background: $ps-sidebar-bg;
+		
+		.sa-left-menu {
+			a {
+				color: $ps-nav-link;
+				font-size: rem($baseFontSize);
+			}
+			> li > a:hover,
+			> li.active > a,
+			> li a:hover,
+
+			li.active li.active > a:hover {
+				background: $ps-nav-hover-bg;
+			}
+			> li > a {
+				.collapse-sign {
+					font-size: rem($baseFontSize + 1);
+					margin: 0;
+					line-height: 18px;
+				}
+			}
+			li > a > .fa-fw {
+				margin-right: 9px;
+			}
+		}
+		.sa-sub-nav > li > a {
+			text-indent: 4px;
+		}
+
+		.sa-sub-nav > li.active > a,
+		.sa-left-menu > li.active > a,
+		ul ul {
+			background: $ps-nav-active-bg;
+		}
+	}
+	.minifyme {
+		background: $ps-minifyme-bg;
+		color: $white;
+		&:hover {
+			background: $ps-minifyme-hover-bg;
+		}
+	}
+	.sa-page-ribbon {
+		display: none;
+	}
+	.home-header {
+		width: auto !important;
+		background: #f7f7f9;
+		padding: 10px 14px 7px;
+		margin: -10px -14px 14px;
+		border-bottom: 1px solid #d9dbe4;
+		.page-header {
+			margin: 8px 0 13px;
+			span {
+				font-size: rem($baseFontSize + 1);
+			}
+		}
+		.fa-fw {
+			display: none;
+		}
+	}
+	@media (min-width: 979px) {
+		.minified .sa-aside-left .sa-left-menu > li {
+			> a {
+				padding-top: 12px;
+				padding-bottom: 14px;
+			}
+			> .sa-sub-nav,
+			.chat-users-dropdown {
+				background: $ps-sidebar-bg;
+			}
+		}
+		.sa-aside-left .sa-left-menu > li > a {
+			line-height: 22px;
+			> .fa-fw {
+				margin-top: 0;
+				margin-bottom: 3px;
+			}
+		}
+
+		.sa-menu-on-top {
+			.sa-aside-left .sa-left-menu {
+				> li {
+					> a {
+						border-left: 1px solid #4E4E4E;
+						border-right: 1px solid #222;
+						padding-top: 11px;
+						padding-bottom: 11px;
+					}
+					&:hover > a:hover,
+					&:hover > a {
+						background: $white;
+						color: $ps-sidebar-bg;
+					} 
+				}
+			}
+		}
+		body:not(.minified):not(.sa-menu-on-top) {
+			.sa-aside-left {
+				.sa-left-menu {
+					> li > a {
+						padding-top: 12px;
+						padding-bottom: 11px;
+					}
+				}
+			}
+		}
+		body:not(.sa-menu-on-top):not(.minified) {
+			.sa-aside-left .sa-left-menu {
+				.sa-sub-nav li.active > a:before {
+					border-left: 4px solid $white;
+					font-size: 0;
+					left: 0;
+					height: 20px;
+					top: 50%;
+					margin-top: -10px;
+					content: '';
+					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAqBAMAAAAt0TTmAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACnRSTlMABQMJDRIBFhofGayHogAAAOFJREFUKM+F070RgzAMBeBU6QkbuKDnlA1INoCjpWIDzmyA2QC2zVMC6IfcIbrvnjC2xe1v3XuUs4AqoN6gBjMuYOcNqINElHskLqDuflY/fKjgC1VRCZTgu/6isaZpoByU5nYAIqgtRiRhJZp3HKc4AInUynOKQNs8LwlWc3MoNluXNEWsYmxNabdwGDefbRp4YW2rmM1dv8+ue/4+v49MLB37lTMYQdxKclbq/ELfbdaCEOPX2ftA7HRviMHU/SIl1yazUdrZ2MjMUA7gaSn8/IE6ZSHD42Y3oGQH+l+4qg+S/XPD6LV6iwAAAABJRU5ErkJggg==) no-repeat left;
+				}				
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.sa-page-header {
+			background: $ps-logo-space-bg;
+		}
+		.home-header {
+			background: none;
+			border: 0;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}

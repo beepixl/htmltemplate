@@ -1,0 +1,111 @@
+.tooltip.in{
+	display: block;
+	opacity: 1;
+}
+.slider {
+	margin-bottom: 30px;
+}
+
+.slider-handle {
+	font-family: FontAwesome;
+	transform: rotate(90deg);
+	border: 1px solid #FFF;
+	font-weight: normal;
+	font-style: normal;
+	background: $slider-handle-background;
+	color: $slider-handle-color;
+	font-size: rem($baseFontSize - 3px);
+	line-height: 18px;
+	text-align: center;
+
+	&:before {
+		content: "\f0c9";
+	}
+}
+.slider.slider-horizontal {
+	width: 100%;
+	.slider-handle.triangle {
+		position: absolute;
+		top: 0;
+	    width: 20px;
+	    height: 20px;
+	    border: none;
+	    line-height: 21px;
+	    text-shadow: 0 1px 0 rgba($white,.8)
+	}
+	.slider-handle.triangle:before {
+	    content: "\f0da";
+	    font-size: 34px
+	}
+	.max-slider-handle.slider-handle.triangle {
+	}
+}
+
+.slider-horizontal .slider-selection+.slider-handle.triangle+.slider-handle.triangle:before {
+    content: "\f0d9"
+}
+
+.slider {
+	.slider-handle.triangle {
+	    color: $slider-handle-background;
+		box-shadow: none;
+	    transform: rotate(0deg) !important;				
+	}
+	.max-slider-handle.slider-handle.triangle {
+	    transform: rotate(180deg) !important;		
+	}
+}
+
+
+.slider.slider-vertical .slider-handle.triangle {
+    width: 20px;
+    height: 20px;
+    border: none;
+    line-height: 21px;
+    text-shadow: 0 -1px 0 rgba($white,.8)
+}
+
+.slider.slider-vertical .slider-handle.triangle:before {
+    content: "\f0d7";
+    font-size: 32px;
+    text-shadow: 0 1px 0 rgba($white,.8)
+}
+
+.slider.slider-vertical .slider-selection+.slider-handle.triangle+.slider-handle.triangle:before {
+    content: "\f0d8";
+    text-shadow: 0 -1px 0 rgba($white,.8)
+}
+
+
+.slider-track {
+	border-radius: 0;
+	box-shadow: none;
+	background: $slider-track-background;
+}
+.slider-selection {
+	border-radius: 0;
+	background: $primary;
+}
+
+.slider-success {
+	.slider-selection {
+		background: $success;
+	}	
+}
+.slider-danger {
+	.slider-selection {
+		background: $danger;
+	}	
+}
+
+.slider-warning {
+	.slider-selection {
+		background: $warning;
+	}	
+}
+
+.slider-info {
+	.slider-selection {
+		background: $info;
+	}	
+}

@@ -1,0 +1,93 @@
+{{!-- blank.hbs --}}
+{{#> layout title=pageTitle parentPage='miscellaneous' firstLevelChild='blank'}}
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa-fw fa fa-home"></i> Page Header <span>> Subtitle</span></h1>				
+			</div>
+			<div class="ml-auto">
+				<ul class="sa-sparks">
+					<li class="sparks-info">
+						<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+						<div class="sparkline text-blue d-none d-xl-block">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline text-purple d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline text-green-dark d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="d-flex w-100">
+			{{!-- widget grid --}}
+			<section id="widget-grid" class="w-100">
+				<div class="row">
+					<article class="col-12 sortable-grid ui-sortable">
+					
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-0">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+							
+						-->
+							<header>
+								<div class="widget-header">
+									<span class="widget-icon"> <i class="fa fa-comments"></i> </span>
+									<h2>Widget Title </h2>
+								</div>
+							</header>
+									
+							<!-- widget div-->
+							<div>
+								
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
+									<input class="form-control" type="text">	
+								</div>
+								<!-- end widget edit box -->
+								
+								<!-- widget content -->
+								<div class="widget-body">
+									
+									<!-- this is what the user will see -->
+									
+								</div>
+								<!-- end widget content -->
+								
+							</div>
+							<!-- end widget div -->
+						</div>
+						<!-- end widget -->
+
+						
+					</article>
+						
+				</div>
+			
+				<!-- end row -->
+			
+			</section>
+			{{!-- end widget grid --}}
+		</div>
+	{{/inline}}
+{{/layout}}

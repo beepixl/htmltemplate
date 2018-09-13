@@ -1,0 +1,758 @@
+.smart-style-5 {
+	&, .modal-content {
+		background: url(../img/glass.jpg) no-repeat center top fixed;
+		background-size: cover;
+		color: $white;		
+	}
+
+	
+	.modal-content {
+		background-attachment: scroll !important;
+	}
+	.h1 .small,
+	.h1 small,
+	.h2 .small,
+	.h2 small,
+	.h3 .small,
+	.h3 small,
+	.h4 .small,
+	.h4 small,
+	.h5 .small,
+	.h5 small,
+	.h6 .small,
+	.h6 small,
+	h1 .small,
+	h1 small,
+	h2 .small,
+	h2 small,
+	h3 .small,
+	h3 small,
+	h4 .small,
+	h4 small,
+	h5 .small,
+	h5 small,
+	h6 .small,
+	h6 small,
+	.easy-pie-chart .percent,
+	.breadcrumb-item + .breadcrumb-item::before,
+	a {
+		color: $white;
+	}
+	.sa-aside-left {
+		.active > a {
+			color: $glass-yellow-2 !important;
+		}
+		ul ul {
+			background: rgba($black, 0.23);
+		}
+		.sa-left-menu .sa-sub-nav {
+			> li.active > a,
+			> li a:hover {
+				background: rgba($black,.3);
+				color: $glass-yellow-2 !important;
+			}
+		}
+	}
+	.page-link:hover,
+	.sa-page-ribbon .breadcrumb-item:last-child a {
+		color: $glass-yellow-2;		
+	}
+	.sa-status .links,
+	.panel,
+	.product-content .product-deatil,
+	.product-content .description,
+	.card,
+	.card-header,
+	.sa-page-body,
+	.sa-page-ribbon,
+	.sa-page-header {
+		background: none;
+	}
+	.sa-page-header {
+		border-bottom: 1px solid rgba($white, 0.15)
+	}
+	.sa-fixed-ribbon .sa-page-header {
+		border-bottom: 0
+	}
+	.sa-fixed-header .sa-page-header {
+		background-color: rgba($black, 0.7);
+	}
+	.jumbotron,
+	.publicheader,
+	.timeline-seperator > :first-child,
+	.lockscreen .logo + div,
+	.sa-aside-left {
+		background: rgba($black,.43);
+	}
+	.usr-card-content > :first-child,
+	.popover-body,
+	.timeline-seperator,
+	.product-content .product-deatil h5 a span,
+	.product-content .product-deatil h5 a,
+	.smart-form header,
+	.smart-form footer,
+	.smart-form fieldset,
+	.smart-form .label,
+	.timeline-seperator > :first-child,
+	.smart-form .icon-append,
+	.smart-form .icon-prepend,
+	.dd-handle > span,
+	.dd3-content,
+	.dd-handle,
+	.smart-form,
+	.sa-header-search-form .sa-form-btn,
+	.secondary-header,
+	.form-check-input:disabled ~ .form-check-label,
+	.bootstrap-duallistbox-container label, .form header, legend,
+	.note,
+	.jarviswidget > header,
+	.ui-menu .ui-menu-item-wrapper,
+	pre,
+	.ui-widget-content,
+	.ui-widget-header,
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default,
+	.ui-button,
+	.ui-button.ui-state-disabled:hover,
+	.ui-button.ui-state-disabled:active,
+	.nav-tabs .nav-link,
+	.result-right a,
+	.typearea textarea,
+	.todo-group-title,
+	.ui-tabs .ui-tabs-nav li a,
+	.sa-status .who .name b,
+	.todo > li > p > .date,
+	.todo > li > p,
+	.todo > li > p > :first-child,
+	h4.paragraph-header,
+	h5.about-heading,
+	.inbox-side-bar h6,
+	.inbox-menu-lg li a,
+	.inbox-menu-sm li a,
+	.inbox-data-message > :first-child,
+	.inbox-data-message > :first-child span,
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+		color: inherit;
+	}
+	.text-info,
+	.text-danger,
+	.sa-btn-light,
+	.btn-default,
+	.note-btn-group .btn-light,
+	.note-btn-group .editable-cancel,
+	.text-blue,
+	.text-blue-light,
+	.text-red,
+	.text-green,
+	.ui-menu .ui-state-disabled,
+	.text-darken,
+	.dropdown-menu,
+	.text-purple,
+	.text-green-dark,
+	.text-blue-dark,
+	.text-teal,
+	.dygraph-axis-label,
+	.text-muted {
+		color:  inherit !important; 
+	}
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	    color: inherit;
+	    opacity: 1; /* Firefox */
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	    color: inherit;
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+	    color: inherit;
+	}
+	
+	.ui-widget.ui-widget-content{
+		border-color: rgba($black,.4);
+		
+	}
+	.inbox-body.no-content-padding,
+	.inbox-body .table-wrap,
+	.inbox-side-bar,
+	.inbox-nav-bar,
+	.well.transparent,
+	.nav-tabs.bordered + .tab-content,
+	.bootstrap-duallistbox-container label, .form header, legend,
+	.ui-tabs .ui-tabs-nav li,
+	.ui-widget-content {
+		background: none;
+	}
+	.ui-menu {
+		background: rgba($black,.1);
+	}
+	.smart-form .input input,
+	.smart-form .select select,
+	.smart-form .textarea textarea,
+	.input-group-addon,
+	.input-group-text,
+	.dt-toolbar .dataTables_filter .form-control,
+	.dt-toolbar .dataTables_filter .editable-input input,
+	.editable-input .dt-toolbar .dataTables_filter input,
+	.dt-toolbar .dataTables_filter .editable-input select,
+	.editable-input .dt-toolbar .dataTables_filter select,
+	.form-control {
+		background: rgba($white, 0.2);
+		border-color: rgba($white, 0.4);
+		color: inherit;
+	}
+	.vradio input:checked + span:before {
+		background: $glass-radio-bg;
+	}
+
+	.well,
+	.well-light {
+		border-color: transparent;
+		background: rgba($white, 0.23);
+		box-shadow: 0 1px 1px rgba($black, 0.43);
+	}
+
+	.widget-body-toolbar,
+	.form-actions,
+	.vradio input + span,
+	.vcheck input + span:before {
+		border-color: rgba($white, 0.53);
+		background: rgba($white, 0.23);
+		color: $white;
+	}
+
+	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+		background: #428BCA;
+		border-color: #357EBD;
+		color: inherit;
+	}
+	.dropdown-item:hover, .dropdown-item:focus {
+		background: #428BCA;
+		color: $white;
+	}
+	.price-features,
+	.table thead tr,
+	.slider-track,
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+	.ui-tabs .ui-tabs-nav {
+		background: rgba($black,.43);
+	}
+	.table {
+		background: rgba($black,.15);
+	}
+	.product-content,
+	.product-content .product-deatil,
+	.publicheader,
+	.widget-footer,
+	.modal-footer,
+	.modal-header,
+	.card-body,
+	.table-bordered,
+	.table-bordered th, .table-bordered td,
+	.table thead th,
+	.card-header,
+	.tabs-left .nav-tabs,
+	.nav-tabs.bordered + .tab-content,
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+	.ui-tabs .ui-tabs-nav,
+	.dropdown-divider,
+	.textarea-controls,
+	.typearea,
+	.textarea-div,
+	.card:last-child .card-body, .card .card-body,
+	.todo > li,
+	.todo > li > p,
+	.todo > li > :first-child,
+	.ui-tabs .ui-tabs-panel {
+		border-color: rgba($white, 0.15);
+	}
+	.nav-tabs .nav-link.active:hover,
+	.nav-tabs .nav-link.active:focus,
+	.nav-tabs .nav-link.active,
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+		box-shadow: 0 -2px 0 $glass-tab-active-shadow;
+	}
+	.tabs-left .nav-tabs .nav-link.active:hover,
+	.tabs-left .nav-tabs .nav-link.active:focus,
+	.tabs-left .nav-tabs .nav-link.active {
+		box-shadow: -2px 0 0 $glass-tab-active-shadow;
+	}
+
+	.jarviswidget-color-green > header,.bg-green {
+		background-color: $glass-green !important;
+		border-color: $glass-green-bdr !important
+	}
+	.jarviswidget-color-green-light > header,.bg-green-light {
+		background-color: $glass-green-light !important;		
+		border-color: $glass-green-light-bdr !important
+	}
+	.jarviswidget-color-green-dark > header,.bg-green-dark {
+		background-color: $glass-green-dark !important;		
+		border-color: $glass-green-dark-bdr !important
+	}
+
+	.jarviswidget-color-purple > header,.bg-purple {
+		background-color: $glass-purple !important;
+		border-color: $glass-purple-bdr !important
+	}
+	
+	.jarviswidget-color-magenta > header,.bg-magenta {
+		background-color: $glass-magenta !important;
+		border-color: $glass-magenta-bdr !important
+	}
+
+	.jarviswidget-color-pink > header,.bg-pink {
+		background-color: $glass-pink !important;
+		border-color: $glass-pink-bdr !important
+	}
+	.jarviswidget-color-pink-dark > header,.bg-pink-dark {
+		background-color: $glass-pink-dark !important;
+		border-color: $glass-pink-dark-bdr !important
+	}
+
+	.jarviswidget-color-teal > header,.bg-teal {
+		background-color: $glass-teal !important;		
+		border-color: $glass-teal-bdr !important
+	}
+
+	.btn-blue, .sa-btn-blue,
+	.jarviswidget-color-blue > header,.bg-blue {
+		background-color: $glass-blue !important;		
+		border-color: $glass-blue-bdr !important
+	}
+
+	.jarviswidget-color-blue-dark > header,.bg-blue-dark {
+		background-color: $glass-blue-dark !important;		
+		border-color: $glass-blue-dark-bdr !important
+	}
+
+	.jarviswidget-color-darken > header,.bg-darken {
+		background-color: $glass-darken !important;		
+		border-color: $glass-darken-bdr !important
+	}
+
+	.jarviswidget-color-yellow > header,.bg-yellow {
+		background-color: $glass-yellow !important;		
+		border-color: $glass-yellow-bdr !important
+	}
+
+	.jarviswidget-color-orange > header,.bg-orange {
+		background-color: $glass-orange !important;		
+		border-color: $glass-orange-bdr !important
+	}
+	
+	.jarviswidget-color-orange-dark > header,.bg-orange-dark {
+		background-color: $glass-orange-dark !important;		
+		border-color: $glass-orange-dark-bdr !important
+	}
+
+	.jarviswidget-color-blue-light > header,.bg-blue-light {
+		background-color: $glass-blue-light !important;		
+		border-color: $glass-blue-light-bdr !important
+	}
+	
+	.jarviswidget-color-red > header,.bg-red {
+		background-color: $glass-red !important;
+		border-color: $glass-red-bdr !important
+	}
+	.jarviswidget-color-red-light > header,.bg-red-light {
+		background-color: $glass-red-light !important;
+		border-color: $glass-red-light-bdr !important
+	}
+	.jarviswidget-color-yellow > header,.bg-yellow {
+		background-color: $glass-yellow !important;		
+		border-color: $glass-yellow-bdr !important
+	}
+	.jarviswidget-color-white > header,.bg-white {
+		background-color: $glass-white !important;		
+		border-color: $glass-white-bdr !important
+	}
+
+	.text-success {
+		color: $glass-text-success !important;
+	}
+	.text-primary {
+		color: $glass-text-primary !important;		
+	}
+	
+
+
+	.btn-primary, .editable-submit, .sa-btn-primary {
+		background-color: $glass-primary;
+		border-color: $glass-btn-primary-border;
+	}
+	.btn-info, .sa-btn-info {
+		background-color: $glass-info;
+		border-color: $glass-btn-info-border;
+		text-shadow: 0 1px 5px rgba($black,.25);
+	}
+	
+	pre {
+		background: rgba($white, 0.13);
+		border-color: rgba($white, 0.15);
+	}
+	.table-striped > tbody > tr:nth-of-type(odd),
+	code {
+		background: rgba($black, 0.13);
+		color: inherit;
+	}
+	.progress {
+		background: rgba($black, 0.13);
+		box-shadow: 0 1px 0 transparent, 0 0 0 1px rgba($white, 0.15) inset;
+	}
+	.sa-btn-light,
+	.btn-default,
+	.note-btn-group .btn-light,
+	.note-btn-group .editable-cancel,
+	.jarviswidget > header {
+		&:not([disabled]):not(.disabled):hover, &:not([disabled]):not(.disabled), &, &:hover {
+			background: rgba($black, 0.5);
+			box-shadow: none;
+			border-color: transparent;			
+		}
+	}
+	.btn-default {
+		color: inherit !important; 
+	}
+
+	.btn-success, .sa-btn-success {
+		background: $glass-btn-success;
+		border-color: $glass-btn-success-bdr;
+		text-shadow: 0 1px 5px rgba($black,.25);
+	}
+	.btn-danger, .sa-btn-danger {
+		background: $glass-btn-danger;
+		border-color: $glass-btn-danger-bdr;
+		text-shadow: 0 1px 5px rgba($black,.25);
+	}
+	.btn-warning, .sa-btn-warning {
+		background: $glass-btn-warning;
+		border-color: $glass-btn-warning-bdr;
+		text-shadow: 0 1px 5px rgba($black,.25);
+	}
+
+	.input-group-prepend {
+		margin-right: 0;
+		.input-group-addon,
+		.input-group-text{
+			border-right: 0;
+		}
+	}
+
+	.jarviswidget > div {
+		background-color: rgba($black, 0.18);
+		border-color: rgba($black, 0.13);
+	}
+
+
+	.alert-info {
+		background: $glass-alert-info;
+		color: $glass-alert-info-color;
+	}
+	.alert-warning {
+		background: $glass-alert-warning;
+		border-color: $glass-alert-warning;
+		color: inherit;
+	}
+	.unread,
+	.unread:hover {
+		background: rgba(255,214,0,.3)!important;
+	}
+	.alert-success {
+		background: $glass-alert-success;
+		border-color: $glass-alert-success-border;
+		color: inherit;
+	}
+	.alert-danger {
+		background: $glass-alert-danger;
+		border-color: $glass-alert-danger-border;
+		color: inherit;
+	}
+	.alert {
+		text-shadow: 0 1px 5px rgba($black,.25)
+	}
+	.dd3-content,
+	.dd-handle,
+	.todo-group-title,
+	.pagination:not(.pagination-alt) .page-link,
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs.bordered,
+	.tabs-left .nav-tabs .nav-link.active:hover,
+	.tabs-left .nav-tabs .nav-link.active:focus,
+	.tabs-left .nav-tabs .nav-link.active {
+		background: rgba($black, 0.43);
+		border-color: rgba($white, 0.15);
+	}
+
+	.page-item.active .page-link {
+		background: rgba($black, 0.63);
+		border-color: rgba($white, 0.15);
+		color: $glass-yellow-2;
+	}
+	.dropdown-menu {
+		background: rgba($black, 0.63);
+	}
+	.pricing-big .panel-footer,
+	.panel-footer {
+	 	background: rgba($black, 0.63) !important;
+	 	border-color: rgba($white, 0.15);
+	}
+
+	.sa-page-footer {
+		background: rgba($black, 0.33);
+	}
+	.smart-form fieldset {
+		background: rgba($white, 0.03);
+	}
+
+	.sa-btn-icon.btn-default,
+	.note-btn-group .sa-btn-icon.btn-light,
+	.note-btn-group .sa-btn-icon.editable-cancel,
+	.sa-btn-icon.btn-light,
+	.sa-btn-icon.editable-cancel {
+		&, &:hover {
+			background: rgba($black, 0.1);
+			color: inherit;
+			border-color: transparent;			
+		}
+	}
+	.minifyme {
+		background: rgba($glass-minifyme, 0.5);
+		&:hover {
+			background: rgba($glass-minifyme, 0.7);
+		}
+	}
+	.tree li:after,
+	.tree li span,
+	.tree li:before {
+		border-color: $white;
+	}
+	.ui-jqgrid .ui-jqgrid-titlebar,
+	.widget-footer,
+	.ui-jqgrid .ui-jqgrid-pager, .ui-jqgrid .ui-jqgrid-toppager,
+	.sa-fixed-ribbon .sa-page-ribbon {
+		background: rgba($black, 0.23);
+	}
+	.sa-header-search-form .form-control,
+	.sa-header-search-form .editable-input input,
+	.editable-input .sa-header-search-form input,
+	.sa-header-search-form .editable-input select,
+	.editable-input .sa-header-search-form select {
+		border-color: transparent;
+		background: rgba($black, 0.1);
+	}
+	.sa-project-label {
+		color: inherit;
+		text-shadow: 0 1px 5px rgba($black,.25)
+	}
+	.chat-body li.message img,
+	.friends-list img,
+	.profile-pic > img,
+	.usr-card > img,
+	.sa-sidebar-shortcut-toggle img {
+		border-radius: 50% 0;
+		outline: 0;
+	}
+	.fc-unthemed th,
+	.fc-unthemed td,
+	.fc-unthemed thead,
+	.fc-unthemed tbody,
+	.fc-unthemed .fc-divider,
+	.fc-unthemed .fc-row,
+	.fc-unthemed .fc-content,
+	.fc-unthemed .fc-popover,
+	.fc-unthemed .fc-list-view,
+	.dt-toolbar,
+	.dt-toolbar ~ .dt-toolbar-footer,
+	.fc-unthemed .fc-list-heading td {
+		border-color: rgba($black, 0.25);
+	}
+	.textarea-controls,
+	.textarea-div,
+	.smart-timeline-list li:hover,
+	.note-toolbar.card-header,
+	.dt-toolbar ~ .dt-toolbar-footer,
+	.dt-toolbar,
+	.superbox-active .superbox-show,
+	.profile-message li.message.message-reply,
+	.result-right a:hover,
+	.fc-head-container th {
+		background: rgba($black, 0.43);
+	}
+	.superbox-list.superbox-O:before {
+		border-bottom-color: rgba($black, 0.43);
+	}
+	.product-content {
+		background: rgba($black, 0.3);
+	}
+	.jvectormap-zoomin, .jvectormap-zoomout {
+		background: rgba($black, 0.3);
+		border-color: rgba($black, 0.3);
+	}
+	.fc-other-month {
+		background-color: rgba(72,112,85,.23);
+	}
+	.show-stat-microcharts > div,
+	.note-editor.note-frame,
+	.table-forum td,
+	.ui-jqgrid,
+	.ui-jqgrid .ui-jqgrid-titlebar,
+	.ui-jqgrid .ui-jqgrid-pager, .ui-jqgrid .ui-jqgrid-toppager,
+	hr {
+		border-color: rgba($white,0.15);
+	}
+	.table-warning, .table-warning > th, .table-warning > td {
+		background: rgba(255,214,0,.3)!important
+	}
+	.note-editor.note-frame .note-editing-area .note-editable {
+		background: rgba(48,126,204,.05);
+	}
+	.typearea textarea,
+	.chat-body {
+		border-color: transparent;
+		background: none;
+	}
+	.chat-footer {
+		background: rgba($white, 0.15);
+	}
+
+	.table > tbody > tr > td,
+	.table > tbody > tr > th {
+		border-color: rgba($white, 0.07);		
+	}
+
+	.table > tbody > tr.active > td,
+	.table > tbody > tr.active > th,
+	.table > tbody > tr > td.active,
+	.table > tbody > tr > th.active,
+	.table > tfoot > tr.active > td,
+	.table > tfoot > tr.active > th,
+	.table > tfoot > tr > td.active,
+	.table > tfoot > tr > th.active,
+	.table > thead > tr.active > td,
+	.table > thead > tr.active > th,
+	.table > thead > tr > td.active,
+	.table > thead > tr > th.active {
+		background: rgba($white, 0.15);
+	}
+
+	.minified {
+		.sa-aside-left {
+			.sa-left-menu > li > .sa-sub-nav {
+				@media (min-width: 979px)  {
+					background: rgba($black, 0.8);
+					border-color: rgba($white, 0.4);
+				}
+			}
+		}		
+	}
+	.popover  {
+		background: rgba($black, 0.8);
+		border-color: rgba($black, 0.4);
+		color: inherit;
+	}
+
+	.fill-a, .fill-b {
+		margin-top: -18px;
+		background: none;
+	}
+	.jvectormap-container {
+		background: none !important;
+	}
+	.ui-chatbox-input-box,
+	#inbox-table.table tbody > tr > td {
+		border-color: rgba($white, 0.15) !important;
+	}
+
+	.inbox-menu-sm li a:hover,
+	.inbox-menu-lg li a:hover,
+	.inbox-menu-lg li.active a {
+		background: rgba($black, 0.43);
+		color: inherit;
+		border-color: rgba($white, 0.15);
+	}
+
+	#inbox-table tbody tr:hover {
+		background: rgba(0,255,225,.25);
+	}
+
+	.chart text {
+		fill: $white;
+	}
+	.table-success {
+		background: rgba(106,228,56,.5);
+		> th, > td {
+			background: none;
+		}
+	}
+	.table-danger {
+		background: rgba(236,43,43,.5);
+		> th, > td {
+			background: none;
+		}
+	}
+	.table-warning {
+		background: rgba(255,214,0,.3);
+		> th, > td {
+			background: none;
+		}
+	}
+	.table-info {
+		background: #d6dde7;
+		color: $black;
+		> th, > td {
+			background: none;
+		}
+	}
+	.smart-form header,
+	.smart-form footer,
+	.ui-jqgrid .ui-state-hover td {
+		background: rgba($black, 0.43) !important;
+		border-color: rgba($white, 0.15) !important;
+	}
+	.error-icon-shadow {
+		color: #b94a48 !important;
+	}
+	.ui-chatbox-input-box,
+	.ui-chatbox-content {
+		background: rgba(51,103,105,.6);
+		background: -webkit-gradient(linear,left bottom,left top,color-stop(0,rgba(81,165,177,.6)),color-stop(1,rgba(68,85,139,.6)));
+		background: -ms-linear-gradient(bottom,rgba(81,165,177,.6),rgba(68,85,139,.6));
+		background: -moz-linear-gradient(center bottom,rgba(81,165,177,.6)0,rgba(68,85,139,.6)100%);
+		background: -o-linear-gradient(rgba(68,85,139,.6),rgba(81,165,177,.6));
+	}
+	.ui-chatbox-content.true > .alert-msg {
+		background: #FFFDD0;
+	}
+}
+
+
+
+// just for typography page
+
+.smart-style-5 {
+	.highlight:not(.table) {
+		background: rgba($white,.43);
+	}
+	@media (min-width: 768px) {
+		.bs-example {
+			border-color: rgba($white,.15);
+			background: rgba($white,.23);
+			box-shadow: 0 1px 1px rgba($black,.43);
+			.table {
+				background: none;
+			}
+		}		
+		.bs-example-type .table {
+			.info {
+				color: inherit;
+			}
+			td {
+				border-color: rgba($white, 0.15);
+			}
+		}
+	}
+}

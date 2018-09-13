@@ -1,0 +1,112 @@
+.noUi-target {
+    border: 1px solid #bfbfbf;
+    border-radius: 0;
+    background: $gray-lighter;
+}
+.noUi-horizontal {
+    height: 14px;    
+    .noUi-handle {
+        height: 30px;
+        width: 16px;
+        top: -9px;
+        border-radius: 0;
+        &:after,
+        &:before {
+            display: none;
+        }
+        //margin: -8px 0 0 -8px;
+    }
+}
+.noUi-origin-lower {
+    background: #72a8d7
+}
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -7px;
+}
+
+.noUi-handle {
+    background: $irs-slider-background;
+    border: 1px solid $white;
+    cursor: default;
+    box-shadow: none;
+
+}
+
+.noUi-handle:hover {
+    background: $noUi-handle-hover;
+}
+
+.noUi-active {
+    cursor: default;
+    //box-shadow: rgba(0,0,0,.1)1px 1px 1px 0;
+    background: $noUi-active-background;
+    height: 32px;
+    width: 18px;
+    ///margin: -9px 0 0 -8px;
+    border: none
+}
+
+.noUi-active:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 100%;
+    border: 1px solid $gray-mid-light-soft
+}
+
+.noUi-connects {
+    border-radius: 0;    
+}
+.noUi-connect {
+    background: $primary;
+}
+
+.noUi-background {
+    background: $gray-lighter;
+    border: none
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+.noUi-origin-upper {
+    background: inherit!important
+}
+
+.noUi-z-index {
+    z-index: 10
+}
+
+.noUi-vertical {
+    width: 10px;
+    height: 100%
+}
+
+.noUi-vertical .noUi-origin {
+    bottom: 0;
+    left: 0
+}
+
+.noUi-vertical .noUi-handle {
+    margin: -8px 0 0 -3px
+}
+
+.noUi-target[disabled] .noUi-base {
+    background: $gray-light
+}
+
+.noUi-target[disabled] .noUi-connect {
+    background: $gray-light-soft-2;
+}
+
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: left .3s,top .3s;
+    transition: left .3s,top .3s
+}

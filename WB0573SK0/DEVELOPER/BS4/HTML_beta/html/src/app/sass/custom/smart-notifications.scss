@@ -1,0 +1,404 @@
+ /*Messagebox */
+.divMessageBox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(0,0,0,0.6);
+  z-index: 100000;
+
+  strong {
+    font-weight: bold;
+  }
+}
+/*
+.MessageIE {
+  background-image: url("#{$base-url}/bg.png");    
+}*/
+
+.MessageBoxContainer {
+  position: relative;
+  top: 35%;
+  color: white;
+  position: relative;
+  width: 100%;
+  background-color: #232323;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: rem(20px);
+  
+  input {
+    width: 50%;
+    padding: rem(5px);
+  }
+
+  select {
+    width: 50%;
+    padding: rem(5px);   
+  }
+}
+
+.MessageBoxMiddle {
+  position: relative;
+  left: 20%;
+  width: 60%;
+  
+  .MsgTitle {
+	  letter-spacing: -rem(1px);
+	  font-size: rem(24px);
+	  font-weight: 300;
+  }
+  .pText { font-style: 1rem; }
+}
+
+.MessageBoxButtonSection {
+  width: 100%;
+  height: rem(30px);
+
+  button {
+	  float: right;
+	  margin-right: rem(7px);
+	  padding-left: rem(15px);
+	  padding-right: rem(15px);
+	  font-size: rem(14px);
+	  font-weight: bold;
+  }
+}
+/* End of MessageBox */
+
+.LoadingBoxContainer {
+  position: relative;
+  top: 20%;
+  color: white;
+  position: relative;
+  width: 100%;
+  background-color: #232323;
+  
+  .MsgTitle { font-size: rem(26px); }
+  .pText { font-style: rem(30px); }
+}
+
+.LoadingBoxMiddle {
+  position: relative;
+  left: 20%;
+  width: 50%;
+  padding: rem(10px);
+}
+#LoadingPoints { position: absolute; }
+
+/* bigBoxes */
+.bigBox {
+  position: fixed;
+  right: rem(10px);
+  bottom: rem(10px);
+  background-color: #004d60;
+  padding: rem(10px) rem(10px) rem(5px);
+  width: rem(390px);
+  height: rem(150px);
+  color: white;
+  z-index: 99999;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  border-left: 5px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  
+  span {
+	  font-size: rem(17px);
+	  font-weight: 300;
+	  letter-spacing: -rem(1px);
+	  padding: 5px 0 !important;
+	  display: block;
+  }
+  p {
+    font-size: rem(13px);
+    margin-top: rem(10px);
+  }
+  .bigboxicon {
+	  font-size: rem(30px);
+	  text-align: left;
+	  position: absolute;
+	  top: rem(120px);
+	  left: rem(6px);
+	  z-index: 0;
+  }
+
+  .bigboxnumber {
+	  width: 100%;
+	  text-align: right;
+	  font-size: rem(25px);
+  }
+}
+  
+#divMiniIcons {
+	position: fixed;
+	width: 4rem(15px);
+	right: rem(10px);
+	bottom: rem(180px);
+	z-index: 9999;
+	float: right;
+
+  .cajita {
+	  text-align: center;
+	  vertical-align: middle;
+	  padding: rem(4px) rem(6px);
+	  color: #FFF;
+	  float: right;
+	  cursor: pointer;
+	  display: block;
+	  background-color: #F00;
+	  font-size: rem(17px);
+	  margin-left: rem(4px);
+	  margin-top: rem(5px);
+
+	  &:active {
+	    top:rem(1px);
+	    left:rem(1px);
+	    position:relative;
+    }
+  }
+}
+
+.botClose {
+	position: absolute;
+	right: rem(10px);
+	height: rem(16px);
+	width: rem(15px);
+	cursor: pointer;
+	font-size: rem(18px);
+	opacity: .5;
+	display: block;
+	top: rem(15px);
+	
+	&:hover { opacity: 1; }
+}
+    
+.cajita img {
+  width: rem(23px);
+  height: rem(23px);
+  padding-left: rem(3px);
+  padding-top: rem(3px);
+}
+
+/* End of  bigBoxes */
+
+/* SmallBox */
+#divSmallBoxes {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.SmallBox {
+  position: absolute;
+  right: rem(5px);
+  top: rem(20px);
+  width: rem(420px);
+  color: white;
+  z-index: 9999;
+  overflow: hidden;
+  border: 1px solid transparent;
+  
+  &:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  .foto {
+	  font-size: rem(50px);
+	  position: absolute;
+	  left: rem(17px);
+  }
+  .textoFull {
+      width: 93%;
+      float: left;
+      padding-left: rem(20px);
+  }
+  .textoFoto {
+	  width: 78%;
+	  margin: 3px rem(20px) 3px rem(80px);
+	  float: left;
+  }
+  span {
+	  font-size: rem(17px);
+	  font-weight: 300;
+	  letter-spacing: -rem(1px);
+	  display: block;
+	  margin: 4px 0;
+  }
+  p {
+    font-size: rem(13px);
+    margin-top: rem(2px);
+  }
+}
+
+.miniPic {
+	position: absolute;
+	bottom: rem(8px);
+	right: rem(9px);
+}
+.miniIcono {
+  height: 100%;
+  font-size: rem(20px);
+} 
+
+/* End of SmallBox */
+#pageslide {
+  /* These styles MUST be included. Do not change. */
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  
+  /* Specify the width of your pageslide here */
+  width: rem(305px);
+  padding: rem(20px);
+  
+  /* These styles are optional, and describe how the pageslide will look */
+  background-color: #004d60;
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 5px 5px #222;
+  -moz-shadow: inset 0 0 0px 0px #222;
+  box-shadow: inset 0 0 0px 0px #222;
+}
+
+.purehtml {
+  color: white;
+  font-size: rem(16px);
+}
+
+
+/* Mobile Phones */
+@media screen and (max-width: 450px) and (max-width: 767px) {
+
+  /* SmallBox Responsive */
+  #divSmallBoxes {
+    position: fixed;
+    width: 90%;
+    right: 0;
+    top: 0;
+  }
+
+  .SmallBox {
+    width: 95%;
+    
+    &:hover {
+      box-shadow: 0px 0px rem(10px) #888888;
+      cursor: pointer;
+    }
+
+    span {
+      font-size: rem(16px);
+      /*font-weight: bold;*/
+    }
+    p {
+      font-size: rem(12px);
+      margin-top: rem(2px);
+    }
+    .textoFull {
+      width: 93%;
+      float: left;
+      padding-left: rem(20px);
+    }
+
+    .textoFoto {
+      width: 55%;
+	    margin: 3px rem(20px) 3px rem(80px);
+      float: left;    
+    }
+  }
+  /* End of SmallBox Responsive*/
+
+  /* bigBoxes Responsive */
+  .bigBox {
+    position: fixed;
+    right: rem(10px);
+    bottom: rem(10px);
+    background-color: #004d60;
+    padding-left: rem(10px);
+    padding-top: rem(10px);
+    padding-right: rem(10px);
+    padding-bottom: rem(5px);
+    width: 88%;
+    height: rem(150px);
+    color: white;
+    z-index: 99999;
+  }
+  /* End of  bigBoxes  Responsive */
+
+  /*Messagebox Responsive */
+  .divMessageBox {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.6);
+    z-index:100000;
+  }
+  .MessageBoxContainer {
+    position: relative;
+    top: 25%;
+    color: white;
+    position: relative;
+    width: 100%;
+    background-color:#232323;
+  }
+
+  .MessageBoxMiddle {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding: rem(3px);
+  }
+
+  .MessageBoxMiddle .MsgTitle {
+    font-size: rem(22px);
+  }
+
+  .MessageBoxMiddle .pText {
+    font-style: rem(10px);
+  }
+
+  .MessageBoxContainer input {
+    width: 50%;
+    padding: rem(5px);
+  }
+
+  .MessageBoxContainer select {
+    width: 50%;
+    padding: rem(5px);   
+  }
+
+
+  .MessageBoxButtonSection {
+    width: 100%;
+    height: rem(30px);
+  }
+
+  .MessageBoxButtonSection button {
+	  float: right;
+	  margin-right: rem(5px);
+	  padding-left: rem(15px);
+	  padding-right: rem(15px);
+  }
+  /* End of MessageBox Responsive */
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-20px,0);
+        transform: translate3d(0,-20px,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}

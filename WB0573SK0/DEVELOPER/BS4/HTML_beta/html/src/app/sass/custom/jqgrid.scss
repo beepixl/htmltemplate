@@ -1,0 +1,98 @@
+/* Grid */
+.ui-jqgrid {
+  border-radius: 0;
+  border-color: $gray-mid-light;
+  .ui-jqgrid-titlebar {
+    background-color: $ui-jqgrid-titlebar-background-top;
+    background-image: -moz-linear-gradient(top,$ui-jqgrid-titlebar-background-top,$ui-jqgrid-titlebar-background-bottom);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from($ui-jqgrid-titlebar-background-top),to($ui-jqgrid-titlebar-background-bottom));
+    background-image: -webkit-linear-gradient(top,$ui-jqgrid-titlebar-background-top,$ui-jqgrid-titlebar-background-bottom);
+    background-image: -o-linear-gradient(top,$ui-jqgrid-titlebar-background-top,$ui-jqgrid-titlebar-background-bottom);
+    background-image: linear-gradient(to bottom,$ui-jqgrid-titlebar-background-top,$ui-jqgrid-titlebar-background-bottom);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid $ui-jqgrid-titlebar-border;
+    padding: 12px 13px;
+    font-size: rem($baseFontSize - 1px);
+    height: auto;
+    margin: 0;
+  }
+  thead th {
+    vertical-align: middle;
+    &:hover {
+      background: none;
+      font-weight: bold;
+    }
+  }
+  .ui-jqgrid-title {
+    font-size: rem($baseFontSize + 2px);
+  }
+  .ui-jqgrid-htable {
+    border-bottom: 3px solid $gray-mid-light-soft;
+    .ui-th-div {
+      display: block;
+      margin: 0;
+    }
+  }
+  .ui-grid-ico-sort {
+    overflow: hidden;
+    position: absolute;
+    display: inline;
+    cursor: pointer !important;
+    right: 0px;
+  }
+  .ui-icon-asc {
+    margin-top: -4px;
+  }
+  .ui-icon-desc {
+    margin-top: 3px;
+    height: 12px;
+  }
+  .ui-i-asc {
+    margin-top: 0;
+    height: 16px;
+  }
+  .ui-i-desc {
+    margin-top: 0;
+    margin-left: 13px;
+    height: 16px;
+  }
+  tr.ui-row-ltr td {
+    padding: 6px 4px;
+    font-size: rem($baseFontSize);
+  }
+  #jqgrid_cb,
+  .ui-jqgrid-btable tbody tr.jqgrow td,
+  .jqgfirstrow td:first-child {
+    padding-right: 4px;
+    width: 21px !important;
+  }
+  .ui-jqgrid-pager .navtable td,
+  .ui-jqgrid-toppager .navtable td,
+  .ui-pg-table td {
+    padding: 1px;
+    border: 0;
+  }
+  .ui-jqgrid-pager {
+    padding: 4px !important;
+
+  }
+  .ui-pg-input, .ui-jqgrid-toppager .ui-pg-input {
+    font-size: inherit;
+    border-radius: 0;
+    padding: 1px 3px;
+    border: 2px inset;
+  }
+  .ui-pg-selbox, .ui-jqgrid-toppager .ui-pg-selbox {
+    border: 1px solid $gray-light-soft;
+    border-radius: 0;
+  }
+  
+}
+
+.fm-button {
+  height: auto;
+  padding-top: 0.25em;
+}
+.ui-jqdialog .ui-jqdialog-titlebar-close:not(:empty) {
+  padding: 0;
+}

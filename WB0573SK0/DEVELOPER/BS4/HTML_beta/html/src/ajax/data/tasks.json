@@ -1,0 +1,76 @@
+{	
+	"data": [
+		{
+			"priority": "PRIMARY:",
+			"title": "Upgrade Infestructure",
+			"progress": 85,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-md",
+			"progressBg": "bg-teal progress-bar-striped",
+			"lastupdatetext": "last updated on",
+			"hasWarning": 1,
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "URGENT:",
+			"title": "Code foundation",
+			"progress": 65,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-sm",
+			"progressBg": "bg-teal",
+			"lastupdatetext": "last updated on",
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "URGENT:",
+			"title": "Project Plan",
+			"progress": 25,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-xs",
+			"progressBg": "bg-teal",
+			"lastupdatetext": "last updated on",
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "CRITICAL:",
+			"title": "Wireframes",
+			"progress": 5,
+			"progressTextClass": "text-danger",
+			"progressClass": "progress-xs",
+			"progressBg": "bg-danger",
+			"lastupdatetext": "last updated on",
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "NORMAL:",
+			"title": "Compile hotfix",
+			"progress": 99,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-xs",
+			"progressBg": "bg-success",
+			"lastupdatetext": "last updated on",
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "MINOR:",
+			"title": "Bug fix #213",
+			"progress": 100,
+			"complete": 1,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-micro",
+			"progressBg": "bg-success",
+			"lastupdatetext": "last updated on",
+			"lastupdatedate": "12/12/2013"
+		},
+		{
+			"priority": "MINOR:",
+			"title": "Bug fix #134",
+			"progress": 100,
+			"complete": 1,
+			"progressTextClass": "text-muted",
+			"progressClass": "progress-micro",
+			"progressBg": "bg-success",
+			"seenotes": "see notes"
+		}
+	]
+}

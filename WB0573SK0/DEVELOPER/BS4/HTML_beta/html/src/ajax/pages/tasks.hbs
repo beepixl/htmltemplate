@@ -1,0 +1,31 @@
+<ul class="notification-body sa-tasks-list list-unstyled">
+{{#each data}}
+	<li>
+		<span>
+			<div class="bar-holder p-0">
+				<p class="margin-bottom-5">
+					{{#if hasWarning }}
+					<i class="fa fa-warning text-warning"></i>
+					{{/if}}
+					<strong>{{priority}}</strong> <i>{{title}}</i> <span class="pull-right text-medium {{progressTextClass}}">
+					{{#if complete }}
+					<i class="fa fa-check text-success"></i> Complete
+					{{else}}
+						{{progress}}%
+					{{/if}}
+
+				</span></p>
+				<div class="progress {{progressClass}}">
+					<div class="progress-bar {{progressBg}}"  style="width: {{progress}}%"></div>
+				</div>
+				{{#if seenotes }}
+					<em class="note display-inline"><a href="javascript:void(0);">{{seenotes}}</a></em>
+				{{else}}
+					<em class="note">{{lastupdatetext}} {{lastupdatedate}}</em>
+				{{/if}}
+			</div>
+		</span>
+	</li>
+	
+{{/each}}
+</ul>

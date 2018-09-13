@@ -1,0 +1,83 @@
+{{!-- easypie-charts.hbs --}}
+{{#> layout title=pageTitle parentPage='graphs' firstLevelChild='easypie-charts'}}
+	{{#*inline "sa-page-content"}}
+	<div class="d-flex w-100 home-header">
+		<div>
+			<h1 class="page-header"><i class="fa-fw fa fa-bar-chart-o"></i> Graphs <span>> Easy Pie Charts</span></h1>				
+		</div>
+		<div class="ml-auto">
+			<ul class="sa-sparks">
+				<li class="sparks-blue">
+					<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+					<div class="sparkline text-blue d-none d-xl-block">
+						1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+					</div>
+				</li>
+				<li class="sparks-purple">
+					<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+					<div class="sparkline d-none d-xl-block" data-sparkline-type="bar" data-sparkline-height="26px" data-sparkline-bar-width="5" data-sparkline-bar-spacing="2" data-sparkline-bar-color="purple">110,150,300,130,400,240,220,310,220,300, 270, 210</div>
+				</li>
+				<li class="sparks-green-dark">
+					<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+					<div class="sparkline d-none d-xl-block" data-sparkline-type="bar" data-sparkline-height="26px" data-sparkline-bar-width="5" data-sparkline-bar-spacing="2" data-sparkline-bar-color="green-dark">110,150,300,130,400,240,220,310,220,300, 270, 210</div>
+				</li>
+			</ul>				
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="well">
+				<h1>Easy <span class="text-medium">Pie Charts</span> <small>Simplified for faster production</small></h1>
+				<p>Easy Pie Charts gives you a nice animation twist to your pie charts - they are also dynamic, which will make it a really nice ajax based live charts for your project</p>
+				<p class="note">&lt;div class=&quot;easy-pie-chart text-blue easyPieChart&quot; data-percent=&quot;36&quot; data-size=&quot;180&quot;&gt; data-pie-size=&quot;50&quot;&gt;
+							&lt;span class=&quot;percent percent-sign text-blue font-xl text-medium&quot;&gt;36&lt;/span&gt;
+						&lt;/div&gt;</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-red easyPieChart" data-percent="50" data-size="180" data-pie-size="180" data-pie-linewidth="50">
+							<span class="percent percent-sign text-red font-xl text-medium">49</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-blue easyPieChart" data-percent="36" data-pie-size="180">
+							<span class="percent percent-sign text-blue font-xl text-medium">36</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-pink-dark easyPieChart" data-percent="46" data-pie-size="160">
+							<span class="percent percent-sign text-pink-dark font-lg text-medium">46</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-green-light easyPieChart" data-percent="56" data-pie-size="110">
+							<span class="percent percent-sign text-green-light font-md">56</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-orange easyPieChart" data-percent="66" data-pie-size="60">
+							<span class="percent percent-sign text-orange">66</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-darken easyPieChart" data-percent="76" data-pie-size="45">
+							<span class="percent percent-sign font-sm">76</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="list-inline-item">&nbsp;&nbsp;&nbsp;
+						<div class="easy-pie-chart text-blue easyPieChart" data-percent="86" data-pie-size="35">
+							<span class="percent percent-sign font-xs">86</span>
+						</div>
+						&nbsp;&nbsp;&nbsp;
+					</li>
+				</ul>				
+			</div>		
+		</div>
+	</div>
+	{{/inline}}
+{{/layout}}

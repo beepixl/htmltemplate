@@ -1,0 +1,47 @@
+.superbox-active .superbox-show {
+	margin-left: 10px;
+	min-width: calc(100% - 10px);
+	margin-bottom: 10px;
+	box-shadow: none;
+}
+/* .superbox-current-img {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 13px;
+} */
+
+// gallery page start
+.superbox {
+    margin-left: -10px;
+}
+
+.superbox-list {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    &.superbox-O:before {
+    	content: "";
+	    display: block;
+	    position: absolute;
+	    left: 50%;
+	    border: 10px solid transparent;
+	    border-bottom-color: #333;
+	    top: 100%;
+	    margin-top: -20px;
+	    margin-left: -5px;
+    }
+}
+
+
+.superbox-active [class^="icon-"], .superbox-active [class*=" icon-"] {
+	font-family: FontAwesome;
+}
+
+
+.superbox-active .icon-circle-arrow-right:before {
+	content: "\f054"
+}
+
+.superbox-active .icon-circle-arrow-left:before {
+	content: "\f053"
+}

@@ -1,0 +1,127 @@
+.dataTables_info {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #969696;
+}
+.dt-toolbar {
+	.right-toolbar {
+		padding: 0 10px;
+	}
+}
+table.dataTable {
+	border-collapse: collapse !important; 
+}
+.dt-toolbar {
+	background: $gray-lightest;
+	padding: 6px;
+
+	~ table.dataTable {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	~ .dt-toolbar-footer {
+		padding: 5px 10px;
+		background: $gray-lightest;
+		.dataTables_info {
+			padding-top: rem(8px);
+		}
+	}
+
+	.show-control{
+	    text-align: right;
+	}
+	label{
+		margin-bottom: 0;
+	}
+	.dataTables_filter {
+    
+	    .form-control {
+			height: 32px;
+			padding: 6px 12px;
+			font-size: rem($baseFontSize);
+			line-height: 1.42857143;
+			color: #555;
+			background-color: $white;
+			background-image: none;
+			border: 1px solid $gray-mid-light;
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+.input-filter{
+  width: auto;
+  border-right: 1px solid $gray-mid-light;
+  padding: 6px;
+}
+.label-datepicker{
+  display: none;
+}
+
+.table {
+	.child {
+		background: $gray-lighter;
+	}
+	td.details-control {
+		vertical-align: middle !important;
+		text-align: center;
+	}
+
+	td.details-control:before {
+		font-family: FontAwesome;
+		content: "\f055";
+		font-size: rem($baseFontSize + 5px);
+		color: $success;
+	}
+	.shown {
+		background:  rgba($datatable-shown-background,.2) !important;
+		td.details-control:before {
+			content: "\f056";
+			color: $danger;
+		}
+		+ tr > td {
+			padding: 0 !important;
+		}
+	}
+	.dtr-details {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		.dtr-title {
+			font-weight: bold;
+		}
+	}
+	.table tr {
+		background: $white !important;
+		td {
+			border-left-width: 0;
+			border-right-width: 0;
+		}
+	}
+}
+
+.table-bordered thead th, .table-bordered thead td {
+	border-bottom-width: 2px;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	.table th, .table td {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+
+@media (max-width: 544px){
+  .dataTables_wrapper.dt-bootstrap4{
+    //max-width: 330px;
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+}
+
+

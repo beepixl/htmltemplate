@@ -1,0 +1,9 @@
+.md-editor {
+	.btn-group + .btn-group {
+		margin-left: 4px;
+	}
+	> textarea {
+	    padding: 10px;
+	    font-size: rem($baseFontSize);
+	}
+}

@@ -1,0 +1,69 @@
+{{!-- includes/sidebar.hbs --}}
+
+<!-- BEGIN .{{prefix}}aside-left -->
+
+<div class="{{prefix}}aside-left">
+
+    <a href="javascript:void(0)"  onclick="SAtoggleClass(this, 'body', '{{prefix}}shortcuts-expanded')" class="{{prefix}}sidebar-shortcut-toggle">
+        <img src="assets/img/avatars/sunny.png" alt="" class="online">
+        <span>John.Doe <span class="fa fa-angle-down"></span></span>
+    </a>
+    <div class="{{prefix}}left-menu-outer">
+      <ul class="metismenu {{prefix}}left-menu" id="menu1">
+          {{#each navigation }}
+            <li class="{{this.class}} {{#iff ../parentPage '==' this.slug}}active{{/iff}}"><!-- first-level -->
+              {{>sidebarLinkTemplate data=this}}
+              {{#if this.hasSubMenu}}
+              <ul aria-expanded="true" class="{{this.subMenuClass}} collapse">
+                {{#each this.subMenu}}<!-- second-level -->
+                <li class="{{#iff ../../firstLevelChild '==' this.slug}}active{{/iff}}">
+                  {{>sidebarLinkTemplate data=this}}
+                  {{#if this.hasSubMenu}}
+                  <ul aria-expanded="true" class="{{this.subMenuClass}}">
+                    {{#each this.subMenu}}<!-- third-level -->
+                    <li class="{{this.class}} {{#iff ../../../secondLevelChild '==' this.slug}}active{{/iff}}">
+                      {{>sidebarLinkTemplate data=this}}
+                      {{#if this.hasSubMenu}}
+                      <ul aria-expanded="true" class="{{this.subMenuClass}}">
+                        {{#each this.subMenu}}<!-- forth-level -->
+                        <li class="{{this.class}}">
+                          {{>sidebarLinkTemplate data=this}}
+                          {{#if this.hasSubMenu}}
+                          <ul aria-expanded="true" class="{{this.subMenuClass}}">
+                            {{#each this.subMenu}}<!-- fifth-level -->
+                            <li class="{{this.class}}">
+                              {{>sidebarLinkTemplate data=this}}
+                              {{#if this.hasSubMenu}}
+                              <ul aria-expanded="true" class="{{this.subMenuClass}}">
+                                {{#each this.subMenu}}<!-- sixth-level -->
+                                <li class="{{this.class}}">
+                                  {{>sidebarLinkTemplate data=this}}
+                                </li>
+                                {{/each}}
+                              </ul>{{/if}}
+                            </li>{{/each}}
+                          </ul>{{/if}}
+                        </li>{{/each}}
+                      </ul>{{/if}}
+                    </li>{{/each}}
+                  </ul>{{/if}}
+                </li>{{/each}}      
+              </ul>{{/if}}
+              {{#if this.chatboxSubMenu}}<ul class="chat-users-dropdown">
+                <li>
+                  <div class="display-users">
+                      <input class="form-control chat-user-filter" placeholder="Filter" type="text">
+                      {{#each this.subMenu}}
+                        {{>userChatLinkTemplate data=this}}
+                      {{/each}}
+                      <a href="chat.html" class="btn btn-xs sa-btn-dark btn-block {{prefix}}chat-learnmore-btn">About the API</a>                    
+                  </div>
+                </li>
+              </ul>{{/if}}
+          </li>{{/each}}  
+      </ul>
+    </div>
+    <a href="javascript:void(0)" class="minifyme" onclick="SAtoggleClass(this, 'body', 'minified')"> 
+        <i class="fa fa-arrow-circle-left hit"></i> 
+    </a>
+</div>

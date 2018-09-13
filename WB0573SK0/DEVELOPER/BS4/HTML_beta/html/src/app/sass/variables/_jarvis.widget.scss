@@ -1,0 +1,5 @@
+$widgetContentOverflow:			  visible;
+$fixed-navigation-zindex:		  900; 
+$ui-widget-overlay:				  $fixed-navigation-zindex + 49; //949
+$widget-fullscreen-zindex:        $ui-widget-overlay + 101; // 1050
+

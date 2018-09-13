@@ -1,0 +1,12 @@
+@import "../variables";
+
+.text-align-right{
+  text-align: right;
+}
+.invoice-footer {
+	border-top: 1px dotted $lightMuted;
+}
+
+.invoice-sum-total {
+	margin-top: rem(30px);
+}

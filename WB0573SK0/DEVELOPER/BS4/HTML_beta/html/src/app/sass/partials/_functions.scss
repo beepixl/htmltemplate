@@ -1,0 +1,4 @@
+// Retreive color Sass maps
+@function rem($size, $base: $baseFontSize) {
+  @return ($size / $baseFontSize) * 1rem;
+}

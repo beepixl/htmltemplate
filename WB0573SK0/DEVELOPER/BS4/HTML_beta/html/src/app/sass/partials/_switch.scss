@@ -1,0 +1,157 @@
+.onoffswitch-container {
+    margin-top: rem(4px);
+    margin-left: rem(7px);
+    display: inline-block
+}
+
+.onoffswitch {
+    position: relative;
+    width: rem(50px);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+    display: inline-block;
+    vertical-align: rem(-3px);
+}
+
+
+.onoffswitch-checkbox {
+    display: none
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: rem(1px) solid;
+    border-radius: rem(50px);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+}
+
+.onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    display: block
+}
+
+.onoffswitch-inner:after,.onoffswitch-inner:before {
+    float: left;
+    width: 50%;
+    height: rem(15px);
+    padding: 0;
+    line-height: rem(15px);
+    font-size: rem(10px);
+    font-family: Trebuchet,Arial,sans-serif;
+    font-weight: 700;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.onoffswitch-inner:before {
+    content: attr(data-swchon-text);
+    padding-left: rem(7px);
+    text-align: left
+}
+
+.onoffswitch-inner:after {
+    content: attr(data-swchoff-text);
+    padding-right: rem(7px);
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    width: rem(19px);
+    margin: rem(-2px);
+    background: #fff;
+    height: rem(19px);
+    border: rem(1px) solid;
+    border-radius: rem(50px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: rem(32px);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-repeat: repeat-x;
+}
+
+
+.onoffswitch-lg {
+    width: rem(64px);    
+    .onoffswitch-switch { 
+        right: rem(32px + 14px);
+    }
+}
+
+
+.onoffswitch-checkbox+.onoffswitch-label .onoffswitch-switch:before,.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch:before {
+    content: "\f00d";
+    color: #a90329;
+    display: block;
+    text-align: center;
+    line-height: rem(19px);
+    font-size: rem(10px);
+    text-shadow: 0 rem(-1px) 0 #fff;
+    font-weight: 700;
+    font-family: FontAwesome
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch:before {
+    content: "\f00c";
+    color: #57889c
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+    display: block
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0
+}
+
+.onoffswitch-switch:hover {
+    background-color: #eee
+}
+
+.onoffswitch-switch:active {
+    background-color: #eee;
+    box-shadow: inset 0 rem(2px) rem(4px) rgba(0,0,0,.15),0 rem(1px) rem(2px) rgba(0,0,0,.05)
+}
+
+.onoffswitch-checkbox:checked:disabled+.onoffswitch-label .onoffswitch-inner:before,.onoffswitch-checkbox:disabled+.onoffswitch-label .onoffswitch-inner:after {
+    text-shadow: 0 rem(1px) 0 #fff;
+    background: #bfbfbf;
+    color: #333
+}
+
+.onoffswitch-checkbox:checked:disabled+.onoffswitch-label .onoffswitch-switch,.onoffswitch-checkbox:disabled+.onoffswitch-label .onoffswitch-switch {
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top,#bfbfbf,#f4f4f4);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#bfbfbf),to(#f4f4f4));
+    background-image: -webkit-linear-gradient(top,#bfbfbf,#f4f4f4);
+    background-image: -o-linear-gradient(top,#bfbfbf,#f4f4f4);
+    background-image: linear-gradient(to bottom,#bfbfbf,#f4f4f4);
+    box-shadow: none!important
+}
+
+.onoffswitch-checkbox:checked:disabled+.onoffswitch-label .onoffswitch-label,.onoffswitch-checkbox:disabled+.onoffswitch-label {
+    border-color: #ababab #999 #878787!important
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label {
+    border-color: #3276b1 #2a6395 #255681
+}
+
+.onoffswitch+span,.onoffswitch-title {
+    display: inline-block;
+    //vertical-align: middle;
+    //margin-top: rem(-5px)
+}

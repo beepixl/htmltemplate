@@ -1,0 +1,26 @@
+{
+  "en": {
+    "he": {
+      "title": "Home",
+      "content": "This is home"
+    },
+    "noname": "<link href='assets/css/style.css' rel='stylesheet'>",
+    "title": "BOOTCLASIFIED - Responsive Classified Theme",
+    "banner": {
+      "title": "Find Classified Ads",
+      "subtitle": "Find local classified ads on bootclassified in Minutes"
+    },
+    "version": "2",
+    "author": "Tanim Ahmed"
+  },
+  "ar": {
+    "rtlfont": "<link href='assets/css/rtlfont.css' rel='stylesheet'>",
+    "title": "BOOTCLASIFIED - Responsive Classified Theme",
+    "banner": {
+      "title": "البحث عن الإعلانات المصنفة",
+      "subtitle": "البحث عن الإعلانات المبوبة المحلية على بوتكلاسيفيد في دقائق"
+    },
+    "version": "2",
+    "author": "Tanim Ahmed"
+  }
+}

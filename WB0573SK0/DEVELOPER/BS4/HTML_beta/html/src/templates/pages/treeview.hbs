@@ -1,0 +1,358 @@
+{{!-- buttons.hbs --}}
+{{#> layout title=pageTitle parentPage='ui-elements' firstLevelChild='treeview'}}
+
+	{{#*inline "head-block"}}	
+		<link rel="stylesheet" type="text/css" href="assets/pages/demo.css">
+	{{/inline}}
+
+	{{#*inline "sa-page-content"}}
+		<div class="d-flex w-100 home-header">
+			<div>
+				<h1 class="page-header"><i class="fa-fw fa fa-desktop"></i> UI Elements <span>> Tree View</span></h1>				
+			</div>
+			<div class="ml-auto">
+				<ul class="sa-sparks">
+					<li class="sparks-info">
+						<h5> <small>My Income</small> <span class="text-blue">$47,171</span></h5>
+						<div class="sparkline text-blue d-none d-xl-block">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Traffic</small> <span class="text-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline text-purple d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> <small>Site Orders</small> <span class="text-green-dark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline text-green-dark d-none d-xl-block">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</div>
+
+		<section id="widget-grid" class="">
+				
+			<!-- row -->
+			<div class="row">
+		
+				<!-- NEW WIDGET START -->
+				<article class="col-xl-6">
+		
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget jarviswidget-color-orange no-padding" id="wid-id-0" data-widget-editbutton="false">
+						<!-- widget options:
+						usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+		
+						data-widget-colorbutton="false"
+						data-widget-editbutton="false"
+						data-widget-togglebutton="false"
+						data-widget-deletebutton="false"
+						data-widget-fullscreenbutton="false"
+						data-widget-custombutton="false"
+						data-widget-collapsed="true"
+						data-widget-sortable="false"
+		
+						-->
+						<header>
+							<div class="widget-header">
+								<span class="widget-icon"> <i class="fa fa-lg fa-calendar"></i> </span>
+								<h2>Organizing view </h2>
+							</div>		
+						</header>
+		
+						<!-- widget div-->
+						<div>
+		
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+		
+							</div>
+							<!-- end widget edit box -->
+		
+							<!-- widget content -->
+							<div class="widget-body">
+		
+								<div class="widget-body-toolbar bg-white">
+		
+									<div class="row">
+										<form class="form-inline w-100" role="form">
+		
+		
+											<div class="col-md-10">
+		
+												<span class="form-group-xs">
+													<input type="email" class="form-control" placeholder="My Task">
+												</span>
+												<span class="form-group-xs">
+													<select class="form-control">
+														<option>Week 1</option>
+														<option>Week 2</option>
+													</select>
+												</span>
+												<span class="form-group-xs">
+													<select class="form-control">
+														<option>Monday</option>
+														<option>Tuesday</option>
+														<option>Wednesday</option>
+														<option>Thursday</option>
+														<option>Friday</option>
+														<option>Saturday</option>
+														<option>Sunday</option>
+													</select>
+												</span>
+											</div>
+		
+											<div class="col-md-2 text-right">
+		
+												<button type="submit" class="btn {{prefix}}btn-warning btn-xs">
+													<i class="fa fa-plus"></i> Add
+												</button>
+		
+											</div>
+		
+		
+										</form>
+
+									</div>
+		
+								</div>
+		
+								<div class="tree p-3">
+									<ul>
+										<li>
+											<span><i class="fa fa-lg fa-calendar"></i> 2013, Week 2</span>
+											<ul>
+												<li>
+													<span class="label label-success"><i class="fa fa-lg fa-plus-circle"></i> Monday, January 7: 8.00 hours</span>
+													<ul>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 8.00</span> &ndash; <a href="javascript:void(0);">Changed CSS to accomodate...</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span class="label label-success"><i class="fa fa-lg fa-minus-circle"></i> Tuesday, January 8: 8.00 hours</span>
+													<ul>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 6.00</span> &ndash; <a href="javascript:void(0);">Altered code...</a>
+														</li>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 2.00</span> &ndash; <a href="javascript:void(0);">Simplified our approach to...</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span class="label label-warning"><i class="fa fa-lg fa-minus-circle"></i> Wednesday, January 9: 6.00 hours</span>
+													<ul>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 3.00</span> &ndash; <a href="javascript:void(0);">Fixed bug caused by...</a>
+														</li>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 3.00</span> &ndash; <a href="javascript:void(0);">Comitting latest code to Git...</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span class="label label-danger"><i class="fa fa-lg fa-minus-circle"></i> Wednesday, January 9: 4.00 hours</span>
+													<ul>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 2.00</span> &ndash; <a href="javascript:void(0);">Create component that...</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span><i class="fa fa-lg fa-calendar"></i> 2013, Week 3</span>
+											<ul>
+												<li>
+													<span class="label label-success"><i class="fa fa-lg fa-minus-circle"></i> Monday, January 14: 8.00 hours</span>
+													<ul>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 7.75</span> &ndash; <a href="javascript:void(0);">Writing documentation...</a>
+														</li>
+														<li>
+															<span><i class="fa fa-clock-o"></i> 0.25</span> &ndash; <a href="javascript:void(0);">Reverting code back to...</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+		
+							</div>
+							<!-- end widget content -->
+		
+						</div>
+						<!-- end widget div -->
+		
+					</div>
+					<!-- end widget -->
+		
+				</article>
+				<!-- WIDGET END -->
+		
+				<!-- NEW WIDGET START -->
+				<article class="col-xl-6">
+		
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget jarviswidget-color-blue" id="wid-id-1" data-widget-editbutton="false">
+						<!-- widget options:
+						usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+		
+						data-widget-colorbutton="false"
+						data-widget-editbutton="false"
+						data-widget-togglebutton="false"
+						data-widget-deletebutton="false"
+						data-widget-fullscreenbutton="false"
+						data-widget-custombutton="false"
+						data-widget-collapsed="true"
+						data-widget-sortable="false"
+		
+						-->
+						<header>
+							<div class="widget-header">
+								<span class="widget-icon"> <i class="fa fa-sitemap"></i> </span>
+								<h2>Simple View </h2>
+							</div>		
+						</header>
+		
+						<!-- widget div-->
+						<div>
+		
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+		
+							</div>
+							<!-- end widget edit box -->
+		
+							<!-- widget content -->
+							<div class="widget-body">
+		
+								<div class="tree smart-form">
+									<ul>
+										<li>
+											<span><i class="fa fa-lg fa-folder-open"></i> Parent</span>
+											<ul>
+												<li>
+													<span><i class="fa fa-lg fa-plus-circle"></i> Administrators</span>
+													<ul>
+														<li style="display:none">
+															<span> <label class="checkbox inline-block">
+																	<input type="checkbox" name="checkbox-inline">
+																	<i></i>Michael.Jackson</label> </span>
+														</li>
+														<li style="display:none">
+															<span> <label class="checkbox inline-block">
+																	<input type="checkbox" checked="checked" name="checkbox-inline">
+																	<i></i>Sunny.Ahmed</label> </span>
+														</li>
+														<li style="display:none">
+															<span> <label class="checkbox inline-block">
+																	<input type="checkbox" checked="checked" name="checkbox-inline">
+																	<i></i>Jackie.Chan</label> </span>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<span><i class="fa fa-lg fa-minus-circle"></i> Child</span>
+													<ul>
+														<li>
+															<span><i class="icon-leaf"></i> Grand Child</span>
+														</li>
+														<li>
+															<span><i class="icon-leaf"></i> Grand Child</span>
+														</li>
+														<li>
+															<span><i class="fa fa-lg fa-plus-circle"></i> Grand Child</span>
+															<ul>
+																<li style="display:none">
+																	<span><i class="fa fa-lg fa-plus-circle"></i> Great Grand Child</span>
+																	<ul>
+																		<li style="display:none">
+																			<span><i class="icon-leaf"></i> Great great Grand Child</span>
+																		</li>
+																		<li style="display:none">
+																			<span><i class="icon-leaf"></i> Great great Grand Child</span>
+																		</li>
+																	</ul>
+																</li>
+																<li style="display:none">
+																	<span><i class="icon-leaf"></i> Great Grand Child</span>
+																</li>
+																<li style="display:none">
+																	<span><i class="icon-leaf"></i> Great Grand Child</span>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span><i class="fa fa-lg fa-folder-open"></i> Parent2</span>
+											<ul>
+												<li>
+													<span><i class="icon-leaf"></i> Child</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+		
+
+		
+							</div>
+							<!-- end widget content -->
+		
+						</div>
+						<!-- end widget div -->
+		
+					</div>
+					<!-- end widget -->
+		
+				</article>
+				<!-- WIDGET END -->
+		
+			</div>
+		
+			<!-- end row -->
+		
+			<!-- row -->
+		
+			<div class="row">
+		
+			</div>
+		
+			<!-- end row -->
+		
+		</section>
+	{{/inline}}
+	{{#*inline "script-block"}}	
+		<script type="text/javascript">
+
+		// PAGE RELATED SCRIPTS
+	
+		$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
+		$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
+			var children = $(this).parent('li.parent_li').find(' > ul > li');
+			if (children.is(':visible')) {
+				children.hide('fast');
+				$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-plus-circle');
+			} else {
+				children.show('fast');
+				$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-minus-circle');
+			}
+			e.stopPropagation();
+		});
+
+    </script>
+	{{/inline}}
+{{/layout}}

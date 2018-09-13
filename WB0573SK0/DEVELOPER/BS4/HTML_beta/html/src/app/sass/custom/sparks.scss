@@ -1,0 +1,475 @@
+.jqstooltip {
+	display: table;
+	max-width: 10px;
+}
+
+.sa-sparks {
+	margin: 5px -10px 0 0;
+	padding: 0;
+
+	li {
+		padding: 0 10px;
+		display: inline-block;
+	    max-height: 47px;
+	    overflow: hidden;
+	    text-align: left;
+	    min-width: 180px;
+	    ~ li {
+	    	border-left: 1px dotted #c7c7c7;
+	    }
+	}
+	h5 {
+		float: left;
+		margin: 2px 0 0;
+		font-size: rem($baseFontSize - 2px);
+		font-weight: normal;
+	}
+	small {
+		color: #555;
+	    font-size: 11px;
+	    text-transform: uppercase;
+	}
+	span {
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0;
+		text-transform: none;
+		display: block;
+	}
+	.sparkline {
+		display: block;
+	    float: right;
+	    margin: 8px 0 0 20px;		
+	}
+	@media (max-width: nth(nth($grid-breakpoints, 5), 2) - 1px) {
+		li {
+			min-width: 91px;
+		}
+	}
+}
+
+[data-progressbar-value] {
+	overflow: visible;
+	position: relative;
+	margin-bottom: 5px;
+	margin-top: rem(20px);
+}
+
+[data-progressbar-value]:before {
+ position:absolute;
+ font-size:rem($baseFontSize - 2px);
+ top:-12px
+}
+[data-progressbar-value]:before {
+ content:attr(data-progressbar-value) "%";
+}
+
+[data-progressbar-value="1"]>.progress-bar {
+ width:1%;
+ background:#a90329
+}
+[data-progressbar-value="2"]>.progress-bar {
+ width:2%;
+ background:#a90329
+}
+[data-progressbar-value="3"]>.progress-bar {
+ width:3%;
+ background:#a90329
+}
+[data-progressbar-value="4"]>.progress-bar {
+ width:4%;
+ background:#a90329
+}
+[data-progressbar-value="5"]>.progress-bar {
+ width:5%;
+ background:#a90329
+}
+[data-progressbar-value="6"]>.progress-bar {
+ width:6%;
+ background:#a90329
+}
+[data-progressbar-value="7"]>.progress-bar {
+ width:7%;
+ background:#a90329
+}
+[data-progressbar-value="8"]>.progress-bar {
+ width:8%;
+ background:#a90329
+}
+[data-progressbar-value="9"]>.progress-bar {
+ width:9%;
+ background:#a90329
+}
+[data-progressbar-value="10"]>.progress-bar {
+ width:10%;
+ background:#db0435
+}
+[data-progressbar-value="11"]>.progress-bar {
+ width:11%;
+ background:#c79121
+}
+[data-progressbar-value="12"]>.progress-bar {
+ width:12%;
+ background:#c79121
+}
+[data-progressbar-value="13"]>.progress-bar {
+ width:13%;
+ background:#c79121
+}
+[data-progressbar-value="14"]>.progress-bar {
+ width:14%;
+ background:#c79121
+}
+[data-progressbar-value="15"]>.progress-bar {
+ width:15%;
+ background:#c79121
+}
+[data-progressbar-value="16"]>.progress-bar {
+ width:16%;
+ background:#c79121
+}
+[data-progressbar-value="17"]>.progress-bar {
+ width:17%;
+ background:#c79121
+}
+[data-progressbar-value="18"]>.progress-bar {
+ width:18%;
+ background:#c79121
+}
+[data-progressbar-value="19"]>.progress-bar {
+ width:19%;
+ background:#c79121
+}
+[data-progressbar-value="20"]>.progress-bar {
+ width:20%;
+ background:#c79121
+}
+[data-progressbar-value="21"]>.progress-bar {
+ width:21%;
+ background:#c79121
+}
+[data-progressbar-value="22"]>.progress-bar {
+ width:22%;
+ background:#c79121
+}
+[data-progressbar-value="23"]>.progress-bar {
+ width:23%;
+ background:#c79121
+}
+[data-progressbar-value="24"]>.progress-bar {
+ width:24%;
+ background:#c79121
+}
+[data-progressbar-value="25"]>.progress-bar {
+ width:25%;
+ background:#c79121
+}
+[data-progressbar-value="26"]>.progress-bar {
+ width:26%;
+ background:#c79121
+}
+[data-progressbar-value="27"]>.progress-bar {
+ width:27%;
+ background:#c79121
+}
+[data-progressbar-value="28"]>.progress-bar {
+ width:28%;
+ background:#c79121
+}
+[data-progressbar-value="29"]>.progress-bar {
+ width:29%;
+ background:#c79121
+}
+[data-progressbar-value="30"]>.progress-bar {
+ width:30%;
+ background:#c79121
+}
+[data-progressbar-value="31"]>.progress-bar {
+ width:31%;
+ background:#c79121
+}
+[data-progressbar-value="32"]>.progress-bar {
+ width:32%;
+ background:#c79121
+}
+[data-progressbar-value="33"]>.progress-bar {
+ width:33%;
+ background:#c79121
+}
+[data-progressbar-value="34"]>.progress-bar {
+ width:34%;
+ background:#c79121
+}
+[data-progressbar-value="35"]>.progress-bar {
+ width:35%;
+ background:#c79121
+}
+[data-progressbar-value="36"]>.progress-bar {
+ width:36%;
+ background:#c79121
+}
+[data-progressbar-value="37"]>.progress-bar {
+ width:37%;
+ background:#c79121
+}
+[data-progressbar-value="38"]>.progress-bar {
+ width:38%;
+ background:#c79121
+}
+[data-progressbar-value="39"]>.progress-bar {
+ width:39%;
+ background:#c79121
+}
+[data-progressbar-value="40"]>.progress-bar {
+ width:40%;
+ background:#c79121
+}
+[data-progressbar-value="41"]>.progress-bar {
+ width:41%;
+ background:#404040
+}
+[data-progressbar-value="42"]>.progress-bar {
+ width:42%;
+ background:#404040
+}
+[data-progressbar-value="43"]>.progress-bar {
+ width:43%;
+ background:#404040
+}
+[data-progressbar-value="44"]>.progress-bar {
+ width:44%;
+ background:#404040
+}
+[data-progressbar-value="45"]>.progress-bar {
+ width:45%;
+ background:#404040
+}
+[data-progressbar-value="46"]>.progress-bar {
+ width:46%;
+ background:#404040
+}
+[data-progressbar-value="47"]>.progress-bar {
+ width:47%;
+ background:#404040
+}
+[data-progressbar-value="48"]>.progress-bar {
+ width:48%;
+ background:#404040
+}
+[data-progressbar-value="49"]>.progress-bar {
+ width:49%;
+ background:#404040
+}
+[data-progressbar-value="50"]>.progress-bar {
+ width:50%;
+ background:#404040
+}
+[data-progressbar-value="51"]>.progress-bar {
+ width:51%;
+ background:#404040
+}
+[data-progressbar-value="52"]>.progress-bar {
+ width:52%;
+ background:#404040
+}
+[data-progressbar-value="53"]>.progress-bar {
+ width:53%;
+ background:#404040
+}
+[data-progressbar-value="54"]>.progress-bar {
+ width:54%;
+ background:#404040
+}
+[data-progressbar-value="55"]>.progress-bar {
+ width:55%;
+ background:#404040
+}
+[data-progressbar-value="56"]>.progress-bar {
+ width:56%;
+ background:#404040
+}
+[data-progressbar-value="57"]>.progress-bar {
+ width:57%;
+ background:#404040
+}
+[data-progressbar-value="58"]>.progress-bar {
+ width:58%;
+ background:#404040
+}
+[data-progressbar-value="59"]>.progress-bar {
+ width:59%;
+ background:#404040
+}
+[data-progressbar-value="60"]>.progress-bar {
+ width:60%;
+ background:#404040
+}
+[data-progressbar-value="61"]>.progress-bar {
+ width:61%;
+ background:#3276b1
+}
+[data-progressbar-value="62"]>.progress-bar {
+ width:62%;
+ background:#3276b1
+}
+[data-progressbar-value="63"]>.progress-bar {
+ width:63%;
+ background:#3276b1
+}
+[data-progressbar-value="64"]>.progress-bar {
+ width:64%;
+ background:#404040
+}
+[data-progressbar-value="65"]>.progress-bar {
+ width:65%;
+ background:#3276b1
+}
+[data-progressbar-value="66"]>.progress-bar {
+ width:66%;
+ background:#3276b1
+}
+[data-progressbar-value="67"]>.progress-bar {
+ width:67%;
+ background:#3276b1
+}
+[data-progressbar-value="68"]>.progress-bar {
+ width:68%;
+ background:#3276b1
+}
+[data-progressbar-value="69"]>.progress-bar {
+ width:69%;
+ background:#3276b1
+}
+[data-progressbar-value="70"]>.progress-bar {
+ width:70%;
+ background:#3276b1
+}
+[data-progressbar-value="71"]>.progress-bar {
+ width:71%;
+ background:#3276b1
+}
+[data-progressbar-value="72"]>.progress-bar {
+ width:72%;
+ background:#3276b1
+}
+[data-progressbar-value="73"]>.progress-bar {
+ width:73%;
+ background:#3276b1
+}
+[data-progressbar-value="74"]>.progress-bar {
+ width:74%;
+ background:#3276b1
+}
+[data-progressbar-value="75"]>.progress-bar {
+ width:75%;
+ background:#3276b1
+}
+[data-progressbar-value="76"]>.progress-bar {
+ width:76%;
+ background:#3276b1
+}
+[data-progressbar-value="77"]>.progress-bar {
+ width:77%;
+ background:#3276b1
+}
+[data-progressbar-value="78"]>.progress-bar {
+ width:78%;
+ background:#3276b1
+}
+[data-progressbar-value="79"]>.progress-bar {
+ width:79%;
+ background:#3276b1
+}
+[data-progressbar-value="80"]>.progress-bar {
+ width:80%;
+ background:#3276b1
+}
+[data-progressbar-value="81"]>.progress-bar {
+ width:81%;
+ background:#a0bda0
+}
+[data-progressbar-value="82"]>.progress-bar {
+ width:82%;
+ background:#a0bda0
+}
+[data-progressbar-value="83"]>.progress-bar {
+ width:83%;
+ background:#a0bda0
+}
+[data-progressbar-value="84"]>.progress-bar {
+ width:84%;
+ background:#9dbb9d
+}
+[data-progressbar-value="85"]>.progress-bar {
+ width:85%;
+ background:#9dbb9d
+}
+[data-progressbar-value="86"]>.progress-bar {
+ width:86%;
+ background:#9dbb9d
+}
+[data-progressbar-value="87"]>.progress-bar {
+ width:87%;
+ background:#97b797
+}
+[data-progressbar-value="88"]>.progress-bar {
+ width:88%;
+ background:#97b797
+}
+[data-progressbar-value="89"]>.progress-bar {
+ width:89%;
+ background:#91b391
+}
+[data-progressbar-value="90"]>.progress-bar {
+ width:90%;
+ background:#91b391
+}
+[data-progressbar-value="91"]>.progress-bar {
+ width:91%;
+ background:#91b391
+}
+[data-progressbar-value="92"]>.progress-bar {
+ width:92%;
+ background:#8eb18e
+}
+[data-progressbar-value="93"]>.progress-bar {
+ width:93%;
+ background:#8baf8b
+}
+[data-progressbar-value="94"]>.progress-bar {
+ width:94%;
+ background:#88ad88
+}
+[data-progressbar-value="95"]>.progress-bar {
+ width:95%;
+ background:#85ab85
+}
+[data-progressbar-value="96"]>.progress-bar {
+ width:96%;
+ background:#82a882
+}
+[data-progressbar-value="97"]>.progress-bar {
+ width:97%;
+ background:#7fa67f
+}
+[data-progressbar-value="98"]>.progress-bar {
+ width:98%;
+ background:#7ca47c
+}
+[data-progressbar-value="99"]>.progress-bar {
+ width:99%;
+ background:#79a279
+}
+[data-progressbar-value="100"]>.progress-bar {
+ width:100%;
+ background:#739e73;
+ -webkit-animation:none;
+ -moz-animation:none;
+ -ms-animation:none;
+ -o-animation:none;
+ animation:none;
+ background-image:none!important
+}
+
+
+

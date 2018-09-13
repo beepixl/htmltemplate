@@ -1,0 +1,545 @@
+.ui-icon.ui-icon-circle-triangle-e,
+.ui-icon.ui-icon-circle-triangle-w {
+	font-family: FontAwesome;
+	text-indent: 0;
+	background: none;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	color: $ui-datepicker-direction-arrow-color;
+}
+
+/* .ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: 0;
+}
+ */
+
+.ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none
+}
+
+.ui-datepicker .ui-datepicker-header {
+    border: 0;
+    font-weight: 700;
+    background-color: $ui-datepicker-header;
+}
+.ui-datepicker .ui-datepicker-title {
+	color: gray;
+}
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 1em;
+    margin: 1px 0
+}
+
+.ui-datepicker select.ui-datepicker-month-year {
+    width: 100%
+}
+
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year {
+    width: 49%
+}
+
+.ui-datepicker-cover {
+    display: none;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    filter: mask();
+    top: -4px;
+    left: -4px;
+    width: 200px;
+    height: 200px
+}
+
+.ui-datepicker th {
+    font-weight: 700;
+    color: gray
+}
+
+.ui-datepicker-today a:hover {
+    background-color: gray;
+    color: #fff
+}
+
+.ui-datepicker-today a {
+    background-color: $ui-datepicker-today;
+    cursor: pointer;
+    padding: 0 4px;
+    margin-bottom: 0
+}
+
+.ui-datepicker td a {
+    margin-bottom: 0;
+    border: 0
+}
+
+.ui-datepicker td:hover {
+    color: #fff
+}
+
+.ui-datepicker td .ui-state-default {
+    border: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    color: gray;
+    text-align: center;
+    filter: none
+}
+
+.ui-datepicker td .ui-state-highlight {
+    color: #fff;
+    background-color: $ui-state-highlight;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.ui-datepicker td .ui-state-active {
+    color: #333;
+    background-color: $ui-state-active;
+    margin-bottom: 0;
+    font-size: normal;
+    text-shadow: 0;
+    border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.ui-datepicker td .ui-state-hover {
+    color: #fff;
+    background: $ui-state-hover;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    border-color: $ui-state-hover-border;
+    border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+    background: $ui-default-state-background;
+    border-color: $ui-default-state-border;
+}
+.ui-datepicker-prev,
+.ui-datepicker-prev:hover,
+.ui-datepicker-next,
+.ui-datepicker-next:hover {
+    border-color: $ui-default-state-background;
+    font-weight: normal;
+}
+
+.ui-datepicker .ui-state-default {
+    background: none;
+}
+
+.ui-datepicker {
+    .ui-datepicker-next-hover {
+        right: 2px;
+    }
+    .ui-datepicker-prev-hover {
+        left: 2px;
+    }
+    .ui-datepicker-prev-hover, .ui-datepicker-next-hover{
+        top: 2px;
+    }
+}
+
+
+/*
+ * Dialog
+ */ 
+.ui-dialog {
+    -webkit-box-shadow: 0 5px 15px rgba(red($black), green($black), blue($black), 0.5);
+    box-shadow: 0 5px 15px rgba(red($black), green($black), blue($black), 0.5);
+    
+    border: 1px solid $gray-light;
+    border: 1px solid rgba(red($black), green($black), blue($black), 0.2);
+    padding: 0;
+}
+.ui-corner-all {
+    border-radius: 0;
+
+}
+.ui-dialog-titlebar h4 {
+    margin: 13px 0;
+}
+ 
+.ui-widget-overlay {
+    z-index: 999;
+}
+ 
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0 10px;
+    background: $white;
+    border-radius: rem(6px) rem(6px) 0 0;
+    border-width: 0 0 1px;
+    border-bottom-color: $gray-lighter;
+}
+ 
+.ui-dialog .ui-dialog-title {
+    margin: 0;
+}
+ 
+.ui-dialog .ui-dialog-titlebar-close {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0.25;
+    margin-top: -16px;
+    margin-right: 4px;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+ 
+.ui-dialog-titlebar-close:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+}
+
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0 .4em 0 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    margin-top: 13px;
+    padding: 19px 15px 20px;
+    text-align: right;
+    border-radius: 0 0 rem(6px) rem(6px);
+    border-top: 1px solid $gray-lighter;    
+}
+
+
+
+/* tabs */
+
+.ui-tabs  {
+    position: relative;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    &.ui-widget.ui-widget-content {
+        border: 0;
+    }
+    .ui-tabs-nav {
+        border: solid $ui-tabs-nav-border;
+        border-width: 0 0 1px;
+        border-radius: 0;
+        padding: 0;
+        background: none;
+        .ui-tabs-anchor {
+            padding: rem(8px) rem(12px);
+        }
+        li {
+            box-shadow: none;
+            position: relative;
+            top: 0;
+            float: left;
+            margin: 0 0 -1px;
+            border: 1px solid transparent;
+            border-bottom-width: 0;
+            border-color: transparent;
+            list-style: none;
+            white-space: nowrap;
+            filter: none;
+            margin-right: 3px;
+            background-color: $ui-tabs-tab;
+            a {
+                border-radius: 0px;
+                color: #838383;
+                float: left;
+                padding: 8px 12px;
+                font-weight: 400;
+                text-decoration: none;
+                outline: 0;
+            }
+            &.ui-tabs-active a {
+                font-weight: bold;
+                border-top-width: 0px !important;
+                margin-top: 1px !important;
+                box-shadow: 0 -2px 0 $blue;
+                border: 1px solid $ui-tabs-nav-border;
+                border-bottom: 1px solid $white;
+                background-color: $white;
+                color: $ui-tabs-active;
+            }
+            &.ui-state-disabled,
+            &.ui-tabs-active,
+            &.ui-tabs-loading {
+                a {
+                    cursor: text
+                }
+            }
+            &.ui-state-active {
+                border: 0;
+                padding: 0;
+                &:hover {
+                    cursor: text
+                }
+
+            }
+        }
+    }
+    .ui-tabs-tab {
+        border-radius: 0;
+    }
+    .ui-tabs-panel {
+        display: block;
+        border-radius: 0;
+        border: 1px solid $nav-tabs-border-color;
+        margin: 0;
+        padding: 10px 13px;
+        border-top: none;
+    }
+    .ui-tabs-hide {
+        display: none!important
+    }
+}
+
+
+/*
+ * JQUI SPINNERS
+ */
+.ui-spinner-input {
+    margin: 0 !important;
+    height: 32px;
+    padding: 7px 24px 7px 12px;
+    border-color: $ui-spinner-input-border;
+}
+
+.ui-spinner-input.spinner-left {
+    padding: 6px 12px 6px 24px;
+}
+
+.ui-spinner {
+    width: 100%;
+    &.ui-widget.ui-widget-content {
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+.ui-spinner-input.spinner-left + .ui-spinner-button, .ui-spinner-input.spinner-left + .ui-spinner-button + .ui-spinner-button{
+    right: auto;
+    left: 0px;
+}
+    
+.ui-spinner-up, .ui-spinner-down {
+    background: $success;
+    border-radius: 0px;
+}
+.ui-spinner-up:hover, .ui-spinner-up:active, .ui-spinner-up:focus {
+    background: darken($success, 10%);
+}
+.ui-spinner-down:hover, .ui-spinner-down:active, .ui-spinner-down:focus {
+    background: darken($danger, 10%);
+}
+
+.ui-spinner-down {
+    background: lighten($danger, 5%);
+}
+
+.ui-spinner-up:before, .ui-spinner-down:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    content: "\f067";
+    color: $white;
+    font-size: rem($baseFontSize + 1px);
+    margin-top: 2px;
+    
+}
+.ui-spinner-down:before {
+    content: "\f068";
+}
+
+.ui-spinner-up >:first-child, .ui-spinner-down >:first-child {
+    display: none;  
+}
+
+
+.ui-spinner-button {
+  width: 19px;
+}
+
+/* spinner both */
+.ui-spinner-input.spinner-both {
+    padding: 6px 30px;
+}
+
+.ui-spinner-input.spinner-both + .ui-spinner-button + .ui-spinner-button {
+    left: 0px;
+    right: auto;
+}
+.ui-spinner-input.spinner-both + .ui-spinner-button, 
+.ui-spinner-input.spinner-both + .ui-spinner-button + .ui-spinner-button {
+    height: 30px;
+    width: 25px;
+}
+
+.ui-spinner-input.spinner-both + .ui-spinner-up:before, .ui-spinner-input.spinner-both + .ui-spinner-up + .ui-spinner-down:before {
+    margin-top: 8px;
+}
+
+
+
+/* menu */
+.ui-menu {
+    width: 155px;
+    padding: 2px;
+    -webkit-box-shadow: 0 2px 4px rgba(30, 30, 100, 0.25);
+    -moz-box-shadow: 0 2px 4px rgba(30,30,100,0.25);
+    box-shadow: 0 2px 4px rgba(30, 30, 100, 0.25);
+    background: $white;
+    border: 1px solid rgba(red($black), green($black), blue($black), 0.2);
+    z-index: 1;
+    
+    .ui-state-disabled {
+      margin: .4em 0 .2em !important;
+      background: none !important;
+      color: #999 !important;
+      font-weight: normal !important;
+      cursor: default;
+  }
+  
+  .ui-menu-item a {
+    display: block;
+  }
+  .ui-menu-item a .ui-menu-icon {
+      width: auto;
+      height:auto;
+      top: 2px;
+      left: auto;
+      right: 5px;
+      bottom: auto;
+      text-indent: 0px;
+  }
+  .ui-state-disabled.ui-state-hover,
+  .ui-state-disabled.ui-state-active {
+    border: 0;
+  }
+}
+
+.ui-icon-caret-1-e:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: rem($baseFontSize + 1px);
+    display: inline;
+}
+    
+
+
+
+
+/* accordions */
+
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+    
+.ui-accordion .ui-accordion-header {
+    background-color: $ui-accordion-header-background;
+    font-size: $baseFontSize + 2px;
+    padding: 10px 15px 9px 36px !important;
+}
+    
+.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-content {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 15px;
+}
+.ui-accordion-header-active {
+    color: inherit;
+}
+.ui-accordion-header-active + .ui-accordion-content {
+    //border-top: 1px solid $nav-tabs-border-color;
+}
+    
+.ui-accordion .ui-accordion-header {
+    margin-top: -2px;
+}
+    
+.ui-accordion .ui-accordion-header, .ui-accordion-content {
+    border-color: darken($gray-lighter, 7%) !important;
+}
+    
+
+.ui-accordion .ui-accordion-icons {
+    padding-left: 2.2em
+}
+
+.ui-accordion .ui-accordion-noicons {
+    padding-left: .7em
+}
+
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    padding-left: 2.2em
+}
+
+.ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px
+}
+
+
+.ui-accordion-header-icon {
+    text-indent: 0;
+    background-image: none !important;
+    text-align: center;
+    line-height: normal;
+    left: 12px;
+    margin-top: -6px;
+    font-size: 14px;
+}
+
+.ui-progressbar {
+    background-color: $gray-lighter;
+}
+.ui-progressbar.ui-widget.ui-widget-content {
+    border: 0;
+
+}
+.ui-progressbar-value.ui-widget-header {
+    height: auto;
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+// menu hover
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: $blue;
+    border-color: transparent;
+}
